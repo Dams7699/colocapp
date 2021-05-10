@@ -10,10 +10,70 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_10_170801) do
+ActiveRecord::Schema.define(version: 2021_05_10_183403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "colocation_goals", force: :cascade do |t|
+    t.bigint "colocation_id", null: false
+    t.bigint "goal_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["colocation_id"], name: "index_colocation_goals_on_colocation_id"
+    t.index ["goal_id"], name: "index_colocation_goals_on_goal_id"
+  end
+
+  create_table "colocations", force: :cascade do |t|
+    t.string "address"
+    t.text "description"
+    t.integer "price"
+    t.integer "desired_people"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_colocations_on_user_id"
+  end
+
+  create_table "goals", force: :cascade do |t|
+    t.string "type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "offers", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "colocation_id"
+    t.string "status"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["colocation_id"], name: "index_offers_on_colocation_id"
+    t.index ["user_id"], name: "index_offers_on_user_id"
+  end
+
+  create_table "personalities", force: :cascade do |t|
+    t.string "type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_goals", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "goal_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["goal_id"], name: "index_user_goals_on_goal_id"
+    t.index ["user_id"], name: "index_user_goals_on_user_id"
+  end
+
+  create_table "user_personalities", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "personality_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["personality_id"], name: "index_user_personalities_on_personality_id"
+    t.index ["user_id"], name: "index_user_personalities_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -23,8 +83,18 @@ ActiveRecord::Schema.define(version: 2021_05_10_170801) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "description"
+    t.integer "age"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "colocation_goals", "colocations"
+  add_foreign_key "colocation_goals", "goals"
+  add_foreign_key "user_goals", "goals"
+  add_foreign_key "user_goals", "users"
+  add_foreign_key "user_personalities", "personalities"
+  add_foreign_key "user_personalities", "users"
 end
