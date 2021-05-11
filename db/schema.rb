@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_05_10_183403) do
     t.text "description"
     t.integer "price"
     t.integer "desired_people"
-    t.bigint "user_id"
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_colocations_on_user_id"
@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 2021_05_10_183403) do
   end
 
   create_table "offers", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "colocation_id"
+    t.bigint "user_id", null: false
+    t.bigint "colocation_id", null: false
     t.string "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -93,6 +93,9 @@ ActiveRecord::Schema.define(version: 2021_05_10_183403) do
 
   add_foreign_key "colocation_goals", "colocations"
   add_foreign_key "colocation_goals", "goals"
+  add_foreign_key "colocations", "users"
+  add_foreign_key "offers", "colocations"
+  add_foreign_key "offers", "users"
   add_foreign_key "user_goals", "goals"
   add_foreign_key "user_goals", "users"
   add_foreign_key "user_personalities", "personalities"

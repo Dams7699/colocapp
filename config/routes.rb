@@ -14,5 +14,4 @@ Rails.application.routes.draw do
 
   resource :profil, only: [ :show ]
   resource :notification, only: [ :show ]
-  end
 end

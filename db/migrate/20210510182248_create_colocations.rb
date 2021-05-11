@@ -5,7 +5,7 @@ class CreateColocations < ActiveRecord::Migration[6.0]
       t.text :description
       t.integer :price
       t.integer :desired_people
-      t.references :user
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
