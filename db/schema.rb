@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_11_100639) do
+ActiveRecord::Schema.define(version: 2021_05_11_125345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,12 @@ ActiveRecord::Schema.define(version: 2021_05_11_100639) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "hobbies", force: :cascade do |t|
+    t.string "type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "offers", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "colocation_id", null: false
@@ -85,6 +91,15 @@ ActiveRecord::Schema.define(version: 2021_05_11_100639) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["goal_id"], name: "index_user_goals_on_goal_id"
     t.index ["user_id"], name: "index_user_goals_on_user_id"
+  end
+
+  create_table "user_hobbies", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "hobby_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["hobby_id"], name: "index_user_hobbies_on_hobby_id"
+    t.index ["user_id"], name: "index_user_hobbies_on_user_id"
   end
 
   create_table "user_personalities", force: :cascade do |t|
@@ -120,6 +135,8 @@ ActiveRecord::Schema.define(version: 2021_05_11_100639) do
   add_foreign_key "offers", "users"
   add_foreign_key "user_goals", "goals"
   add_foreign_key "user_goals", "users"
+  add_foreign_key "user_hobbies", "hobbies"
+  add_foreign_key "user_hobbies", "users"
   add_foreign_key "user_personalities", "personalities"
   add_foreign_key "user_personalities", "users"
 end
