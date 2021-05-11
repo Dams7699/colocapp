@@ -8,6 +8,7 @@ require "open-uri"
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 
+
 user1 = User.create!(first_name:"axel", last_name:"test", email:"axel@gmail.fr", password:"123456", description:"coucou c moi", age:"25")
 file = File.open("app/assets/images/cerisier2.jpg")
 user1.photo.attach(io: file, filename: "cerisier2.jpg", content_type: 'image/png')
