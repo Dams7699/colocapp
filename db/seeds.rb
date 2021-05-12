@@ -120,25 +120,25 @@ offer9 = Offer.create!(user: user9, colocation: colocation4, status: "Accepté!"
 offer10 = Offer.create!(user: user8, colocation: colocation4, status: "En attente..")
 
 
-personality1 = Personality.create!("Casanier")
-personality2 = Personality.create!("Aventurier")
-personality3 = Personality.create!("Studieux")
-personality4 = Personality.create!("Fêtard")
-personality5 = Personality.create!("Extravertit")
-personality6 = Personality.create!("Introvertit")
+personality1 = Personality.create!(name: "casanier")
+personality2 = Personality.create!(name: "aventurier")
+personality3 = Personality.create!(name: "studieux")
+personality4 = Personality.create!(name: "fêtard")
+personality5 = Personality.create!(name: "extravertit")
+personality6 = Personality.create!(name: "introvertit")
 
-hobby1 = Hobby.create!("Cinéphile")
-hobby2 = Hobby.create!("Musicien")
-hobby3 = Hobby.create!("Sportif")
-hobby4 = Hobby.create!("Gastronome")
-hobby5 = Hobby.create!("Gamer")
+hobby1 = Hobby.create!(name: "cinéphile")
+hobby2 = Hobby.create!(name: "musicien")
+hobby3 = Hobby.create!(name: "sportif")
+hobby4 = Hobby.create!(name: "gastronome")
+hobby5 = Hobby.create!(name: "gamer")
 
-goal1 = Goal.create!("Antisocial")
-goal1 = Goal.create!("HyperSociable")
-goal1 = Goal.create!("Techno")
-goal1 = Goal.create!("Rap")
-goal1 = Goal.create!("Rock")
-goal1 = Goal.create!("Plusieurs Langues")
+goal1 = Goal.create!(name: "antisocial")
+goal2 = Goal.create!(name: "hypersociable")
+goal3 = Goal.create!(name: "techno")
+goal4 = Goal.create!(name: "rap")
+goal5 = Goal.create!(name: "rock")
+goal6 = Goal.create!(name: "plusieurs langues")
 
 
 
