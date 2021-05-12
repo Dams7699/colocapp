@@ -1,0 +1,14 @@
+
+<%= form_for current_user, url: profil_path do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label 'Add goals' %>
+  <%= f.collection_check_boxes(:goal_ids, Goal.all, :id, :name) do |check| %>
+    <%= check.check_box %>
+    <%= check.label do %>
+      <%= check.text %>
+    <% end %>
+  <% end  %>
+  <%= f.submit %>
+<% end %>
