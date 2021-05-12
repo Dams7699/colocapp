@@ -1,1 +1,16 @@
-<%= Profil User %>
+<div class="profil-container text-center">
+  <div class="profil-pictures">
+    <%= cl_image_tag current_user.photo.key, class:'w-100' %>
+  </div>
+  <div class="profil-content">
+    <p class="over-titre"><%= current_user.age %> ans</p>
+    <h2><%= current_user.first_name %><%= current_user.last_name %></h2>
+    <div class="description"><%= current_user.description %></div>
+    <h2>Your personalities</h2>
+    <h2>Your hobbies</h2>
+    <h2>Your colocation goals</h2>
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
