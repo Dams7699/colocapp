@@ -9,6 +9,9 @@ require "open-uri"
 User.destroy_all
 Colocation.destroy_all
 Offer.destroy_all
+Personality.destroy_all
+Hobby.destroy_all
+Goal.destroy_all
 
 
 
@@ -115,5 +118,30 @@ offer8 = Offer.create!(user: user3, colocation: colocation3, status: "Décliné!
 
 offer9 = Offer.create!(user: user9, colocation: colocation4, status: "Accepté!")
 offer10 = Offer.create!(user: user8, colocation: colocation4, status: "En attente..")
+
+
+personality1 = Personality.create!(name: "casanier")
+personality2 = Personality.create!(name: "aventurier")
+personality3 = Personality.create!(name: "studieux")
+personality4 = Personality.create!(name: "fêtard")
+personality5 = Personality.create!(name: "extravertit")
+personality6 = Personality.create!(name: "introvertit")
+
+hobby1 = Hobby.create!(name: "cinéphile")
+hobby2 = Hobby.create!(name: "musicien")
+hobby3 = Hobby.create!(name: "sportif")
+hobby4 = Hobby.create!(name: "gastronome")
+hobby5 = Hobby.create!(name: "gamer")
+
+goal1 = Goal.create!(name: "antisocial")
+goal2 = Goal.create!(name: "hypersociable")
+goal3 = Goal.create!(name: "techno")
+goal4 = Goal.create!(name: "rap")
+goal5 = Goal.create!(name: "rock")
+goal6 = Goal.create!(name: "plusieurs langues")
+
+
+
+
 
 
