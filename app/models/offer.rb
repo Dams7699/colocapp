@@ -1,4 +1,4 @@
 class Offer < ApplicationRecord
-  belong_to :colocation
-  belong_to :user
+  belongs_to :colocation
+  belongs_to :user
 end
