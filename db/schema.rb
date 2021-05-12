@@ -58,13 +58,13 @@ ActiveRecord::Schema.define(version: 2021_05_12_091339) do
   end
 
   create_table "goals", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "hobbies", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -80,7 +80,7 @@ ActiveRecord::Schema.define(version: 2021_05_12_091339) do
   end
 
   create_table "personalities", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

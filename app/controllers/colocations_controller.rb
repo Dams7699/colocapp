@@ -4,7 +4,7 @@ class ColocationsController < ApplicationController
     @colocations = Colocation.all
   end
 
-  def show
-    @colocations = Colocation.find(params[:id])
+  def show 
+    @colocation = Colocation.find(params[:id])
   end
 end

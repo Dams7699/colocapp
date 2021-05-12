@@ -9,6 +9,13 @@ require "open-uri"
 User.destroy_all
 Colocation.destroy_all
 Offer.destroy_all
+Personality.destroy_all
+Hobby.destroy_all
+Goal.destroy_all
+UserPersonality.destroy_all
+UserHobby.destroy_all
+UserGoal.destroy_all
+ColocationGoal.destroy_all
 
 
 
@@ -63,7 +70,7 @@ user10.photo.attach(io: file, filename: "image9.jpeg", content_type: 'image/png'
 user10.save!
 
 
-colocation1 = Colocation.create!(address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 450, desired_people: 1, user: user1)
+colocation1 = Colocation.create!(title: "La chouille house", address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 450, desired_people: 1, user: user1)
 file1 = File.open("app/assets/images/images_coloc/chambre1.jpeg")
 colocation1.photos.attach(io: file1, filename: "chambre1.jpeg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine1.jpeg")
@@ -72,8 +79,7 @@ file3 = File.open("app/assets/images/images_coloc/salon1.jpeg")
 colocation1.photos.attach(io: file3, filename: "salon1.jpeg", content_type: 'image/png')
 colocation1.save!
 
-
-colocation2 = Colocation.create!(address:"1 Place Sainte-Anne, 35000 Rennes", description: "En plein centre de l'effervescence Rennaise! Si l'imprévu est t'on fil conducteur viens avec nous chef!", price: 475, desired_people: 1, user: user5)
+colocation2 = Colocation.create!(title: "Koh Lanta", address:"1 Place Sainte-Anne, 35000 Rennes", description: "En plein centre de l'effervescence Rennaise! Si l'imprévu est t'on fil conducteur viens avec nous chef!", price: 475, desired_people: 1, user: user5)
 file1 = File.open("app/assets/images/images_coloc/chambre2.jpeg")
 colocation2.photos.attach(io: file1, filename: "chambre2.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine2.jpeg")
@@ -82,7 +88,7 @@ file3 = File.open("app/assets/images/images_coloc/salon2.jpeg")
 colocation2.photos.attach(io: file3, filename: "salon2.jpg", content_type: 'image/png')
 colocation2.save!
 
-colocation3 = Colocation.create!(address:"10 Place du Parlment de Bretagne, 35000 Rennes", description: "Bien situé, dans un environnement qui pousse au travail ! Si tu es déterminé, et sérieux nous t'accepterons avec plaisir", price: 415, desired_people: 1, user: user6)
+colocation3 = Colocation.create!(title: "Chill House", address:"10 Place du Parlment de Bretagne, 35000 Rennes", description: "Bien situé, dans un environnement qui pousse au travail ! Si tu es déterminé, et sérieux nous t'accepterons avec plaisir", price: 415, desired_people: 1, user: user6)
 file1 = File.open("app/assets/images/images_coloc/chambre3.jpeg")
 colocation3.photos.attach(io: file1, filename: "chambre3.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine3.jpeg")
@@ -91,7 +97,7 @@ file3 = File.open("app/assets/images/images_coloc/salon3.jpeg")
 colocation3.photos.attach(io: file3, filename: "salon3.jpg", content_type: 'image/png')
 colocation3.save!
 
-colocation4 = Colocation.create!(address:"17 Cours du Président John Fitzgerald Kennedy, 35000 Rennes", description: "Si t'aime taper des grosses LAN entre potes, cette coloc est faite pour toi !", price: 375, desired_people: 1, user: user9)
+colocation4 = Colocation.create!(title: "L'ESL Breton", address:"17 Cours du Président John Fitzgerald Kennedy, 35000 Rennes", description: "Si t'aime taper des grosses LAN entre potes, cette coloc est faite pour toi !", price: 375, desired_people: 1, user: user9)
 file1 = File.open("app/assets/images/images_coloc/chambre4.jpeg")
 colocation4.photos.attach(io: file1, filename: "chambre4.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine4.jpeg")
@@ -115,5 +121,160 @@ offer8 = Offer.create!(user: user3, colocation: colocation3, status: "Décliné!
 
 offer9 = Offer.create!(user: user9, colocation: colocation4, status: "Accepté!")
 offer10 = Offer.create!(user: user8, colocation: colocation4, status: "En attente..")
+
+
+personality1 = Personality.create!(name: "casanier")
+personality2 = Personality.create!(name: "aventurier")
+personality3 = Personality.create!(name: "studieux")
+personality4 = Personality.create!(name: "fêtard")
+personality5 = Personality.create!(name: "extravertit")
+personality6 = Personality.create!(name: "introvertit")
+
+
+hobby1 = Hobby.create!(name: "cinéphile")
+hobby2 = Hobby.create!(name: "musicien")
+hobby3 = Hobby.create!(name: "sportif")
+hobby4 = Hobby.create!(name: "gastronome")
+hobby5 = Hobby.create!(name: "gamer")
+
+
+goal1 = Goal.create!(name: "antisocial")
+goal2 = Goal.create!(name: "hypersociable")
+goal3 = Goal.create!(name: "techno")
+goal4 = Goal.create!(name: "rap")
+goal5 = Goal.create!(name: "rock")
+goal6 = Goal.create!(name: "plusieurs langues")
+
+
+user_personalities1 = UserPersonality.create!(user: user1, personality: personality2)
+user_personalities2 = UserPersonality.create!(user: user1, personality: personality4)
+user_personalities3 = UserPersonality.create!(user: user1, personality: personality5)
+
+user_personalities4 = UserPersonality.create!(user: user2, personality: personality1)
+user_personalities5 = UserPersonality.create!(user: user2, personality: personality4)
+user_personalities6 = UserPersonality.create!(user: user2, personality: personality6)
+
+user_personalities7 = UserPersonality.create!(user: user3, personality: personality2)
+user_personalities8 = UserPersonality.create!(user: user3, personality: personality3)
+user_personalities9 = UserPersonality.create!(user: user3, personality: personality6)
+
+user_personalities10 = UserPersonality.create!(user: user4, personality: personality2)
+user_personalities11 = UserPersonality.create!(user: user4, personality: personality3)
+user_personalities12 = UserPersonality.create!(user: user4, personality: personality6)
+
+user_personalities13 = UserPersonality.create!(user: user5, personality: personality1)
+user_personalities14 = UserPersonality.create!(user: user5, personality: personality3)
+user_personalities15 = UserPersonality.create!(user: user5, personality: personality5)
+
+user_personalities16 = UserPersonality.create!(user: user6, personality: personality1)
+user_personalities17 = UserPersonality.create!(user: user6, personality: personality3)
+user_personalities18 = UserPersonality.create!(user: user6, personality: personality5)
+
+user_personalities19 = UserPersonality.create!(user: user7, personality: personality2)
+user_personalities20 = UserPersonality.create!(user: user7, personality: personality4)
+user_personalities21 = UserPersonality.create!(user: user7, personality: personality5)
+
+user_personalities22 = UserPersonality.create!(user: user8, personality: personality1)
+user_personalities23= UserPersonality.create!(user: user8, personality: personality4)
+user_personalities24 = UserPersonality.create!(user: user8, personality: personality5)
+
+user_personalities25 = UserPersonality.create!(user: user9, personality: personality2)
+user_personalities26 = UserPersonality.create!(user: user9, personality: personality3)
+user_personalities27 = UserPersonality.create!(user: user9, personality: personality6)
+
+user_personalities28 = UserPersonality.create!(user: user10, personality: personality2)
+user_personalities29 = UserPersonality.create!(user: user10, personality: personality3)
+user_personalities30 = UserPersonality.create!(user: user10, personality: personality5)
+
+
+user_hobbies1 = UserHobby.create!(user: user1, hobby: hobby2)
+user_hobbies2 = UserHobby.create!(user: user1, hobby: hobby4)
+user_hobbies3 = UserHobby.create!(user: user1, hobby: hobby5)
+
+user_hobbies1 = UserHobby.create!(user: user2, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user2, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user2, hobby: hobby4)
+
+user_hobbies1 = UserHobby.create!(user: user3, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user3, hobby: hobby2)
+user_hobbies3 = UserHobby.create!(user: user3, hobby: hobby5)
+
+user_hobbies1 = UserHobby.create!(user: user4, hobby: hobby2)
+user_hobbies2 = UserHobby.create!(user: user4, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user4, hobby: hobby5)
+
+user_hobbies1 = UserHobby.create!(user: user5, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user5, hobby: hobby2)
+user_hobbies3 = UserHobby.create!(user: user5, hobby: hobby4)
+
+user_hobbies1 = UserHobby.create!(user: user6, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user6, hobby: hobby2)
+user_hobbies3 = UserHobby.create!(user: user6, hobby: hobby4)
+
+user_hobbies1 = UserHobby.create!(user: user7, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user7, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user7, hobby: hobby5)
+
+user_hobbies1 = UserHobby.create!(user: user8, hobby: hobby2)
+user_hobbies2 = UserHobby.create!(user: user8, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user8, hobby: hobby5)
+
+user_hobbies1 = UserHobby.create!(user: user9, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user9, hobby: hobby2)
+user_hobbies3 = UserHobby.create!(user: user9, hobby: hobby5)
+
+user_hobbies1 = UserHobby.create!(user: user10, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user10, hobby: hobby2)
+user_hobbies3 = UserHobby.create!(user: user10, hobby: hobby4)
+
+
+user_goals1 = UserGoal.create!(user: user1, goal: goal2)
+user_goals2 = UserGoal.create!(user: user1, goal: goal3)
+
+user_goals3 = UserGoal.create!(user: user2, goal: goal1)
+user_goals4 = UserGoal.create!(user: user2, goal: goal4)
+
+user_goals5 = UserGoal.create!(user: user3, goal: goal2)
+user_goals6 = UserGoal.create!(user: user3, goal: goal5)
+
+user_goals7 = UserGoal.create!(user: user4, goal: goal1)
+user_goals8 = UserGoal.create!(user: user4, goal: goal3)
+
+user_goals9 = UserGoal.create!(user: user5, goal: goal1)
+user_goals10 = UserGoal.create!(user: user5, goal: goal6)
+
+user_goals11 = UserGoal.create!(user: user6, goal: goal3)
+user_goals12 = UserGoal.create!(user: user6, goal: goal6)
+
+user_goals13 = UserGoal.create!(user: user7, goal: goal2)
+user_goals14 = UserGoal.create!(user: user7, goal: goal6)
+
+user_goals15 = UserGoal.create!(user: user8, goal: goal3)
+user_goals16 = UserGoal.create!(user: user8, goal: goal6)
+
+user_goals17= UserGoal.create!(user: user9, goal: goal2)
+user_goals18 = UserGoal.create!(user: user9, goal: goal5)
+
+user_goals19 = UserGoal.create!(user: user10, goal: goal1)
+user_goals20 = UserGoal.create!(user: user10, goal: goal5)
+
+
+colocation_goals1 = ColocationGoal.create!(colocation: colocation1, goal: goal2)
+colocation_goals1 = ColocationGoal.create!(colocation: colocation1, goal: goal5)
+
+colocation_goals1 = ColocationGoal.create!(colocation: colocation2, goal: goal2)
+colocation_goals1 = ColocationGoal.create!(colocation: colocation2, goal: goal6)
+
+colocation_goals1 = ColocationGoal.create!(colocation: colocation3, goal: goal1)
+colocation_goals1 = ColocationGoal.create!(colocation: colocation3, goal: goal3)
+
+colocation_goals1 = ColocationGoal.create!(colocation: colocation4, goal: goal2)
+colocation_goals1 = ColocationGoal.create!(colocation: colocation4, goal: goal4)
+
+
+
+
+
+
 
 

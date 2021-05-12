@@ -1,9 +1,0 @@
-<div class="card">
-  <h1>Ceci est l index de toute les colocations</h1>
-    <% colocations.each do |colocation| %>
-    <%= cl_image_tag colocation.photo.key %>
-    <h2><%= colocation.price %></h2>
-    <p><%= colocation.desired_people  %></p>
-    <p><%= colocation.description %></p>
-    <% end %>
-</div>
