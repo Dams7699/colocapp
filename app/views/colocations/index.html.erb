@@ -1,9 +1,11 @@
   <h1>Ceci est l index de toute les colocations</h1>
-<div class="card border border-dark mt-3 p-3">
     <% @colocations.each do |colocation| %>
-    <%= cl_image_tag colocation.photos.key, class:"w-300 h-200"%>
-    <h2><%= colocation.price %></h2>
-    <p><%= colocation.desired_people  %></p>
-    <p><%= colocation.description %></p>
+      <%= link_to colocation_path(colocation) do %>
+        <div class="cards border border-dark mt-3 p-3">
+          <%= cl_image_tag colocation.photos.key, class:"w-100"%>
+          <h2><%= colocation.price %></h2>
+          <p><%= colocation.desired_people %></p>
+          <p><%= colocation.description %></p>
+        </div>
+        <% end %>
     <% end %>
-</div>
