@@ -11,6 +11,7 @@ Colocation.destroy_all
 Offer.destroy_all
 
 
+
 user1 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter! ", age:"25")
 file = File.open("app/assets/images/images_profil/image.jpeg")
 user1.photo.attach(io: file, filename: "image.jpeg", content_type: 'image/png')
@@ -64,39 +65,39 @@ user10.save!
 
 colocation1 = Colocation.create!(address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 450, desired_people: 1, user: user1)
 file1 = File.open("app/assets/images/images_coloc/chambre1.jpeg")
-colocation1.photo.attach(io: file, filename: "chambre1.jpeg", content_type: 'image/png')
+colocation1.photos.attach(io: file1, filename: "chambre1.jpeg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine1.jpeg")
-colocation1.photo.attach(io: file, filename: "cuisine1.jpeg", content_type: 'image/png')
+colocation1.photos.attach(io: file2, filename: "cuisine1.jpeg", content_type: 'image/png')
 file3 = File.open("app/assets/images/images_coloc/salon1.jpeg")
-colocation1.photo.attach(io: file, filename: "salon1.jpeg", content_type: 'image/png')
+colocation1.photos.attach(io: file3, filename: "salon1.jpeg", content_type: 'image/png')
 colocation1.save!
 
 
 colocation2 = Colocation.create!(address:"1 Place Sainte-Anne, 35000 Rennes", description: "En plein centre de l'effervescence Rennaise! Si l'imprévu est t'on fil conducteur viens avec nous chef!", price: 475, desired_people: 1, user: user5)
 file1 = File.open("app/assets/images/images_coloc/chambre2.jpeg")
-colocation2.photo.attach(io: file, filename: "chambre2.jpg", content_type: 'image/png')
+colocation2.photos.attach(io: file1, filename: "chambre2.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine2.jpeg")
-colocation2.photo.attach(io: file, filename: "cuisine2.jpg", content_type: 'image/png')
+colocation2.photos.attach(io: file2, filename: "cuisine2.jpg", content_type: 'image/png')
 file3 = File.open("app/assets/images/images_coloc/salon2.jpeg")
-colocation2.photo.attach(io: file, filename: "salon2.jpg", content_type: 'image/png')
+colocation2.photos.attach(io: file3, filename: "salon2.jpg", content_type: 'image/png')
 colocation2.save!
 
 colocation3 = Colocation.create!(address:"10 Place du Parlment de Bretagne, 35000 Rennes", description: "Bien situé, dans un environnement qui pousse au travail ! Si tu es déterminé, et sérieux nous t'accepterons avec plaisir", price: 415, desired_people: 1, user: user6)
 file1 = File.open("app/assets/images/images_coloc/chambre3.jpeg")
-colocation3.photo.attach(io: file, filename: "chambre3.jpg", content_type: 'image/png')
+colocation3.photos.attach(io: file1, filename: "chambre3.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine3.jpeg")
-colocation3.photo.attach(io: file, filename: "cuisine3.jpg", content_type: 'image/png')
+colocation3.photos.attach(io: file2, filename: "cuisine3.jpg", content_type: 'image/png')
 file3 = File.open("app/assets/images/images_coloc/salon3.jpeg")
-colocation3.photo.attach(io: file, filename: "salon3.jpg", content_type: 'image/png')
+colocation3.photos.attach(io: file3, filename: "salon3.jpg", content_type: 'image/png')
 colocation3.save!
 
 colocation4 = Colocation.create!(address:"17 Cours du Président John Fitzgerald Kennedy, 35000 Rennes", description: "Si t'aime taper des grosses LAN entre potes, cette coloc est faite pour toi !", price: 375, desired_people: 1, user: user9)
 file1 = File.open("app/assets/images/images_coloc/chambre4.jpeg")
-colocation4.photo.attach(io: file, filename: "chambre4.jpg", content_type: 'image/png')
+colocation4.photos.attach(io: file1, filename: "chambre4.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine4.jpeg")
-colocation4.photo.attach(io: file, filename: "cuisine4.jpg", content_type: 'image/png')
+colocation4.photos.attach(io: file2, filename: "cuisine4.jpg", content_type: 'image/png')
 file3 = File.open("app/assets/images/images_coloc/salon4.jpeg")
-colocation4.photo.attach(io: file, filename: "salon4.jpg", content_type: 'image/png')
+colocation4.photos.attach(io: file3, filename: "salon4.jpg", content_type: 'image/png')
 colocation4.save!
 
 
