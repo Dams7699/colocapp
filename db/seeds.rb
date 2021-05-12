@@ -12,7 +12,7 @@ Offer.destroy_all
 
 
 
-user1 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter! ", age:"25")
+user1 = User.create!(first_name: "test", last_name: "test", email: "test@test.fr", password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter! ", age:"25")
 file = File.open("app/assets/images/images_profil/image.jpeg")
 user1.photo.attach(io: file, filename: "image.jpeg", content_type: 'image/png')
 user1.save!

@@ -26,6 +26,7 @@ h2 {
   font-size: 22px;
   line-height: 29px;
   color: $white;
+  margin: 0;
 }
 
 
@@ -36,4 +37,15 @@ h3 {
   line-height: 21px;
   color: $white;
   opacity: 0.8;
+}
+
+.over-titre {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+  color: $white;
+
+  opacity: 0.5;
 }
