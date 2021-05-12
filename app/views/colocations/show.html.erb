@@ -1,0 +1,19 @@
+<%= cl_image_tag @colocation.photos.key, class:"w-100" %>
+<h3><%= @colocation.desired_people %></h3>
+<!--en attendant les title dans la seed-->
+ <!--<h2><% @colocation.title %></h2>--->
+<h3><%= @colocation.price %></h3>
+
+  <div class="card">
+    <%= @colocation.description %>
+  </div>
+  
+    <h3>La Coloc aime :</h3>
+  <div class="card">
+    <input class="coloc_goal" type="checkbox" id="smile">
+    <label for="smile">smile</label>
+  </div>
+
+<footer class="card">
+<p>Contact</p>
+</footer>
