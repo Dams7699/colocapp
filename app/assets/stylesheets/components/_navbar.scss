@@ -1,0 +1,32 @@
+.navbar-lewagon {
+  display:flex;
+  justify-content: space-between;
+  background: black;
+  position:fixed;
+  bottom:0;
+  width: 100vw;
+  padding: 24px 40px;
+  a {
+    position: relative;
+  }
+}
+
+.icone {
+  width: 50px;
+  opacity: 0.4;
+}
+
+.active {
+  opacity:1;
+}
+
+.notification {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0px 3px 5px rgba(0,0,0,1);
+}
