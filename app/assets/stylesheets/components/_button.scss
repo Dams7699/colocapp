@@ -2,10 +2,31 @@
 .btn-bottom {
   width: 100%;
   padding: 24px 0;
-  background-color: $gradient;
+  background: $gradient;
   text-align: center;
   border: 2px solid $black;
   color: $gradient;
+  position:fixed;
+  bottom:0;
+  text-transform: uppercase;
+}
+
+.btn-landing {
+  width: 75%;
+  padding: 15px 0;
+  background: $gradient !important;
+  text-align: center;
+  border: 2px solid $black;
+  color: $black !important;
+  font-size: 20px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: $white !important;
+  opacity: 0.4;
+  margin-top: 150px;
+  font-size: 20px;
 }
 
 .btn-profil {

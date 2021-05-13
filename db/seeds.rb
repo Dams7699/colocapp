@@ -6,6 +6,7 @@ require "open-uri"
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 ColocationGoal.destroy_all
 UserPersonality.destroy_all
 UserHobby.destroy_all
@@ -16,6 +17,7 @@ User.destroy_all
 Personality.destroy_all
 Hobby.destroy_all
 Goal.destroy_all
+
 
 
 
@@ -123,27 +125,27 @@ offer9 = Offer.create!(user: user9, colocation: colocation4, status: "Accepté!"
 offer10 = Offer.create!(user: user8, colocation: colocation4, status: "En attente..")
 
 
-personality1 = Personality.create!(name: "casanier")
-personality2 = Personality.create!(name: "aventurier")
-personality3 = Personality.create!(name: "studieux")
-personality4 = Personality.create!(name: "fêtard")
-personality5 = Personality.create!(name: "extravertit")
-personality6 = Personality.create!(name: "introvertit")
+personality1 = Personality.create!(icon: "🏠", name: "casanier")
+personality2 = Personality.create!(icon: "🤠", name: "aventurier")
+personality3 = Personality.create!(icon: "🎓", name: "studieux")
+personality4 = Personality.create!(icon: "🥳", name: "fêtard")
+personality5 = Personality.create!(icon: "🤡", name: "extravertit")
+personality6 = Personality.create!(icon: "👉👈", name: "introvertit")
 
 
-hobby1 = Hobby.create!(name: "cinéphile")
-hobby2 = Hobby.create!(name: "musicien")
-hobby3 = Hobby.create!(name: "sportif")
-hobby4 = Hobby.create!(name: "gastronome")
-hobby5 = Hobby.create!(name: "gamer")
+hobby1 = Hobby.create!(icon: "📽️", name: "cinéphile")
+hobby2 = Hobby.create!(icon: "🎶", name: "musicien")
+hobby3 = Hobby.create!(icon: "🏆", name: "sportif")
+hobby4 = Hobby.create!(icon: "👩‍🍳", name: "gastronome")
+hobby5 = Hobby.create!(icon: "🕹️", name: "gamer")
 
 
-goal1 = Goal.create!(name: "antisocial")
-goal2 = Goal.create!(name: "hypersociable")
-goal3 = Goal.create!(name: "techno")
-goal4 = Goal.create!(name: "rap")
-goal5 = Goal.create!(name: "rock")
-goal6 = Goal.create!(name: "plusieurs langues")
+goal1 = Goal.create!(icon: "🙅", name: "antisocial")
+goal2 = Goal.create!(icon: "🙋", name: "hypersociable")
+goal3 = Goal.create!(icon: "🔊", name: "techno")
+goal4 = Goal.create!(icon: "🎤", name: "rap")
+goal5 = Goal.create!(icon: "🎸", name: "rock")
+goal6 = Goal.create!(icon: "🌎", name: "plusieurs langues")
 
 
 user_personalities1 = UserPersonality.create!(user: user1, personality: personality2)

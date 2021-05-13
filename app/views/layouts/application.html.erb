@@ -34,7 +34,9 @@
 
     <%= render 'shared/flashes' %>
 
-    <%= render 'shared/navbar' %>
+    <%= render 'shared/navbar' unless action_name == "home" || controller_name == "sessions" || controller_name == "registrations" ||
+                                      (action_name == "edit" && controller_name == "profils") %>
+
 
 
     <%= yield %>
