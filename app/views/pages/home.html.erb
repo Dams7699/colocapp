@@ -1,2 +1,20 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="landing-container">
+  <%= image_tag ("logo.svg"), class: "icone-landing" %>
+
+  <div class="content-landing">
+    <h1>Col.</h1>
+    <h1>Une expérience faite pour toi 😉 </h1>
+
+    <h2>La colocation rêver! Simplement au bout de tes doigts !</h2>
+  </div>
+
+  <div class="btn-container">
+
+    <%= link_to "JE M'INSCRIS", new_user_registration_path, class: "btn-landing" %>
+
+
+    <%= link_to "CONNEXION", new_user_session_path, class: "btn-secondary" %>
+  </div>
+
+</div>
+
