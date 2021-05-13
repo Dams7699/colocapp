@@ -8,8 +8,64 @@
 
 .coloc-card {
   background-color: $black;
-  background-image:;
   width: 100px;
   height: 100px;
   color:white;
 }
+
+// CSS CARDS COLOCATION //
+.card-colocation {
+  border: 3px solid $black;
+  background-color: $black;
+  color: $white;
+  padding: 0;
+  border-image-slice: 1;
+  border-image-source: $gradient;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.profil-pictures2{
+  position:relative;
+  display:inline-block;
+}
+.profil-pictures2:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0, 0, 0, 0) 38%);
+}
+
+.colocation-content {
+  padding: 20px;
+
+}
+
+.coloc-info {
+  display: flex;
+  margin-bottom: 8px;
+  p{
+    font-size: 12px;
+    opacity: 0.6;
+    margin: 0;
+    margin-left: 12px;
+  }
+}
+
+.colocation-pictures {
+  height: 220px;
+}
+
+#carouselExampleIndicators, .carousel-inner {
+  height: 100%;
+}
+
+.text-center {
+  margin-top: 12px;
+}
+
+
