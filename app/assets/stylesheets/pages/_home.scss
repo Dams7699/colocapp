@@ -1,1 +1,33 @@
 // Specific CSS for your home-page
+.landing-container {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.icone-landing {
+  width: 50px;
+  margin: 10% 0;
+  opacity: 1;
+}
+
+.content-landing {
+  margin: 10% 0;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2{
+    margin: 15% 0;
+    opacity: 0.8;
+    font-size: 24px;
+  }
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30% 0;
+}
