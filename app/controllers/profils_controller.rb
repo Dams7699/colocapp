@@ -8,6 +8,7 @@ class ProfilsController < ApplicationController
 
   def update
     current_user.update(profil_params)
+    redirect_to profil_path if params[:user][:finished] == "true"
   end
 
   private
