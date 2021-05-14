@@ -1,0 +1,22 @@
+.notification-container {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.icone {
+  width: 50px;
+  margin: 10% 0;
+  opacity: 1;
+}
+
+
+.notification-content {
+  display:flex;
+  background-color:rgba(255,255,255,0.1);
+  text-align:left;
+  padding:10px;
+  p {
+    margin-left:12px;
+  }
+}
