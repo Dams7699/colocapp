@@ -3,7 +3,7 @@
 
   <% @offers.each do |o| %>
   <div class="notification-content">
-    <%= cl_image_tag current_user.photo.key, class:'w-25'%>
+    <%= cl_image_tag o.colocation.photos.first.key, class:'w-25'%>
     <p>Votre demande pour <%= o.colocation.title %> est <%= o.status %></p>
   <% end %>
   </div>
