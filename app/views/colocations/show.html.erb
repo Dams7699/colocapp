@@ -1,21 +1,42 @@
+<div class="profil-container text-center">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <% @colocation.photos.each_with_index do |photo, index| %>
+          <div class="carousel-item <%= "active" if index == 0 %>">
+            <%= cl_image_tag photo.key, class:"w-100 d-block carousel-image" %>
+          </div>
+            <% end %>
+      </div>
+      </div>
+      <div class="container">
+        <div class="over-titre">
+          <br>
+          <h2><% @colocation.title %></h2>
+        </div>
+        <div class="btn-price"><span class="colocation-price"><%= @colocation.price %>$</span></div>
 
+          <p class="description"><%= @colocation.description %></p>
+          <br>
+        <h3>Le style de la coloc'</h3>
+        <br>
+      </div>
+        <div class="content_chekbox">
+        <% @colocation.goals.each do |g| %>
+            <div class="jaime"><%= g.full_name %></div>
+          <% end %>
+          <!--<p>j'aime pas</p>-->
+          <% (Goal.all - @colocation.goals).each do |g| %>
+            <div class="jaime_pas"><%= g.full_name %></div>
+          <% end %>
+        </div>
+      </div>
+</div>
 
-<%= cl_image_tag @colocation.photos.key, class:"w-100" %>
-
-<h3><%= @colocation.desired_people %></h3>
-<!--en attendant les title dans la seed-->
- <!--<h2><% @colocation.title %></h2>--->
-<h3><%= @colocation.price %></h3>
-
-  <div class="card">
-    <%= @colocation.description %>
-  </div>
-  
-    <h3>La Coloc aime :</h3>
-  <div class="card">
-    <input class="coloc_goal" type="checkbox" id="smile">
-    <label for="smile">smile</label>
-  </div>
 
 <footer class="card">
 <p>Contact</p>

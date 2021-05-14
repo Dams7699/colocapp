@@ -4,5 +4,7 @@ class Colocation < ApplicationRecord
   belongs_to :user
 
   has_many :colocation_goals
+  has_many :goals, through: :colocation_goals
+
   has_many :offers
 end
