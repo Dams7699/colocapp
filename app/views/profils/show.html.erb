@@ -9,7 +9,7 @@
   
   <div class="profil-content">
     <p class="over-titre"><%= current_user.age %> ans</p>
-    <h2><%= current_user.first_name %><%= current_user.last_name %></h2>
+    <h2><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></h2>
     <div class="description"><%= current_user.description %></div>
     <h2>Ce que j'aime</h2>
 
