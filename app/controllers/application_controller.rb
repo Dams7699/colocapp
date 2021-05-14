@@ -12,5 +12,6 @@ class ApplicationController < ActionController::Base
       redirect_to colocations_path
     end
   end
+  
 
 end
