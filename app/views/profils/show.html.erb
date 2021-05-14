@@ -1,7 +1,12 @@
 <div class="profil-container text-center">
   <div class="profil-pictures">
-    <%= cl_image_tag current_user.photo.key, class:'w-100' %>
+    <% if current_user.photo.attached? %>
+      <%= cl_image_tag current_user.photo.key, class:'w-100' %>
+    <% else %>
+      <%= image_tag "empty.png", class:"w-100" %>
+    <% end %>
   </div>
+  
   <div class="profil-content">
     <p class="over-titre"><%= current_user.age %> ans</p>
     <h2><%= current_user.first_name %><%= current_user.last_name %></h2>
