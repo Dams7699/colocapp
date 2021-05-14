@@ -6,9 +6,42 @@
     <p class="over-titre"><%= current_user.age %> ans</p>
     <h2><%= current_user.first_name %><%= current_user.last_name %></h2>
     <div class="description"><%= current_user.description %></div>
-    <h2>Your personalities</h2>
-    <h2>Your hobbies</h2>
-    <h2>Your colocation goals</h2>
+    <h2>Ce que j'aime</h2>
+
+      <div class="content_chekbox">
+        <% current_user.personalities.each do |p| %>
+          <div class="jaime"><%= p.full_name %></div>
+        <% end %>
+        <!--<p>j'aime pas</p>-->
+        <% (Personality.all - current_user.personalities).each do |p| %>
+          <div class="jaime_pas"><%= p.full_name %></div>
+        <% end %>
+      </div>
+
+
+
+
+    <h2>Mes loisirs</h2>
+      <div class="content_chekbox">
+        <% current_user.hobbies.each do |l| %>
+          <div class="jaime"><%= l.full_name %></div>
+        <% end %>
+        <!--<p>j'aime pas</p>-->
+        <% (Hobby.all - current_user.hobbies).each do |l| %>
+          <div class="jaime_pas"><%= l.full_name %></div>
+        <% end %>
+      </div>
+
+    <h2>Mes style de Colocations</h2>
+      <div class="content_chekbox">
+        <% current_user.goals.each do |g| %>
+            <div class="jaime"><%= g.full_name %></div>
+          <% end %>
+          <!--<p>j'aime pas</p>-->
+          <% (Goal.all - current_user.goals).each do |g| %>
+            <div class="jaime_pas"><%= g.full_name %></div>
+          <% end %>
+        </div>
     <br>
     <br>
     <br>
