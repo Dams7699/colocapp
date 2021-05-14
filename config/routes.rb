@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   # => end
   resource :profil, only: [ :show, :edit, :update ]
   resource :notification, only: [ :show ]
+
 end
