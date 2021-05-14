@@ -6,10 +6,10 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    if current_user 
-      profil_path
+    if current_user = User.new
+      stored_location_for(resource) || edit_profil_path
     else
-    stored_location_for(resource) || edit_profil_path
+      redirect_to colocations_path
     end
   end
 
