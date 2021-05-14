@@ -9,6 +9,13 @@
   position:fixed;
   bottom:0;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-coloc {
+  bottom: 105px;
+  left: 0;
+  color:$black;
 }
 
 .btn-landing {
@@ -41,6 +48,9 @@
   font-size: 11px;
   display: inline-block;
   text-align: center;
+  height: 28px;
+  display: flex;
+  align-items: center;
   border: 2px solid transparent;
   //border-image-slice: 1;//
   //border-image-source: $gradient;//

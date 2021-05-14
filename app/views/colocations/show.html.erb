@@ -1,4 +1,4 @@
-<div class="profil-container text-center">
+<div class="profil-container text-center mb-5">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -34,10 +34,11 @@
             <div class="jaime_pas"><%= g.full_name %></div>
           <% end %>
         </div>
-      </div>
+
+      <%= link_to "CONTACT NOUS GROS", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
+
+
 </div>
 
 
-<footer class="card">
-<p>Contact</p>
-</footer>
+

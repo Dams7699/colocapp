@@ -6,7 +6,7 @@
       <%= image_tag "empty.png", class:"w-100" %>
     <% end %>
   </div>
-  
+
   <div class="profil-content">
     <p class="over-titre"><%= current_user.age %> ans</p>
     <h2><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></h2>
@@ -47,8 +47,7 @@
             <div class="jaime_pas"><%= g.full_name %></div>
           <% end %>
         </div>
-    <br>
-    <br>
-    <br>
+
+    <%= link_to "Log out ☠️", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
   </div>
 </div>
