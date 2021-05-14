@@ -15,12 +15,15 @@
       </div>
       <div class="container">
         <div class="over-titre">
+          <br>
           <h2><% @colocation.title %></h2>
         </div>
         <div class="btn-price"><span class="colocation-price"><%= @colocation.price %>$</span></div>
 
           <p class="description"><%= @colocation.description %></p>
+          <br>
         <h3>Le style de la coloc'</h3>
+        <br>
       </div>
         <div class="content_chekbox">
         <% @colocation.goals.each do |g| %>
@@ -34,16 +37,6 @@
       </div>
 </div>
 
-<h3><%= @colocation.desired_people %></h3>
-<!--en attendant les title dans la seed-->
- <!--<h2><% @colocation.title %></h2>--->
-<h3><%= @colocation.price %></h3>
-
-    <h3>La Coloc aime :</h3>
-  <div class="card">
-    <input class="coloc_goal" type="checkbox" id="smile">
-    <label for="smile">smile</label>
-  </div>
 
 <footer class="card">
 <p>Contact</p>

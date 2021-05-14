@@ -278,5 +278,3 @@ colocation_goals1 = ColocationGoal.create!(colocation: colocation4, goal: goal4)
 
 
 
-
-
