@@ -10,10 +10,18 @@
 
   <div class="btn-container">
 
-    <%= link_to "JE M'INSCRIS", new_user_registration_path, class: "btn-landing" %>
+    <% if current_user %>
+      <%= link_to "quoi d'neuf ?", colocations_path, class:"btn-landing" %>
+    <% else %>
+      <%= link_to "JE M'INSCRIS", new_user_registration_path, class: "btn-landing" %>
+      <%= link_to "CONNEXION", new_user_session_path, class: "btn-secondary" %>
+    <% end %>
 
 
-    <%= link_to "CONNEXION", new_user_session_path, class: "btn-secondary" %>
+
+    <!------provisoir test---------->
+    <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
+
   </div>
 
 </div>
