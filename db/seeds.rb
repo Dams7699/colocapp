@@ -21,102 +21,102 @@ Goal.destroy_all
 
 
 
-user1 = User.create!(first_name: "test", last_name: "test", email: "test@test.fr", password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter! ", age:"25")
+user1 = User.create!(first_name: "test", last_name: "test", email: "test@test.fr", password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter! ", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image.jpeg")
 user1.photo.attach(io: file, filename: "image.jpeg", content_type: 'image/png')
 user1.save!
 
-user2 = User.create!(first_name: "Thomas", last_name: "Ledev", email: "thomas@example.fr" , password:"123456", description:"Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", age:"18")
+user2 = User.create!(first_name: "Thomas", last_name: "Ledev", email: "thomas@example.fr" , password:"123456", description:"Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image1.jpeg")
 user2.photo.attach(io: file, filename: "image1.jpeg", content_type: 'image/png')
 user2.save!
 
-user3 = User.create!(first_name: "Clotax", last_name: "Lacaille", email: "clotax@example.fr", password:"123456", description:"Bonsoir a tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", age:"28")
+user3 = User.create!(first_name: "Clotax", last_name: "Lacaille", email: "clotax@example.fr", password:"123456", description:"Bonsoir a tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image2.jpeg")
 user3.photo.attach(io: file, filename: "image2.jpeg", content_type: 'image/png')
 user3.save!
 
-user4 = User.create!(first_name: "Simon", last_name: "Lecoffre" , email: "simon@example.fr", password:"123456", description:"Hola, fraîchement arrivé de colombie, faites moi découvrir la FrenchLife!", age:"22")
+user4 = User.create!(first_name: "Simon", last_name: "Lecoffre" , email: "simon@example.fr", password:"123456", description:"Hola, fraîchement arrivé de colombie, faites moi découvrir la FrenchLife!", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image3.jpeg")
 user4.photo.attach(io: file, filename: "image3.jpeg", content_type: 'image/png')
 user4.save!
 
-user5 = User.create!(first_name: "Jerôme", last_name: "Dupont" , email: "jerôme@example.fr", password:"123456", description:"Un Normand venu foutre le zbeul en Bretagne !", age:"21")
+user5 = User.create!(first_name: "Jerôme", last_name: "Dupont" , email: "jerôme@example.fr", password:"123456", description:"Un Normand venu foutre le zbeul en Bretagne !", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image4.jpeg")
 user5.photo.attach(io: file, filename: "image4.jpeg", content_type: 'image/png')
 user5.save!
 
-user6 = User.create!(first_name: "Damien", last_name: "biglouche", email: "damien@example.fr", password:"123456", description:"Pur produit du Sud, j'arrive imposé la farniente dans ta coloc!", age:"27")
+user6 = User.create!(first_name: "Damien", last_name: "biglouche", email: "damien@example.fr", password:"123456", description:"Pur produit du Sud, j'arrive imposé la farniente dans ta coloc!", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image5.jpeg")
 user6.photo.attach(io: file, filename: "image5.jpeg", content_type: 'image/png')
 user6.save!
 
-user7 = User.create!(first_name: "Axel", last_name: "lecuistax", email: "axel@example.fr", password:"123456", description:"Hey ! Retour dans ma bretagne natale après 5 ans de voyage, si tu veux des soirées chill en partagent nos expériences fais moi signe!", age:"26")
+user7 = User.create!(first_name: "Axel", last_name: "lecuistax", email: "axel@example.fr", password:"123456", description:"Hey ! Retour dans ma bretagne natale après 5 ans de voyage, si tu veux des soirées chill en partagent nos expériences fais moi signe!", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image6.jpeg")
 user7.photo.attach(io: file, filename: "image6.jpeg", content_type: 'image/png')
 user7.save!
 
-user8 = User.create!(first_name: "Lomig" , last_name: "Guillaume", email: "Lomig@example.fr", password:"123456", description:"Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", age:"29")
+user8 = User.create!(first_name: "Lomig" , last_name: "Guillaume", email: "Lomig@example.fr", password:"123456", description:"Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image7.jpeg")
 user8.photo.attach(io: file, filename: "image7.jpeg", content_type: 'image/png')
 user8.save!
 
-user9 = User.create!(first_name: "Hugo", last_name: "Daniel", email: "hugo@example.fr", password:"123456", description:"Hey, je suis paradoxale à la fois sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", age:"25")
+user9 = User.create!(first_name: "Hugo", last_name: "Daniel", email: "hugo@example.fr", password:"123456", description:"Hey, je suis paradoxale à la fois sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image8.jpeg")
 user9.photo.attach(io: file, filename: "image8.jpeg", content_type: 'image/png')
 user9.save!
 
-user10 = User.create!(first_name: "Jjax", last_name: "Benoit", email: "jjax@example.fr", password:"123456", description:"Bonjour à tous, je fais une entré fraccasssante dans ta coloc comme un obèse qui fait une bombe dans une piscine", age:"25")
+user10 = User.create!(first_name: "Jjax", last_name: "Benoit", email: "jjax@example.fr", password:"123456", description:"Bonjour à tous, je fais une entré fraccasssante dans ta coloc comme un obèse qui fait une bombe dans une piscine", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image20.jpeg")
 user10.photo.attach(io: file, filename: "image20.jpeg", content_type: 'image/png')
 user10.save!
 
-user11 = User.create!(first_name: "Pierre", last_name: "Facq", email: "pierre@example.fr", password:"123456", description:"Bonsoir a tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", age:"23")
+user11 = User.create!(first_name: "Pierre", last_name: "Facq", email: "pierre@example.fr", password:"123456", description:"Bonsoir a tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image14.jpeg")
 user11.photo.attach(io: file, filename: "image14.jpeg", content_type: 'image/png')
 user11.save!
 
-user12 = User.create!(first_name: "Clémentine", last_name: "David", email: "martin@example.fr", password:"123456", description:"Hey, je suis paradoxale à la fois sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", age:"24")
+user12 = User.create!(first_name: "Clémentine", last_name: "David", email: "martin@example.fr", password:"123456", description:"Hey, je suis paradoxale à la fois sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image10.jpeg")
 user12.photo.attach(io: file, filename: "image10.jpeg", content_type: 'image/png')
 user12.save!
 
-user13 = User.create!(first_name: "Cécile", last_name: "DeFrance", email: "cécile@example.fr", password:"123456", description: "Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", age:"21")
+user13 = User.create!(first_name: "Cécile", last_name: "DeFrance", email: "cécile@example.fr", password:"123456", description: "Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image11.jpeg")
 user13.photo.attach(io: file, filename: "image11.jpeg", content_type: 'image/png')
 user13.save!
 
-user14 = User.create!(first_name: "Titou", last_name: "Lefauconier", email: "titax@example.fr", password:"123456", description: "Bonsoir a tous, fraîchement arrivé de Normandie venu retourner la Bretagne, n'hésite pas à me contacter", age:"23")
+user14 = User.create!(first_name: "Titou", last_name: "Lefauconier", email: "titax@example.fr", password:"123456", description: "Bonsoir a tous, fraîchement arrivé de Normandie venu retourner la Bretagne, n'hésite pas à me contacter", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image17.jpeg")
 user14.photo.attach(io: file, filename: "image17.jpeg", content_type: 'image/png')
 user14.save!
 
-user15 = User.create!(first_name: "Marine", last_name: "DesChateau", email: "marine@example.fr", password:"123456", description: "Hello, venu découvrir la Bretagne en espérant que les légendes sur votre alcoolisme est fondé ;)", age:"21")
+user15 = User.create!(first_name: "Marine", last_name: "DesChateau", email: "marine@example.fr", password:"123456", description: "Hello, venu découvrir la Bretagne en espérant que les légendes sur votre alcoolisme est fondé ;)", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image12.jpeg")
 user15.photo.attach(io: file, filename: "image12.jpeg", content_type: 'image/png')
 user15.save!
 
-user16 = User.create!(first_name: "Manon", last_name: "Gaillard", email: "manon@example.fr", password:"123456", description: "Hi, fraîchement arrivé des US, faites moi découvrir la FrenchLife!", age:"24")
+user16 = User.create!(first_name: "Manon", last_name: "Gaillard", email: "manon@example.fr", password:"123456", description: "Hi, fraîchement arrivé des US, faites moi découvrir la FrenchLife!", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image13.jpeg")
 user16.photo.attach(io: file, filename: "image13.jpeg", content_type: 'image/png')
 user16.save!
 
-user17 = User.create!(first_name: "Leo", last_name: "Criquet", email: "léo@example.fr", password:"123456", description: "Hey, ton futur barman préféré ;)", age:"22")
+user17 = User.create!(first_name: "Leo", last_name: "Criquet", email: "léo@example.fr", password:"123456", description: "Hey, ton futur barman préféré ;)", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image18.jpeg")
 user17.photo.attach(io: file, filename: "image18.jpeg", content_type: 'image/png')
 user17.save!
 
-user18 = User.create!(first_name: "Marie", last_name: "Cottebrune", email: "marie@example.fr", password:"123456", description: "Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", age:"21")
+user18 = User.create!(first_name: "Marie", last_name: "Cottebrune", email: "marie@example.fr", password:"123456", description: "Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image16.jpeg")
 user18.photo.attach(io: file, filename: "image16.jpeg", content_type: 'image/png')
 user18.save!
 
-user19 = User.create!(first_name: "Flossie", last_name: "Dusclos", email: "flossie@example.fr", password:"123456", description: "Hey, Parisienne venu observer le retard des provinciaux", age:"26")
+user19 = User.create!(first_name: "Flossie", last_name: "Dusclos", email: "flossie@example.fr", password:"123456", description: "Hey, Parisienne venu observer le retard des provinciaux", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image15.jpeg")
 user19.photo.attach(io: file, filename: "image15.jpeg", content_type: 'image/png')
 user19.save!
 
-user20 = User.create!(first_name: "Alexndre", last_name: "Tyt", email: "alex@example.fr", password:"123456", description: "Hey, je viens d'arrivé sur Rennes et je recherche une petite colocation des familles, histoire de passer de bon moment :)", age:"21")
+user20 = User.create!(first_name: "Alexndre", last_name: "Tyt", email: "alex@example.fr", password:"123456", description: "Hey, je viens d'arrivé sur Rennes et je recherche une petite colocation des familles, histoire de passer de bon moment :)", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image19.jpeg")
 user20.photo.attach(io: file, filename: "image19.jpeg", content_type: 'image/png')
 user20.save!
