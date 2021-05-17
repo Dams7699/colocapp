@@ -204,15 +204,6 @@ file3 = File.open("app/assets/images/images_coloc/salon9.jpeg")
 colocation9.photos.attach(io: file3, filename: "salon9.jpg", content_type: 'image/png')
 colocation9.save!
 
-colocation10 = Colocation.create!(title: "La Guinguette", address:"20 Rue d'Antrain, 35000 Rennes", description: "Ici, on boie, on danse, on mange bien, on vit tout simplement", price: 335, desired_people: 1, user: user12)
-file1 = File.open("app/assets/images/images_coloc/chambre10.jpeg")
-colocation10.photos.attach(io: file1, filename: "chambre10.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine10.jpeg")
-colocation10.photos.attach(io: file2, filename: "cuisine10.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon10.jpeg")
-colocation10.photos.attach(io: file3, filename: "salon10.jpg", content_type: 'image/png')
-colocation10.save!
-
 
 
 offer1 = Offer.create!(user: user1, colocation: colocation1, status: "Accepté!")
@@ -518,10 +509,10 @@ user_goals60 = UserGoal.create!(user: user20, goal: goal6)
 
 colocation_goals1 = ColocationGoal.create!(colocation: colocation1, goal: goal2)
 colocation_goals2 = ColocationGoal.create!(colocation: colocation1, goal: goal5)
-colocation_goals = ColocationGoal.create!(colocation: colocation1, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation1, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal2)
-colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal3)
 colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation3, goal: goal1)
@@ -537,7 +528,7 @@ colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal5)
 colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal2)
-colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal4)
 colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal1)

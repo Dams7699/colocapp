@@ -22,22 +22,16 @@
 
           <p class="description"><%= @colocation.description %></p>
           <br>
-        <h3>Le style de la coloc'</h3>
+        <h3>Goals Colocation</h3>
         <br>
       </div>
         <div class="content_chekbox">
-        <% @colocation.goals.each do |g| %>
-            <div class="jaime"><%= g.full_name %></div>
-          <% end %>
-          <!--<p>j'aime pas</p>-->
-          <% (Goal.all - @colocation.goals).each do |g| %>
-            <div class="jaime_pas"><%= g.full_name %></div>
+          <% @colocation.goals.each do |g| %>
+              <div class="jaime"><%= g.full_name %></div>
           <% end %>
         </div>
 
-      <%= link_to "CONTACT NOUS GROS", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
-
-
+      <%= link_to "CONTACTER LA COLOCATION", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
 </div>
 
 
