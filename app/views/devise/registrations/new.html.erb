@@ -15,6 +15,12 @@
                     required: true,
                     label: "Nom",
                     input_html: { autocomplete: "last_name" } %>
+
+    <%= f.input :age ,
+                required: true,
+                label: "Age",
+                input_html: { type: "date" }  %>
+    
     <%= f.input :email,
                 required: true,
                 autofocus: true,

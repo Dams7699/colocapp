@@ -14,6 +14,6 @@ class ProfilsController < ApplicationController
   private
 
   def profil_params
-    params.require(:user).permit(:first_name, :last_name, :photo, { goal_ids: []}, {hobby_ids: []}, { personality_ids: []})
+    params.require(:user).permit(:first_name, :last_name, :photo, :age, { goal_ids: []}, {hobby_ids: []}, { personality_ids: []})
   end
 end
