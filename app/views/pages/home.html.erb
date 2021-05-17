@@ -25,9 +25,11 @@
       </div>
     </div>
   </div>
+
   <div class="mt-5">
   <% if current_user %>
     <%= link_to "Déconnexion ☠️", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
+
     <% else %>
     <%= link_to "JE ME CONNECTE", new_user_session_path, class: "btn-secondary" %>
     <%= link_to "JE M'INSCRIS", new_user_registration_path, class: "btn btn-bottom" %>

@@ -15,6 +15,11 @@
                     required: true,
                     label: "Nom",
                     input_html: { autocomplete: "last_name" } %>
+
+    <%= f.input :birthday ,
+                required: true,
+                label: "Date de naissance", end_year: Time.now.year - 12, start_year: Time.now.year - 90, order: [:day, :month, :year]  %>
+    
     <%= f.input :email,
                 required: true,
                 autofocus: true,
