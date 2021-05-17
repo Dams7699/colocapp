@@ -67,3 +67,45 @@
   -webkit-text-fill-color: transparent;
 
 }
+
+.add_photo {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+  z-index: -1;
+  display:none;
+}
+
+.add_photo + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.add_photo + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+.user_photo_label {
+  z-index:999;
+  width:50px;
+  height:50px;
+  background: $gradient;
+  border-radius:50%;
+  color:$black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size:24px;
+  position: absolute;
+  right: 32px;
+  top: -40px;
+  
+  label {
+    margin:0;
+  }
+}

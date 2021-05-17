@@ -6,16 +6,22 @@
       <%= image_tag "empty.png", class:"w-100" %>
     <% end %>
   </div>
-  <input type="file" id="user_photo"/>
+  
 
   <div class="profil-content">
-    <p class="over-titre"><%= current_user.age %> ans 
-      <%= link_to "#" do %>
-        <%= image_tag ("modif-pen.svg"), class: "pen" %>
-      <% end %>
-    </p>
+    <div class="user_photo_label">
+      <label for="user_photo"><i class="fas fa-plus"></i></label>
+      <input type="file" name="file" id="user_photo" class="add_photo"/>
+    </div>
+    <p class="over-titre"><%= current_user.age %> ans</p>
     <h2><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></h2>
-    <div class="description"><%= current_user.description %></div>
+
+    <div class="description">
+      <% if current_user.description == nil %>
+        <%= current_user.description = "Pensez à revenir compléter une description pour vous décrire aux colocations intéressés !" %>
+      <% end %>
+    </div>
+
     <h2>Ce que j'aime</h2>
 
       <div class="content_chekbox">
