@@ -1,4 +1,18 @@
 .carousel-image {
   height: 360px;
+}
 
+.carousel-indicators li {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+span {
+  font-size: 138px;
 }
