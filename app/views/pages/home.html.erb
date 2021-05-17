@@ -2,7 +2,7 @@
   <%= image_tag ("logo.svg"), class: "icone-landing" %>
 
   <h3>Découvre la<br>
-  colocation revée !</h3>
+  colocation rêvée !</h3>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
@@ -13,7 +13,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
           <span>😎</span>
-          <p>Col te met en relation avec des colocation idéales selon tes critères  et tes envies</p>
+          <p>Col te met en relation avec des colocations idéales, selon tes critères  et tes envies</p>
       </div>
       <div class="carousel-item">
         <span>🙋🏻‍♂️</span>
@@ -21,7 +21,7 @@
       </div>
       <div class="carousel-item">
         <span>🏠</span>
-        <p>Sélectionne ta ville, ton budget et trouves la coloc de tes rêves</p>
+        <p>Sélectionne ta ville, ton budget et trouves la colocations de tes rêves</p>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
     <%= link_to "Déconnexion ☠️", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
     <% else %>
     <%= link_to "JE ME CONNECTE", new_user_session_path, class: "btn-secondary" %>
-    <%= link_to "JE M'INSCRIS", new_user_registration_path, class: "btn-bottom" %>
+    <%= link_to "JE M'INSCRIS", new_user_registration_path, class: "btn btn-bottom" %>
   <% end %>
   </div>
 </div>
