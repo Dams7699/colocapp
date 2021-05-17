@@ -1,22 +1,38 @@
 <div class="landing-container">
   <%= image_tag ("logo.svg"), class: "icone-landing" %>
 
-  <div class="content-landing">
-    <h1>Col.</h1>
-    <h1>Une expérience faite pour toi 😉 </h1>
+  <h3>Découvre la<br>
+  colocation rêvée !</h3>
 
-    <h2>La colocation rêver! Simplement au bout de tes doigts !</h2>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <span>😎</span>
+          <p>Col te met en relation avec des colocations idéales, selon tes critères  et tes envies</p>
+      </div>
+      <div class="carousel-item">
+        <span>🙋🏻‍♂️</span>
+        <p>Renseigne tes traits de personnalité et tes hobbies pour un matching idéal</p>
+      </div>
+      <div class="carousel-item">
+        <span>🏠</span>
+        <p>Sélectionne ta ville, ton budget et trouves la colocations de tes rêves</p>
+      </div>
+    </div>
   </div>
 
-  <div class="btn-container">
+  <div class="mt-5">
+  <% if current_user %>
+    <%= link_to "Déconnexion ☠️", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
 
-    <% if current_user %>
-      <%= link_to "quoi d'neuf ?", colocations_path, class:"btn-landing" %>
-    <!------provisoir test---------->
-      <%= link_to "Déconnexion ☠️", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
     <% else %>
-      <%= link_to "JE M'INSCRIS", new_user_registration_path, class: "btn-landing" %>
-      <%= link_to "CONNEXION", new_user_session_path, class: "btn-secondary" %>
-    <% end %>
+    <%= link_to "JE ME CONNECTE", new_user_session_path, class: "btn-secondary" %>
+    <%= link_to "JE M'INSCRIS", new_user_registration_path, class: "btn btn-bottom" %>
+  <% end %>
   </div>
 </div>
