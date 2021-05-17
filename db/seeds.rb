@@ -26,53 +26,104 @@ file = File.open("app/assets/images/images_profil/image.jpeg")
 user1.photo.attach(io: file, filename: "image.jpeg", content_type: 'image/png')
 user1.save!
 
-user2 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", age:"18")
+user2 = User.create!(first_name: "Thomas", last_name: "Ledev", email: "thomas@example.fr" , password:"123456", description:"Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", age:"18")
 file = File.open("app/assets/images/images_profil/image1.jpeg")
 user2.photo.attach(io: file, filename: "image1.jpeg", content_type: 'image/png')
 user2.save!
 
-user3 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Bonsoir a tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", age:"28")
+user3 = User.create!(first_name: "Clotax", last_name: "Lacaille", email: "clotax@example.fr", password:"123456", description:"Bonsoir a tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", age:"28")
 file = File.open("app/assets/images/images_profil/image2.jpeg")
 user3.photo.attach(io: file, filename: "image2.jpeg", content_type: 'image/png')
 user3.save!
 
-user4 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Hola, fraîchement arrivé de colombie, faites moi découvrir la FrenchLife!", age:"22")
+user4 = User.create!(first_name: "Simon", last_name: "Lecoffre" , email: "simon@example.fr", password:"123456", description:"Hola, fraîchement arrivé de colombie, faites moi découvrir la FrenchLife!", age:"22")
 file = File.open("app/assets/images/images_profil/image3.jpeg")
 user4.photo.attach(io: file, filename: "image3.jpeg", content_type: 'image/png')
 user4.save!
 
-user5 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Un Normand venu foutre le zbeul en Bretagne !", age:"21")
+user5 = User.create!(first_name: "Jerôme", last_name: "Dupont" , email: "jerôme@example.fr", password:"123456", description:"Un Normand venu foutre le zbeul en Bretagne !", age:"21")
 file = File.open("app/assets/images/images_profil/image4.jpeg")
 user5.photo.attach(io: file, filename: "image4.jpeg", content_type: 'image/png')
 user5.save!
 
-user6 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Pur produit du Sud, j'arrive imposé la farniente dans ta coloc!", age:"27")
+user6 = User.create!(first_name: "Damien", last_name: "biglouche", email: "damien@example.fr", password:"123456", description:"Pur produit du Sud, j'arrive imposé la farniente dans ta coloc!", age:"27")
 file = File.open("app/assets/images/images_profil/image5.jpeg")
 user6.photo.attach(io: file, filename: "image5.jpeg", content_type: 'image/png')
 user6.save!
 
-user7 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Hey ! Retour dans ma bretagne natale après 5 ans de voyage, si tu veux des soirées chill en partagent nos expériences fais moi signe!", age:"26")
+user7 = User.create!(first_name: "Axel", last_name: "lecuistax", email: "axel@example.fr", password:"123456", description:"Hey ! Retour dans ma bretagne natale après 5 ans de voyage, si tu veux des soirées chill en partagent nos expériences fais moi signe!", age:"26")
 file = File.open("app/assets/images/images_profil/image6.jpeg")
 user7.photo.attach(io: file, filename: "image6.jpeg", content_type: 'image/png')
 user7.save!
 
-user8 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", age:"29")
+user8 = User.create!(first_name: "Lomig" , last_name: "Guillaume", email: "Lomig@example.fr", password:"123456", description:"Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", age:"29")
 file = File.open("app/assets/images/images_profil/image7.jpeg")
 user8.photo.attach(io: file, filename: "image7.jpeg", content_type: 'image/png')
 user8.save!
 
-user9 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Hey, je suis paradoxale a l foi sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", age:"25")
+user9 = User.create!(first_name: "Hugo", last_name: "Daniel", email: "hugo@example.fr", password:"123456", description:"Hey, je suis paradoxale à la fois sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", age:"25")
 file = File.open("app/assets/images/images_profil/image8.jpeg")
 user9.photo.attach(io: file, filename: "image8.jpeg", content_type: 'image/png')
 user9.save!
 
-user10 = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password:"123456", description:"Bonjour à tous, je fais une entré fraccasssante dans ta coloc comme un obèse qui fait une bombe dans une piscine", age:"25")
-file = File.open("app/assets/images/images_profil/image9.jpeg")
-user10.photo.attach(io: file, filename: "image9.jpeg", content_type: 'image/png')
+user10 = User.create!(first_name: "Jjax", last_name: "Benoit", email: "jjax@example.fr", password:"123456", description:"Bonjour à tous, je fais une entré fraccasssante dans ta coloc comme un obèse qui fait une bombe dans une piscine", age:"25")
+file = File.open("app/assets/images/images_profil/image20.jpeg")
+user10.photo.attach(io: file, filename: "image20.jpeg", content_type: 'image/png')
 user10.save!
 
+user11 = User.create!(first_name: "Pierre", last_name: "Facq", email: "pierre@example.fr", password:"123456", description:"Bonsoir a tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", age:"23")
+file = File.open("app/assets/images/images_profil/image14.jpeg")
+user11.photo.attach(io: file, filename: "image14.jpeg", content_type: 'image/png')
+user11.save!
 
-colocation1 = Colocation.create!(title: "La chouille house", address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 450, desired_people: 1, user: user1)
+user12 = User.create!(first_name: "Clémentine", last_name: "David", email: "martin@example.fr", password:"123456", description:"Hey, je suis paradoxale à la fois sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", age:"24")
+file = File.open("app/assets/images/images_profil/image10.jpeg")
+user12.photo.attach(io: file, filename: "image10.jpeg", content_type: 'image/png')
+user12.save!
+
+user13 = User.create!(first_name: "Cécile", last_name: "DeFrance", email: "cécile@example.fr", password:"123456", description: "Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", age:"21")
+file = File.open("app/assets/images/images_profil/image11.jpeg")
+user13.photo.attach(io: file, filename: "image11.jpeg", content_type: 'image/png')
+user13.save!
+
+user14 = User.create!(first_name: "Titou", last_name: "Lefauconier", email: "titax@example.fr", password:"123456", description: "Bonsoir a tous, fraîchement arrivé de Normandie venu retourner la Bretagne, n'hésite pas à me contacter", age:"23")
+file = File.open("app/assets/images/images_profil/image17.jpeg")
+user14.photo.attach(io: file, filename: "image17.jpeg", content_type: 'image/png')
+user14.save!
+
+user15 = User.create!(first_name: "Marine", last_name: "DesChateau", email: "marine@example.fr", password:"123456", description: "Hello, venu découvrir la Bretagne en espérant que les légendes sur votre alcoolisme est fondé ;)", age:"21")
+file = File.open("app/assets/images/images_profil/image12.jpeg")
+user15.photo.attach(io: file, filename: "image12.jpeg", content_type: 'image/png')
+user15.save!
+
+user16 = User.create!(first_name: "Manon", last_name: "Gaillard", email: "manon@example.fr", password:"123456", description: "Hi, fraîchement arrivé des US, faites moi découvrir la FrenchLife!", age:"24")
+file = File.open("app/assets/images/images_profil/image13.jpeg")
+user16.photo.attach(io: file, filename: "image13.jpeg", content_type: 'image/png')
+user16.save!
+
+user17 = User.create!(first_name: "Leo", last_name: "Criquet", email: "léo@example.fr", password:"123456", description: "Hey, ton futur barman préféré ;)", age:"22")
+file = File.open("app/assets/images/images_profil/image18.jpeg")
+user17.photo.attach(io: file, filename: "image18.jpeg", content_type: 'image/png')
+user17.save!
+
+user18 = User.create!(first_name: "Marie", last_name: "Cottebrune", email: "marie@example.fr", password:"123456", description: "Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", age:"21")
+file = File.open("app/assets/images/images_profil/image16.jpeg")
+user18.photo.attach(io: file, filename: "image16.jpeg", content_type: 'image/png')
+user18.save!
+
+user19 = User.create!(first_name: "Flossie", last_name: "Dusclos", email: "flossie@example.fr", password:"123456", description: "Hey, Parisienne venu observer le retard des provinciaux", age:"26")
+file = File.open("app/assets/images/images_profil/image15.jpeg")
+user19.photo.attach(io: file, filename: "image15.jpeg", content_type: 'image/png')
+user19.save!
+
+user20 = User.create!(first_name: "Alexndre", last_name: "Tyt", email: "alex@example.fr", password:"123456", description: "Hey, je viens d'arrivé sur Rennes et je recherche une petite colocation des familles, histoire de passer de bon moment :)", age:"21")
+file = File.open("app/assets/images/images_profil/image19.jpeg")
+user20.photo.attach(io: file, filename: "image19.jpeg", content_type: 'image/png')
+user20.save!
+
+
+
+colocation1 = Colocation.create!(title: "La Chouille House", address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 275, desired_people: 1, user: user1)
 file1 = File.open("app/assets/images/images_coloc/chambre1.jpeg")
 colocation1.photos.attach(io: file1, filename: "chambre1.jpeg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine1.jpeg")
@@ -108,11 +159,65 @@ file3 = File.open("app/assets/images/images_coloc/salon4.jpeg")
 colocation4.photos.attach(io: file3, filename: "salon4.jpg", content_type: 'image/png')
 colocation4.save!
 
+colocation5 = Colocation.create!(title: "La Geuleton House", address:"1 Rue du Thabor, 35000 Rennes", description: "Si t'aime les copains et la bonne bouffe, c'est ici qu'il faut que tu sois!", price: 250, desired_people: 1, user: user11)
+file1 = File.open("app/assets/images/images_coloc/chambre5.jpeg")
+colocation5.photos.attach(io: file1, filename: "chambre5.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/cuisine5.jpeg")
+colocation5.photos.attach(io: file2, filename: "cuisine5.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/salon5.jpeg")
+colocation5.photos.attach(io: file3, filename: "salon5.jpg", content_type: 'image/png')
+colocation5.save!
+
+colocation6 = Colocation.create!(title: "La Club House", address:"25 Rue Alexandre Duval, 35000 Rennes", description: "Les boîtes te manque, leur ambiance aussi, durant cette période agacente nous te proposons une colocation énergique, qui te fera oublier l'existence du mot ennui", price: 310, desired_people: 1, user: user15)
+file1 = File.open("app/assets/images/images_coloc/chambre6.jpeg")
+colocation6.photos.attach(io: file1, filename: "chambre6.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/cuisine6.jpeg")
+colocation6.photos.attach(io: file2, filename: "cuisine6.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/salon6.jpeg")
+colocation6.photos.attach(io: file3, filename: "salon6.jpg", content_type: 'image/png')
+colocation6.save!
+
+colocation7 = Colocation.create!(title: "Tokyo House", address:"11 Rue Ange Blèze, 35000 Rennes", description: "Si la culture japonaise fait partie de toi, tu sera ici chez toi", price: 260, desired_people: 1, user: user17)
+file1 = File.open("app/assets/images/images_coloc/chambre7.jpeg")
+colocation7.photos.attach(io: file1, filename: "chambre7.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/cuisine7.jpeg")
+colocation7.photos.attach(io: file2, filename: "cuisine7.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/salon7.jpeg")
+colocation7.photos.attach(io: file3, filename: "salon7.jpg", content_type: 'image/png')
+colocation7.save!
+
+colocation8 = Colocation.create!(title: "Au bout du Monde", address:"11 Rue de Léon, 35000 Rennes", description: "Colocation suspendu dans le temps et l'espace, si tu veux venir te ressourcer tu es le bienvenue!", price: 225, desired_people: 1, user: user13)
+file1 = File.open("app/assets/images/images_coloc/chambre8.jpeg")
+colocation8.photos.attach(io: file1, filename: "chambre8.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/cuisine8.jpeg")
+colocation8.photos.attach(io: file2, filename: "cuisine8.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/salon8.jpeg")
+colocation8.photos.attach(io: file3, filename: "salon8.jpg", content_type: 'image/png')
+colocation8.save!
+
+colocation9 = Colocation.create!(title: "Le Zoo", address:"20 Place du Bas des Lices, 35000 Rennes", description: "Si tu veux foutre le bordel, ramène toi direct!", price: 325, desired_people: 1, user: user18)
+file1 = File.open("app/assets/images/images_coloc/chambre9.jpeg")
+colocation9.photos.attach(io: file1, filename: "chambre9.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/cuisine9.jpeg")
+colocation9.photos.attach(io: file2, filename: "cuisine9.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/salon9.jpeg")
+colocation9.photos.attach(io: file3, filename: "salon9.jpg", content_type: 'image/png')
+colocation9.save!
+
+colocation10 = Colocation.create!(title: "La Guinguette", address:"20 Rue d'Antrain, 35000 Rennes", description: "Ici, on boie, on danse, on mange bien, on vit tout simplement", price: 335, desired_people: 1, user: user12)
+file1 = File.open("app/assets/images/images_coloc/chambre10.jpeg")
+colocation10.photos.attach(io: file1, filename: "chambre10.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/cuisine10.jpeg")
+colocation10.photos.attach(io: file2, filename: "cuisine10.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/salon10.jpeg")
+colocation10.photos.attach(io: file3, filename: "salon10.jpg", content_type: 'image/png')
+colocation10.save!
+
+
 
 offer1 = Offer.create!(user: user1, colocation: colocation1, status: "Accepté!")
 offer2 = Offer.create!(user: user2, colocation: colocation1, status: "Accepté!")
 offer3 = Offer.create!(user: user7, colocation: colocation1, status: "En attente..")
-
 
 offer4 = Offer.create!(user: user4, colocation: colocation2, status: "Accepté!")
 offer5 = Offer.create!(user: user5, colocation: colocation2, status: "Accepté!")
@@ -124,28 +229,45 @@ offer8 = Offer.create!(user: user3, colocation: colocation3, status: "Décliné!
 offer9 = Offer.create!(user: user9, colocation: colocation4, status: "Accepté!")
 offer10 = Offer.create!(user: user8, colocation: colocation4, status: "En attente..")
 
+offer11 = Offer.create!(user: user11, colocation: colocation5, status: "Accepté!")
+offer12 = Offer.create!(user: user14, colocation: colocation5, status: "En attente..")
 
-personality1 = Personality.create!(icon: "🏠", name: "casanier")
-personality2 = Personality.create!(icon: "🤠", name: "aventurier")
-personality3 = Personality.create!(icon: "🎓", name: "studieux")
-personality4 = Personality.create!(icon: "🥳", name: "fêtard")
-personality5 = Personality.create!(icon: "🤡", name: "extravertit")
-personality6 = Personality.create!(icon: "👉👈", name: "introvertit")
+offer13 = Offer.create!(user: user15, colocation: colocation6, status: "Accepté!")
+offer14 = Offer.create!(user: user19, colocation: colocation6, status: "En attente..")
+
+offer15 = Offer.create!(user: user17, colocation: colocation7, status: "Accepté!")
+offer16 = Offer.create!(user: user12, colocation: colocation7, status: "Accepté!")
+
+offer17 = Offer.create!(user: user13, colocation: colocation8, status: "Accepté!")
+offer18 = Offer.create!(user: user16, colocation: colocation8, status: "En attente..")
+
+offer19 = Offer.create!(user: user18, colocation: colocation9, status: "Accepté!")
+offer20 = Offer.create!(user: user20, colocation: colocation9, status: "Accepté!")
 
 
-hobby1 = Hobby.create!(icon: "📽️", name: "cinéphile")
-hobby2 = Hobby.create!(icon: "🎶", name: "musicien")
-hobby3 = Hobby.create!(icon: "🏆", name: "sportif")
-hobby4 = Hobby.create!(icon: "👩‍🍳", name: "gastronome")
-hobby5 = Hobby.create!(icon: "🕹️", name: "gamer")
+
+personality1 = Personality.create!(icon: "🏠", name: "Casanier")
+personality2 = Personality.create!(icon: "🤠", name: "Aventurier")
+personality3 = Personality.create!(icon: "🎓", name: "Studieux")
+personality4 = Personality.create!(icon: "🥳", name: "Fêtard")
+personality5 = Personality.create!(icon: "🤡", name: "Extraverti")
+personality6 = Personality.create!(icon: "👉👈", name: "Introverti")
 
 
-goal1 = Goal.create!(icon: "🙅", name: "antisocial")
-goal2 = Goal.create!(icon: "🙋", name: "hypersociable")
-goal3 = Goal.create!(icon: "🔊", name: "techno")
-goal4 = Goal.create!(icon: "🎤", name: "rap")
-goal5 = Goal.create!(icon: "🎸", name: "rock")
-goal6 = Goal.create!(icon: "🌎", name: "plusieurs langues")
+hobby1 = Hobby.create!(icon: "📽️", name: "Cinéphile")
+hobby2 = Hobby.create!(icon: "🎶", name: "Musicien")
+hobby3 = Hobby.create!(icon: "🏆", name: "Sportif")
+hobby4 = Hobby.create!(icon: "👩‍🍳", name: "Gastronome")
+hobby5 = Hobby.create!(icon: "🕹️", name: "Gamer")
+hobby6 = Hobby.create!(icon: "📚", name: "Littéraire")
+
+
+goal1 = Goal.create!(icon: "🙅", name: "Antisocial")
+goal2 = Goal.create!(icon: "🙋", name: "Hypersociable")
+goal3 = Goal.create!(icon: "🐕", name: "Animaux")
+goal4 = Goal.create!(icon: "🎶", name: "Musicale")
+goal5 = Goal.create!(icon: "📡", name: "Haut débit")
+goal6 = Goal.create!(icon: "🌎", name: "Plusieurs Langues")
 
 
 user_personalities1 = UserPersonality.create!(user: user1, personality: personality2)
@@ -188,6 +310,47 @@ user_personalities28 = UserPersonality.create!(user: user10, personality: person
 user_personalities29 = UserPersonality.create!(user: user10, personality: personality3)
 user_personalities30 = UserPersonality.create!(user: user10, personality: personality5)
 
+user_personalities31 = UserPersonality.create!(user: user11, personality: personality1)
+user_personalities32 = UserPersonality.create!(user: user11, personality: personality3)
+user_personalities33 = UserPersonality.create!(user: user11, personality: personality6)
+
+user_personalities34 = UserPersonality.create!(user: user12, personality: personality2)
+user_personalities35 = UserPersonality.create!(user: user12, personality: personality4)
+user_personalities36 = UserPersonality.create!(user: user12, personality: personality6)
+
+user_personalities37 = UserPersonality.create!(user: user13, personality: personality1)
+user_personalities38 = UserPersonality.create!(user: user13, personality: personality4)
+user_personalities39 = UserPersonality.create!(user: user13, personality: personality6)
+
+user_personalities40 = UserPersonality.create!(user: user14, personality: personality2)
+user_personalities41 = UserPersonality.create!(user: user14, personality: personality4)
+user_personalities42 = UserPersonality.create!(user: user14, personality: personality6)
+
+user_personalities43 = UserPersonality.create!(user: user15, personality: personality2)
+user_personalities44 = UserPersonality.create!(user: user15, personality: personality3)
+user_personalities45 = UserPersonality.create!(user: user15, personality: personality6)
+
+user_personalities46 = UserPersonality.create!(user: user16, personality: personality2)
+user_personalities47 = UserPersonality.create!(user: user16, personality: personality4)
+user_personalities48 = UserPersonality.create!(user: user16, personality: personality5)
+
+user_personalities49 = UserPersonality.create!(user: user17, personality: personality1)
+user_personalities50 = UserPersonality.create!(user: user17, personality: personality3)
+user_personalities51 = UserPersonality.create!(user: user17, personality: personality5)
+
+user_personalities52 = UserPersonality.create!(user: user18, personality: personality1)
+user_personalities53 = UserPersonality.create!(user: user18, personality: personality3)
+user_personalities54 = UserPersonality.create!(user: user18, personality: personality6)
+
+user_personalities55 = UserPersonality.create!(user: user19, personality: personality1)
+user_personalities56 = UserPersonality.create!(user: user19, personality: personality3)
+user_personalities57 = UserPersonality.create!(user: user19, personality: personality6)
+
+user_personalities58 = UserPersonality.create!(user: user20, personality: personality2)
+user_personalities59 = UserPersonality.create!(user: user20, personality: personality4)
+user_personalities60 = UserPersonality.create!(user: user20, personality: personality5)
+
+
 
 user_hobbies1 = UserHobby.create!(user: user1, hobby: hobby2)
 user_hobbies2 = UserHobby.create!(user: user1, hobby: hobby4)
@@ -229,52 +392,164 @@ user_hobbies1 = UserHobby.create!(user: user10, hobby: hobby1)
 user_hobbies2 = UserHobby.create!(user: user10, hobby: hobby2)
 user_hobbies3 = UserHobby.create!(user: user10, hobby: hobby4)
 
+user_hobbies1 = UserHobby.create!(user: user11, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user11, hobby: hobby2)
+user_hobbies3 = UserHobby.create!(user: user11, hobby: hobby6)
+
+user_hobbies1 = UserHobby.create!(user: user12, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user12, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user12, hobby: hobby6)
+
+user_hobbies1 = UserHobby.create!(user: user13, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user13, hobby: hobby2)
+user_hobbies3 = UserHobby.create!(user: user13, hobby: hobby4)
+
+user_hobbies1 = UserHobby.create!(user: user14, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user14, hobby: hobby5)
+user_hobbies3 = UserHobby.create!(user: user14, hobby: hobby6)
+
+user_hobbies1 = UserHobby.create!(user: user15, hobby: hobby2)
+user_hobbies2 = UserHobby.create!(user: user15, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user15, hobby: hobby5)
+
+user_hobbies1 = UserHobby.create!(user: user16, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user16, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user16, hobby: hobby4)
+
+user_hobbies1 = UserHobby.create!(user: user17, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user17, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user17, hobby: hobby6)
+
+user_hobbies1 = UserHobby.create!(user: user18, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user18, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user18, hobby: hobby5)
+
+user_hobbies1 = UserHobby.create!(user: user19, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user19, hobby: hobby3)
+user_hobbies3 = UserHobby.create!(user: user19, hobby: hobby4)
+
+user_hobbies1 = UserHobby.create!(user: user20, hobby: hobby1)
+user_hobbies2 = UserHobby.create!(user: user20, hobby: hobby4)
+user_hobbies3 = UserHobby.create!(user: user20, hobby: hobby5)
+
+
 
 user_goals1 = UserGoal.create!(user: user1, goal: goal2)
 user_goals2 = UserGoal.create!(user: user1, goal: goal3)
+user_goals3 = UserGoal.create!(user: user1, goal: goal4)
 
-user_goals3 = UserGoal.create!(user: user2, goal: goal1)
-user_goals4 = UserGoal.create!(user: user2, goal: goal4)
+user_goals4 = UserGoal.create!(user: user2, goal: goal1)
+user_goals5 = UserGoal.create!(user: user2, goal: goal4)
+user_goals6 = UserGoal.create!(user: user2, goal: goal6)
 
-user_goals5 = UserGoal.create!(user: user3, goal: goal2)
-user_goals6 = UserGoal.create!(user: user3, goal: goal5)
+user_goals7 = UserGoal.create!(user: user3, goal: goal2)
+user_goals8 = UserGoal.create!(user: user3, goal: goal5)
+user_goals9 = UserGoal.create!(user: user3, goal: goal6)
 
-user_goals7 = UserGoal.create!(user: user4, goal: goal1)
-user_goals8 = UserGoal.create!(user: user4, goal: goal3)
+user_goals10 = UserGoal.create!(user: user4, goal: goal1)
+user_goals11 = UserGoal.create!(user: user4, goal: goal3)
+user_goals12 = UserGoal.create!(user: user4, goal: goal4)
 
-user_goals9 = UserGoal.create!(user: user5, goal: goal1)
-user_goals10 = UserGoal.create!(user: user5, goal: goal6)
+user_goals13 = UserGoal.create!(user: user5, goal: goal1)
+user_goals14 = UserGoal.create!(user: user5, goal: goal6)
+user_goals15 = UserGoal.create!(user: user5, goal: goal4)
 
-user_goals11 = UserGoal.create!(user: user6, goal: goal3)
-user_goals12 = UserGoal.create!(user: user6, goal: goal6)
+user_goals16 = UserGoal.create!(user: user6, goal: goal3)
+user_goals17 = UserGoal.create!(user: user6, goal: goal6)
+user_goals18 = UserGoal.create!(user: user6, goal: goal3)
 
-user_goals13 = UserGoal.create!(user: user7, goal: goal2)
-user_goals14 = UserGoal.create!(user: user7, goal: goal6)
+user_goals19 = UserGoal.create!(user: user7, goal: goal2)
+user_goals20 = UserGoal.create!(user: user7, goal: goal6)
+user_goals21 = UserGoal.create!(user: user7, goal: goal3)
 
-user_goals15 = UserGoal.create!(user: user8, goal: goal3)
-user_goals16 = UserGoal.create!(user: user8, goal: goal6)
+user_goals22 = UserGoal.create!(user: user8, goal: goal3)
+user_goals23 = UserGoal.create!(user: user8, goal: goal6)
+user_goals24 = UserGoal.create!(user: user8, goal: goal5)
 
-user_goals17= UserGoal.create!(user: user9, goal: goal2)
-user_goals18 = UserGoal.create!(user: user9, goal: goal5)
+user_goals25 = UserGoal.create!(user: user9, goal: goal2)
+user_goals26 = UserGoal.create!(user: user9, goal: goal5)
+user_goals27 = UserGoal.create!(user: user9, goal: goal4)
 
-user_goals19 = UserGoal.create!(user: user10, goal: goal1)
-user_goals20 = UserGoal.create!(user: user10, goal: goal5)
+user_goals28 = UserGoal.create!(user: user10, goal: goal1)
+user_goals29 = UserGoal.create!(user: user10, goal: goal5)
+user_goals30 = UserGoal.create!(user: user10, goal: goal3)
+
+user_goals31 = UserGoal.create!(user: user11, goal: goal2)
+user_goals32 = UserGoal.create!(user: user11, goal: goal3)
+user_goals33 = UserGoal.create!(user: user11, goal: goal4)
+
+user_goals34 = UserGoal.create!(user: user12, goal: goal1)
+user_goals35 = UserGoal.create!(user: user12, goal: goal4)
+user_goals36 = UserGoal.create!(user: user12, goal: goal6)
+
+user_goals37 = UserGoal.create!(user: user13, goal: goal2)
+user_goals38 = UserGoal.create!(user: user13, goal: goal5)
+user_goals39 = UserGoal.create!(user: user13, goal: goal3)
+
+user_goals40 = UserGoal.create!(user: user14, goal: goal1)
+user_goals41 = UserGoal.create!(user: user14, goal: goal3)
+user_goals42 = UserGoal.create!(user: user14, goal: goal4)
+
+user_goals43 = UserGoal.create!(user: user15, goal: goal1)
+user_goals44 = UserGoal.create!(user: user15, goal: goal4)
+user_goals45 = UserGoal.create!(user: user15, goal: goal3)
+
+user_goals46 = UserGoal.create!(user: user16, goal: goal3)
+user_goals47 = UserGoal.create!(user: user16, goal: goal6)
+user_goals48 = UserGoal.create!(user: user16, goal: goal4)
+
+user_goals49 = UserGoal.create!(user: user17, goal: goal2)
+user_goals50 = UserGoal.create!(user: user17, goal: goal6)
+user_goals51 = UserGoal.create!(user: user17, goal: goal3)
+
+user_goals52 = UserGoal.create!(user: user18, goal: goal3)
+user_goals53 = UserGoal.create!(user: user18, goal: goal6)
+user_goals54 = UserGoal.create!(user: user18, goal: goal1)
+
+user_goals55 = UserGoal.create!(user: user19, goal: goal2)
+user_goals56 = UserGoal.create!(user: user19, goal: goal5)
+user_goals57 = UserGoal.create!(user: user19, goal: goal4)
+
+user_goals58 = UserGoal.create!(user: user20, goal: goal2)
+user_goals59 = UserGoal.create!(user: user20, goal: goal4)
+user_goals60 = UserGoal.create!(user: user20, goal: goal6)
+
 
 
 colocation_goals1 = ColocationGoal.create!(colocation: colocation1, goal: goal2)
-colocation_goals1 = ColocationGoal.create!(colocation: colocation1, goal: goal5)
+colocation_goals2 = ColocationGoal.create!(colocation: colocation1, goal: goal5)
+colocation_goals = ColocationGoal.create!(colocation: colocation1, goal: goal2)
 
-colocation_goals1 = ColocationGoal.create!(colocation: colocation2, goal: goal2)
-colocation_goals1 = ColocationGoal.create!(colocation: colocation2, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal6)
 
-colocation_goals1 = ColocationGoal.create!(colocation: colocation3, goal: goal1)
-colocation_goals1 = ColocationGoal.create!(colocation: colocation3, goal: goal3)
+colocation_goals = ColocationGoal.create!(colocation: colocation3, goal: goal1)
+colocation_goals = ColocationGoal.create!(colocation: colocation3, goal: goal3)
+colocation_goals = ColocationGoal.create!(colocation: colocation3, goal: goal6)
 
-colocation_goals1 = ColocationGoal.create!(colocation: colocation4, goal: goal2)
-colocation_goals1 = ColocationGoal.create!(colocation: colocation4, goal: goal4)
+colocation_goals = ColocationGoal.create!(colocation: colocation4, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation4, goal: goal4)
+colocation_goals = ColocationGoal.create!(colocation: colocation4, goal: goal6)
 
+colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal5)
+colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal6)
 
+colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal6)
 
+colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal1)
+colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal3)
+colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal6)
 
+colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal4)
+colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal6)
+
+colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal4)
+colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal6)
 
 
