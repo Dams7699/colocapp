@@ -5,9 +5,10 @@
   background: $gradient;
   text-align: center;
   border: 2px solid $black;
-  color: $gradient;
+  color: $black;
   position:fixed;
   bottom:0;
+  left: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
