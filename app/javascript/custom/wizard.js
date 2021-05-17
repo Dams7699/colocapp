@@ -17,5 +17,6 @@ const wizardForm = () => {
       step3.classList.add("step-active")
     });
   }
+  
 }
 export{wizardForm}
