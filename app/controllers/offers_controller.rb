@@ -4,11 +4,19 @@ class OffersController < ApplicationController
     @offer = Offer.new
     @offer.colocation = @colocation
     @offer.user = current_user
-    @offer.status = "En attente"
+    @offer.status = "En attente.."
     if @offer.save
       redirect_to notification_path
     else
       redirect_to colocation_path(@colocation)
     end
   end
+
+  def accept
+    @offer = Offer.find(params[:id])
+    @offer.status = "Accepté!"
+    @offer.save
+    redirect_to notification_path
+  end
+
 end

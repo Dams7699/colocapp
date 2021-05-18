@@ -30,6 +30,7 @@
               <div class="jaime"><%= g.full_name %></div>
           <% end %>
         </div>
+
       
       <div class="content_avatar">
         <h2>Les Colocataires</h2>
@@ -44,7 +45,11 @@
       </div>
 
       <%= link_to "CONTACTER LA COLOCATION", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
+
+        <% if @offer %>
+          <p class='btn-bottom btn-coloc'>VOUS AVEZ DÉJÂ POSTULÉ POUR CETTE COLOCATION</p>
+        <% else %>
+          <%= link_to "CONTACTER LA COLOCATION", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
+        <% end %>
+
 </div>
-
-
-
