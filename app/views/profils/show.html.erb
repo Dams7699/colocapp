@@ -13,8 +13,8 @@
       <label for="user_photo"><i class="fas fa-plus"></i></label>
       <input type="file" name="file" id="user_photo" class="add_photo"/>
     </div>
+    <p><%= current_user.age_in_years %> ans</p>
     <h2><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></h2>
-
     <div class="description">
       <% if current_user.description == nil %>
         <%= current_user.description = "Pensez à revenir compléter une description pour vous décrire aux colocations intéressés !" %>
