@@ -8,6 +8,7 @@ const imageUpload = () => {
       formData.append('user[photo]', file)
       formData.append('authenticity_token', csrfToken)
 
+      
       fetch("/profil", 
         {
           method: "put",
