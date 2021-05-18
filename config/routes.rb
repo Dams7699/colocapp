@@ -6,12 +6,11 @@ Rails.application.routes.draw do
   resources :offers, only: [ :create ]
   end
 
-# =>   resources :offers do
- # =>    member { patch :accept }
- # =>    member { patch :decline }
-# =>  member { patch :cancel }
-  # => end
+  resources :offers do
+    member { patch :accept }
+    member { patch :decline }
+    member { patch :cancel }
+  end
   resource :profil, only: [ :show, :edit, :update ]
   resource :notification, only: [ :show ]
-
 end
