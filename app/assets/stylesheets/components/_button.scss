@@ -67,6 +67,7 @@
 }
 
 .colocation-price {
+  font-size: 13px;
   padding: 12px;
   background: $gradient;
   -webkit-background-clip: text;
@@ -115,7 +116,7 @@
   position: absolute;
   right: 32px;
   top: -40px;
-  
+
   label {
     margin:0;
   }
