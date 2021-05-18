@@ -29,7 +29,11 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { wizardForm } from '../custom/wizard';
 import { imageUpload } from '../custom/image_upload';
+
 import { initFlatpickr } from '../plugins/flatpickr'
+
+import { initAutocomplete } from '../plugins/init_autocomplete';
+
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -37,5 +41,8 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   wizardForm()
   imageUpload()
+
   initFlatpickr()
+
+  initAutocomplete()
 });

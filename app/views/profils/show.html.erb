@@ -6,7 +6,7 @@
       <%= image_tag "empty.png", class:"w-100" %>
     <% end %>
   </div>
-  
+
 
   <div class="profil-content">
     <div class="user_photo_label">
@@ -15,12 +15,15 @@
     </div>
     <p><%= current_user.age_in_years %> ans</p>
     <h2><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></h2>
+
     <div class="description">
       <% if current_user.description == nil %>
         <%= current_user.description = "Pensez à revenir compléter une description pour vous décrire aux colocations intéressés !" %>
+      <% else %>
+        <%= current_user.description %>
       <% end %>
     </div>
-  
+
     <h2>Personnalité</h2>
 
 
@@ -46,6 +49,8 @@
             <div class="jaime"><%= g.full_name %></div>
           <% end %>
           <!--<p>j'aime pas</p>-->
-    <%= link_to "Log out ☠️", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
+      <div class="btn-container">
+        <%= link_to "Log out ☠️", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
+      </div>
   </div>
 </div>

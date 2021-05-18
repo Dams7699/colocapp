@@ -67,11 +67,17 @@
 }
 
 .colocation-price {
+  font-size: 13px;
   padding: 12px;
   background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
 
+
+.btn-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .add_photo {
@@ -110,8 +116,39 @@
   position: absolute;
   right: 32px;
   top: -40px;
-  
+
   label {
     margin:0;
   }
 }
+
+.btn-notification {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font: Futura;
+  font-size: 20px;
+  }
+
+
+.notification-decline {
+  opacity: 0.5;
+}
+
+
+
+
+.search-btn {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+
+  img {
+    width: 30px;
+  }
+}
+.search-form {
+  display: flex;
+}
+

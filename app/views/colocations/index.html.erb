@@ -1,21 +1,44 @@
-<div class="text-center">
-  <%= image_tag('logo.svg')%>
-  <% @colocations.each do |colocation| %>
-    <%= link_to colocation_path(colocation) do %>
-      <div class="card-colocation">
-        <div class="profil-pictures">
-          <%= cl_image_tag colocation.photos.first.key, class:'w-100' %>
-        </div>
-        <div class="colocation-content">
-          <div class="coloc-info">
-            <div class="btn-price"><span class="colocation-price"><%= colocation.price %>$</span></div>
-            <p><%= colocation.desired_people %> place(s) restante(s)</p>
-          </div>
-          <h2><%= colocation.title %></h2>
-          <p><%= colocation.description %></p>
-        </div>
-      </div>
+  <div class="text-center"><%= image_tag('logo.svg')%></div>
+    <div>
+      <%= form_tag colocations_path, method: :get, class: "search-form" do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "villes"
+        %>
+        <%= number_field_tag :price, params[:price], class: "form-control" %>
+        <button type="submit" class="search-btn">
+          <%= image_tag "search.svg" %>
+        </button>
       <% end %>
+    </div>
+<div class="text-center">
+  <% if @colocations.any? %>
+    <% @colocations.each do |colocation| %>
+      <%= link_to colocation_path(colocation) do %>
+        <div class="card-colocation">
+          <div class="profil-pictures">
+            <%= cl_image_tag colocation.photos.first.key, class:'w-100' %>
+          </div>
+
+          <div class="colocation-content">
+            <div class="coloc-info">
+              <div class="btn-price"><span class="colocation-price"><%= colocation.price %>$</span></div>
+              <p><%= colocation.desired_people %> place(s) restante(s)</p>
+            </div>
+            <h2><%= colocation.title %></h2>
+            <p><%= colocation.description %></p>
+          </div>
+          <div class="goals-percentage">
+            <p>
+              <%= goals_percentage(colocation, current_user) %> %
+            </p>
+          </div>
+        </div>
+        <% end %>
+    <% end %>
+  <% else %>
+    <p>Aucun résultat...</p>
   <% end %>
 </div>
 

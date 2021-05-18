@@ -1,15 +1,18 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to colocations_path do %>
-    <%= image_tag ("logo.svg"), class: "icone" %>
+    <%= image_tag ("logo.svg"), class: "icone #{'active' if controller_name == 'colocations'}" %>
   <% end %>
 
   <%= link_to "#" do %>
-    <%= image_tag ("search.svg"), class: "icone" %>
+    <%= image_tag ("search.svg"), class: "icone #{'active' if controller_name == ''}" %>
   <% end %>
 
   <%= link_to profil_path do %>
-    <%= image_tag ("profil.svg"), class: "icone active" %>
-    <div class="notification"></div>
+    <%= image_tag ("profil.svg"), class: "icone #{'active' if controller_name == 'profils'}" %>
   <% end %>
 
+  <%= link_to notification_path do %>
+    <%= image_tag ("bell.svg"), class: "icone #{'active' if controller_name == 'notifications'}" %>
+    <div class="notification"></div>
+  <% end %>
 </div>
