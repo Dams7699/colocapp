@@ -11,9 +11,11 @@ class ColocationsController < ApplicationController
     else
       @colocations = Colocation.all
     end
+
   end
 
   def show
     @colocation = Colocation.find(params[:id])
   end
+
 end
