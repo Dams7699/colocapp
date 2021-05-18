@@ -2,8 +2,7 @@ class ColocationsController < ApplicationController
 
   def index
     if params[:query].present? && params[:price].present?
-      colocations = Colocation.near(params[:query], 10)
-      colocations = Colocation.where("price <= ?", params[:price])
+      colocations = Colocation.near(params[:query], 10).where("price <= ?", params[:price])
 
     elsif params[:query].present?
       colocations = Colocation.near(params[:query], 10)
