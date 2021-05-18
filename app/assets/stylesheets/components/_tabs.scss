@@ -1,0 +1,25 @@
+.nav-tabs, .nav-tabs .nav-item.show .nav-link {
+  border: 0 !important;
+  background-color: $black;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+#myTab {
+  text-decoration: none;
+  font: Futura;
+}
+
+.nav-item a {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.5;
+}
+
+.nav-link.active {
+  opacity: 1 !important;
+  border: none;
+}
