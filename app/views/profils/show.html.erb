@@ -6,7 +6,7 @@
       <%= image_tag "empty.png", class:"w-100" %>
     <% end %>
   </div>
-  
+
 
   <div class="profil-content">
     <div class="user_photo_label">
@@ -14,13 +14,15 @@
       <input type="file" name="file" id="user_photo" class="add_photo"/>
     </div>
     <h2><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></h2>
-
+    
     <div class="description">
       <% if current_user.description == nil %>
         <%= current_user.description = "Pensez à revenir compléter une description pour vous décrire aux colocations intéressés !" %>
+      <% else %>
+        <%= current_user.description %>
       <% end %>
     </div>
-  
+
     <h2>Personnalité</h2>
 
 

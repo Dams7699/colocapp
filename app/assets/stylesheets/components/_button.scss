@@ -138,3 +138,17 @@
 
 
 
+
+.search-btn {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+
+  img {
+    width: 30px;
+  }
+}
+.search-form {
+  display: flex;
+}
+
