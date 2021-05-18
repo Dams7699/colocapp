@@ -6,12 +6,23 @@
       <%= image_tag "empty.png", class:"w-100" %>
     <% end %>
   </div>
+  
 
   <div class="profil-content">
-    <p class="over-titre"><%= current_user.age %> ans</p>
+    <div class="user_photo_label">
+      <label for="user_photo"><i class="fas fa-plus"></i></label>
+      <input type="file" name="file" id="user_photo" class="add_photo"/>
+    </div>
     <h2><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></h2>
-    <div class="description"><%= current_user.description %></div>
+
+    <div class="description">
+      <% if current_user.description == nil %>
+        <%= current_user.description = "Pensez à revenir compléter une description pour vous décrire aux colocations intéressés !" %>
+      <% end %>
+    </div>
+  
     <h2>Personnalité</h2>
+
 
       <div class="content_chekbox">
         <% current_user.personalities.each do |p| %>
@@ -20,10 +31,8 @@
         <!--<p>j'aime pas</p>-->
       </div>
 
-
-
-
     <h2>Hobbies</h2>
+
       <div class="content_chekbox">
         <% current_user.hobbies.each do |l| %>
           <div class="jaime"><%= l.full_name %></div>
