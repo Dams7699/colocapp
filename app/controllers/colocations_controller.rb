@@ -1,17 +1,21 @@
 class ColocationsController < ApplicationController
 
   def index
-    @colocations = Colocation.all.sort_by do |colocation|
+    if params[:query].present? && params[:price].present?
+      colocations = Colocation.near(params[:query], 10).where("price <= ?", params[:price])
+
+    elsif params[:query].present?
+      colocations = Colocation.near(params[:query], 10)
+    elsif params[:price].present?
+      colocations = Colocation.where("price <= ?", params[:price])
+    else
+      colocations = Colocation.all
+    end
+
+    @colocations = colocations.sort_by do |colocation|
       goals = colocation.goals & current_user.goals
       -goals.length
     end
-
-    if params[:query].present?
-      @colocations = Colocation.near(params[:query], 10)
-    else
-      @colocations = Colocation.all
-    end
-
   end
 
   def show
