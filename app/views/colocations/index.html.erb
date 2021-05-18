@@ -1,15 +1,17 @@
-<div class="text-center">
-  <%= image_tag('logo.svg')%>
+  <div class="text-center"><%= image_tag('logo.svg')%></div>
     <div>
-      <%= form_tag colocations_path, method: :get do %>
+      <%= form_tag colocations_path, method: :get, class: "search-form" do %>
         <%= text_field_tag :query,
           params[:query],
           class: "form-control",
           placeholder: "villes"
         %>
-          <%= submit_tag "rechercher", class: "btn btn-primary" %>
+        <button type="submit" class="search-btn">
+          <%= image_tag "search.svg" %>
+        </button>
       <% end %>
     </div>
+<div class="text-center">
   <% @colocations.each do |colocation| %>
     <%= link_to colocation_path(colocation) do %>
       <div class="card-colocation">
