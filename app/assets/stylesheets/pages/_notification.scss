@@ -4,11 +4,6 @@
   margin: 0 auto;
 }
 
-.icone {
-  width: 50px;
-  margin: 10% 0;
-  opacity: 1;
-}
 
 
 .notification-content {
@@ -22,9 +17,14 @@
     min-width:100px;
     max-height: 100px;
     max-width:100px;
-    object-fit:cover;
   }
-  p {
+  .notification-infos {
     margin-left:12px;
   }
+}
+
+.notifications-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
 }

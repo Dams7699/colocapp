@@ -121,3 +121,20 @@
     margin:0;
   }
 }
+
+.btn-notification {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font: Futura;
+  font-size: 20px;
+  }
+
+
+.notification-decline {
+  opacity: 0.5;
+}
+
+
+
