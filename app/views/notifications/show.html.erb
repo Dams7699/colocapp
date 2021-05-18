@@ -17,20 +17,20 @@
     <% @offers.each do |o| %>
     <div class="notification-content">
       <%= cl_image_tag o.colocation.photos.first.key%>
-      <div class="notification-infos"><span class="over-titre"> 18/05/2021</span>
+      <div class="notification-infos"><span class="over-titre"><%= o.created_at.strftime("%d/%m/%Y à %Hh%M") %></span>
         <p>Votre demande pour <%= o.colocation.title %> est <%= o.status %></p></div>
     </div>
   <% end %>
   </div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <% @offers.each do |o| %>
+    <% @owner_offers.each do |o| %>
     <div class="notification-content">
       <%= cl_image_tag o.colocation.photos.first.key%>
       <div class="notification-infos">
-        <span class="over-titre"> 18/05/2021</span>
+        <span class="over-titre"><%= o.created_at.strftime("%d/%m/%Y à %Hh%M") %></span>
         <p>Jeannot a fait une demande pour La Grosse Beuverie</p>
         <div class="notifications-actions">
-          <%= link_to "#", class: 'btn-notification' do %>
+          <%= link_to accept_offer_path(o), method: :patch, class: 'btn-notification' do %>
             <%= icon("fas","check") %>
             Accept
           <% end %>

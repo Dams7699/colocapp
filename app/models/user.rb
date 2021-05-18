@@ -18,12 +18,14 @@ class User < ApplicationRecord
   has_many :personalities, through: :user_personalities
 
   has_many :offers
+  has_many :colocations
+  has_many :owner_offers, through: :colocations, source: :offers
 
   accepts_nested_attributes_for :user_goals
   accepts_nested_attributes_for :user_hobbies
   accepts_nested_attributes_for :user_personalities
 
-  def age_in_years   
+  def age_in_years
     (Date.today - self.birthday).to_i / 365
   end
 
