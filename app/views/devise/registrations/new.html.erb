@@ -16,9 +16,12 @@
                     label: "Nom",
                     input_html: { autocomplete: "last_name" } %>
 
-    <%= f.input :birthday ,
-                required: true,
-                label: "Date de naissance", end_year: Time.now.year - 12, start_year: Time.now.year - 90, order: [:day, :month, :year]  %>
+    <%= f.input :birthday,
+                  as: :string,
+                  required: false,
+                  label: "date de naissance :",
+                  input_html: { class: "datepicker" } %>
+     
     
     <%= f.input :email,
                 required: true,
