@@ -6,6 +6,7 @@
         <div class="profil-pictures">
           <%= cl_image_tag colocation.photos.first.key, class:'w-100' %>
         </div>
+
         <div class="colocation-content">
           <div class="coloc-info">
             <div class="btn-price"><span class="colocation-price"><%= colocation.price %>$</span></div>
@@ -13,6 +14,11 @@
           </div>
           <h2><%= colocation.title %></h2>
           <p><%= colocation.description %></p>
+        </div>
+        <div class="goals-percentage">
+          <p>
+            <%= goals_percentage(colocation, current_user) %> %
+          </p>
         </div>
       </div>
       <% end %>
