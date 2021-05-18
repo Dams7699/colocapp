@@ -16,7 +16,7 @@
       <div class="container">
         <div class="over-titre">
           <br>
-          <h2><% @colocation.title %></h2>
+          <h2><%= @colocation.title %></h2>
         </div>
         <div class="btn-price"><span class="colocation-price"><%= @colocation.price %>$</span></div>
 
@@ -30,6 +30,18 @@
               <div class="jaime"><%= g.full_name %></div>
           <% end %>
         </div>
+      
+      <div class="content_avatar">
+        <h2>Les Colocataires</h2>
+          <% @colocation.users.each do |user| %>
+            <div class="avatar_box">
+              <%= cl_image_tag user.photo.key, class:"avatar-large" %>
+              <p class="name_avatar"><%= user.first_name %><br><%= user.personalities.first(3).map(&:icon).join %></p>
+              
+            </div>
+          <% end %>
+
+      </div>
 
       <%= link_to "CONTACTER LA COLOCATION", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
 </div>

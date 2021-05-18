@@ -26,5 +26,4 @@ class User < ApplicationRecord
   def age_in_years   
     (Date.today - self.birthday).to_i / 365
   end
-
 end
