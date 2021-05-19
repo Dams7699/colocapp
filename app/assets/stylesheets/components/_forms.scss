@@ -17,15 +17,48 @@
 }
 
 input.form-control, input.form-control:focus, input.form-control:focus-visible {
-  background-color: transparent;
+  background: none;
   border: none;
   border-bottom: 1px solid $white;
   box-shadow: none;
+  padding-left:0;
+  -webkit-appearance : none;
 }
 
 label.string, label.password, label.email  {
-
   font-size: 18px;
   color: $white;
   opacity: 0.5;
+}
+
+
+.devise-sub-infos {
+  display:flex;
+  flex-direction:column;
+  margin-top:50px;
+}
+
+.form-container .over-titre {
+  text-transform: none;
+}
+
+#price {
+  width:90px;
+  margin-left:24px;
+}
+
+// .ap-icon-pin {
+//   display:none;
+// }
+
+
+.inputform,
+.inputform:hover,
+.inputform:focus,
+.inputform:active {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,0) inset !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: #e7e8eb !important;
+    border:none !important;
+    border-bottom: 1px solid $white !important;
 }
