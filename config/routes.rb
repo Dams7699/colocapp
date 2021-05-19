@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     member { patch :decline }
     member { patch :cancel }
   end
+  resources :users, only: [ :show ]
+  
   resource :profil, only: [ :show, :edit, :update ]
   resource :notification, only: [ :show ]
 end
