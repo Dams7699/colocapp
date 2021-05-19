@@ -6,6 +6,7 @@
   text-align: center;
   border: 2px solid $black;
   color: $black;
+  font-size: 20px;
   position:fixed;
   bottom:0;
   left: 0;
@@ -14,9 +15,10 @@
 }
 
 .btn-coloc {
-  bottom: 105px;
+  bottom: 103px;
   left: 0;
   color:$black;
+  font-size: 20px;
 }
 
 .btn-landing {
@@ -27,13 +29,15 @@
   border: 2px solid $black;
   color: $black !important;
   font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .btn-secondary {
   background-color: transparent;
   color: $white !important;
   opacity: 0.4;
-  margin-top: 150px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 20px;
   &:hover {
     opacity: .8;
@@ -48,13 +52,13 @@
   text-align: center;
   border: 2px solid $gradient;
   color: $gradient;
+  font-size: 20px;
 }
 
 .btn-price {
-  font-size: 11px;
+  font-size: 14px;
   display: inline-block;
   text-align: center;
-  height: 28px;
   display: flex;
   align-items: center;
   border: 2px solid transparent;
@@ -64,14 +68,22 @@
   border-radius: 50px;
   background-origin: border-box;
   background-clip: content-box, border-box;
+  height: 36px;
+  width: fit-content;
+  margin:0 auto;
+  margin-bottom:10px;
 }
 
 .colocation-price {
-  font-size: 13px;
+  font-size: 14px;
   padding: 12px;
   background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 12px;
 }
 
 

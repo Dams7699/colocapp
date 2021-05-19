@@ -1,5 +1,5 @@
-<div id="step_1" class="step step-active">
-  <p>étape 1/3</p>
+<div id="step_1" class="step step-active text-center">
+  <p class="over-titre">étape 1/3</p>
       <%= form_for current_user, url: profil_path do |f| %>
         <h4>Choisis ce qui te définis le mieux</h4> <br/>
         <div class="content_chekbox">
@@ -14,8 +14,8 @@
       <% end %>
 </div>
 
-<div id="step_2" class="step">
-  <p>étape 2/3</p>
+<div id="step_2" class="step text-center">
+  <p class="over-titre">étape 2/3</p>
     <%= form_for current_user, url: profil_path do |f| %>
         <h4>Choisis tes loisirs</h4><br/>
         <div class="content_chekbox">
@@ -30,8 +30,8 @@
     <% end %>
 </div>
 
-<div id="step_3" class="step">
-  <p>étape 3/3</p>
+<div id="step_3" class="step text-center">
+  <p class="over-titre">étape 3/3</p>
 
     <%= form_for current_user, url: profil_path do |f| %>
       <h4>choisis tes styles de colocations</h4><br/>
@@ -43,7 +43,7 @@
           <% end %>
         <% end  %>
       </div>
-      
+
       <%= f.hidden_field :finished, value: "true" %>
       <br/><%= f.submit "suivant", class:"btn-bottom" %>
     <% end %>

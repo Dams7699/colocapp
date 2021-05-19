@@ -10,31 +10,38 @@
           <div class="carousel-item <%= "active" if index == 0 %>">
             <%= cl_image_tag photo.key, class:"w-100 d-block carousel-image" %>
           </div>
-            <% end %>
+        <% end %>
       </div>
       </div>
-      <div class="container">
-        <div class="over-titre">
-          <br>
-          <h2><%= @colocation.title %></h2>
+      <div class="profil-content mt-4">
+        <h2><%= @colocation.title %></h2>
+        <div class="coloc-infos">
+          <p><%= @colocation.price %> € /mois</p>
+          <p class="desired_people">
+            <i class="fas fa-user-friends"></i>
+            <%= @colocation.desired_people %> place(s) restante(s)
+          </p>
         </div>
-        <div class="btn-price"><span class="colocation-price"><%= @colocation.price %>$</span></div>
 
-          <p class="description"><%= @colocation.description %></p>
-          <br>
-        <h3>Goals Colocation</h3>
-        <br>
-      </div>
+        <p class="description mt-3"><%= @colocation.description %></p>
+
+        <h3 class="mt-4">Goals Colocation</h3>
         <div class="content_chekbox">
           <% @colocation.goals.each do |g| %>
-              <div class="jaime"><%= g.full_name %></div>
+            <div class="jaime"><%= g.full_name %></div>
           <% end %>
         </div>
 
-      
-      <div class="content_avatar">
-        <h2>Les Colocataires</h2>
+        <div class="content_avatar">
+          <h2>Les Colocataires</h2>
           <% @colocation.users.each do |user| %>
+            <div class="avatar_box">
+              <%= cl_image_tag user.photo.key, class:"avatar-large" %>
+              <p class="name_avatar"><%= user.first_name %> <span class="over-titre">25 ans</span>
+                <br><span class="users-personalities"><%= user.personalities.first(3).map(&:icon).join %></span></p>
+            </div>
+          <% end %>
+        </div>
             <%= link_to user_path(user), class:"avatar_box" do %>
               <div>
                 <%= cl_image_tag user.photo.key, class:"avatar-large" %>
