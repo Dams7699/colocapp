@@ -445,9 +445,9 @@ user_goals13 = UserGoal.create!(user: user5, goal: goal1)
 user_goals14 = UserGoal.create!(user: user5, goal: goal6)
 user_goals15 = UserGoal.create!(user: user5, goal: goal4)
 
-user_goals16 = UserGoal.create!(user: user6, goal: goal3)
-user_goals17 = UserGoal.create!(user: user6, goal: goal6)
-user_goals18 = UserGoal.create!(user: user6, goal: goal3)
+user_goals16 = UserGoal.create!(user: user6, goal: goal1)
+user_goals17 = UserGoal.create!(user: user6, goal: goal3)
+user_goals18 = UserGoal.create!(user: user6, goal: goal6)
 
 user_goals19 = UserGoal.create!(user: user7, goal: goal2)
 user_goals20 = UserGoal.create!(user: user7, goal: goal6)

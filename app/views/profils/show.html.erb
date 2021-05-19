@@ -47,15 +47,10 @@
             <div class="jaime"><%= g.full_name %></div>
           <% end %>
 
-          <!--<p>j'aime pas</p>-->
-        </div>
+      </div>
+
       <div class="mt-5 mx-auto">
         <%= link_to "Se deconnecter", destroy_user_session_path, method: :delete, class:"btn-secondary" %>
-
-      <div class="btn-container">
-        <%= link_to "Log out ☠️", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
-
-      </div>
   </div>
 </div>
 
