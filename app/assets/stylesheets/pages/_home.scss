@@ -3,18 +3,26 @@
   text-align: center;
   width: 75%;
   margin: 0 auto;
+  position:relative;
+  overflow:hidden;
   #carouselExampleIndicators {
-    margin-top: 100px;
+    margin-top: 30px;
   }
-  .btn-secondary {
-    bottom: 100px;
-    position: fixed;
+  .carousel-indicators {
+    bottom:-50px;
   }
 }
 
+.carousel-item p {
+  font-size:18px;
+  width:80%;
+  margin:0 auto;
+}
+
+
 .icone-landing {
   width: 50px;
-  margin: 10% 0;
+  margin: 50px 0 10px 0;
   opacity: 1;
 }
 
@@ -38,3 +46,5 @@
   align-items: center;
   margin: 30% 0;
 }
+
+

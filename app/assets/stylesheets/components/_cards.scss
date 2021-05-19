@@ -23,9 +23,7 @@
   border-image-source: $gradient;
   margin-bottom: 20px;
   margin-top: 10px;
-  margin-right: 15px;
-  margin-left: 15px;
-  text-align: left;
+  text-align: center;
   .profil-pictures img {
     height: 300px;
   }
@@ -49,15 +47,18 @@
 
 }
 
-.coloc-info {
+.coloc-infos {
   display: flex;
   margin-bottom: 8px;
   align-items:center;
+  justify-content: center;
   p{
-    font-size: 12px;
-    opacity: 0.6;
-    margin: 0;
-    margin-left: 12px;
+    font-size: 16px;
+    margin:0;
+  }
+  .desired_people {
+    opacity: .6;
+    margin-left:24px;
   }
 }
 
