@@ -1,0 +1,47 @@
+<div class="profil-container text-center">
+  <div class="profil-pictures">
+    <% if @user.photo.attached? %>
+      <%= cl_image_tag @user.photo.key, class:'w-100' %>
+    <% else %>
+      <%= image_tag "empty.png", class:"w-100" %>
+    <% end %>
+  </div>
+
+
+  <div class="profil-content">
+    <p><%= @user.age_in_years %> ans</p>
+    <h2><%= @user.first_name.capitalize %> <%= @user.last_name.capitalize %></h2>
+
+    <div class="description">
+      <% if @user.description == nil %>
+        <%= @user.description = "Pensez à revenir compléter une description pour vous décrire aux colocations intéressés !" %>
+      <% else %>
+        <%= @user.description %>
+      <% end %>
+    </div>
+
+    <h2>Personnalité</h2>
+
+
+    <div class="content_chekbox">
+      <% @user.personalities.each do |p| %>
+        <div class="jaime"><%= p.full_name %></div>
+      <% end %>  
+    </div>
+
+    <h2>Hobbies</h2>
+
+    <div class="content_chekbox">
+      <% @user.hobbies.each do |l| %>
+        <div class="jaime"><%= l.full_name %></div>
+      <% end %>
+    </div>
+
+    <h2>Goals Colocation</h2>
+    <div class="content_chekbox">
+      <% @user.goals.each do |g| %>
+        <div class="jaime"><%= g.full_name %></div>
+      <% end %>
+    </div>
+  </div>
+</div>

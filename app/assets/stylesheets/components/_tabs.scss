@@ -10,6 +10,8 @@
 #myTab {
   text-decoration: none;
   font: Futura;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-item a {
@@ -23,3 +25,4 @@
   opacity: 1 !important;
   border: none;
 }
+

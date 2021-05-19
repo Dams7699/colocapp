@@ -34,7 +34,7 @@
             <%= icon("fas","check") %>
             Accept
           <% end %>
-          <%= link_to "#", class: 'btn-notification notification-decline'  do %>
+          <%= link_to decline_offer_path(o), method: :patch, class: 'btn-notification notification-decline'  do %>
             <%= icon("fas","times") %>
             Decline
           <% end %>
