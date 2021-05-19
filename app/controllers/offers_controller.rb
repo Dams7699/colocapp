@@ -17,6 +17,11 @@ class OffersController < ApplicationController
     @offer.status = "Accepté!"
     @offer.save
     redirect_to notification_path
+
+    NotificationChannel.broadcast_to(
+      @offer.user,
+      render_to_string(partial: "notifications/new", locals: { offer: @offer })
+    )
   end
 
   def decline
@@ -24,5 +29,11 @@ class OffersController < ApplicationController
     @offer.status = "Décliné!"
     @offer.save
     redirect_to notification_path
+
+
+    NotificationChannel.broadcast_to(
+      @offer.user,
+      render_to_string(partial: "notifications/new", locals: { offer: @offer })
+    )
   end
 end

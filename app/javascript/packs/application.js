@@ -29,10 +29,10 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { wizardForm } from '../custom/wizard';
 import { imageUpload } from '../custom/image_upload';
-
+import { initNotificationBullet } from '../custom/init_notification_bullet';
 import { initFlatpickr } from '../plugins/flatpickr'
-
 import { initAutocomplete } from '../plugins/init_autocomplete';
+import { initChatroomCable } from '../channels/notification_channel';
 
 
 
@@ -41,8 +41,8 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   wizardForm()
   imageUpload()
-
   initFlatpickr()
-
   initAutocomplete()
+  initChatroomCable()
+  initNotificationBullet()
 });
