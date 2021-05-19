@@ -19,4 +19,10 @@ class OffersController < ApplicationController
     redirect_to notification_path
   end
 
+  def decline
+    @offer = Offer.find(params[:id])
+    @offer.status = "Décliné!"
+    @offer.save
+    redirect_to notification_path
+  end
 end
