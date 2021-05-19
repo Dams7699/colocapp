@@ -1,0 +1,24 @@
+.content_avatar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.avatar_box{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  margin-top: 10px;
+  color:white;
+    a:active{
+      text-decoration: none;
+      color: white;
+    }
+}
+
+.name_avatar {
+  margin: 0;
+  text-align: justify;
+  padding: 4px;
+  margin-left: 8px;
+}

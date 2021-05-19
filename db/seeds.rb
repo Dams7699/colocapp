@@ -116,7 +116,7 @@ file = File.open("app/assets/images/images_profil/image15.jpeg")
 user19.photo.attach(io: file, filename: "image15.jpeg", content_type: 'image/png')
 user19.save!
 
-user20 = User.create!(first_name: "Alexndre", last_name: "Tyt", email: "alex@example.fr", password:"123456", description: "Hey, je viens d'arrivé sur Rennes et je recherche une petite colocation des familles, histoire de passer de bon moment :)", birthday: Time.now - 22.year)
+user20 = User.create!(first_name: "Alexandre", last_name: "Tyt", email: "alex@example.fr", password:"123456", description: "Hey, je viens d'arrivé sur Rennes et je recherche une petite colocation des familles, histoire de passer de bon moment :)", birthday: Time.now - 22.year)
 file = File.open("app/assets/images/images_profil/image19.jpeg")
 user20.photo.attach(io: file, filename: "image19.jpeg", content_type: 'image/png')
 user20.save!

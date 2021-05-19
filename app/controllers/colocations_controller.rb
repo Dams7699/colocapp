@@ -20,6 +20,7 @@ class ColocationsController < ApplicationController
 
   def show
     @colocation = Colocation.find(params[:id])
+    @offer = Offer.find_by(user: current_user, colocation: @colocation)
   end
 
 end
