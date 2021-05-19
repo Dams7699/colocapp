@@ -35,14 +35,13 @@
       <div class="content_avatar">
         <h2>Les Colocataires</h2>
           <% @colocation.users.each do |user| %>
-              <div class="avatar_box">
-            <%= link_to user_path(user) do %>
+            <%= link_to user_path(user), class:"avatar_box" do %>
+              <div>
                 <%= cl_image_tag user.photo.key, class:"avatar-large" %>
                 <p class="name_avatar"><%= user.first_name %><br><%= user.personalities.first(3).map(&:icon).join %></p>
             <% end %>  
-            </div>
           <% end %>
-
+              </div>
       </div>
 
       <%= link_to "CONTACTER LA COLOCATION", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
