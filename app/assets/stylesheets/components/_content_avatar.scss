@@ -1,7 +1,7 @@
 .content_avatar {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .avatar_box{
@@ -20,11 +20,5 @@
   margin: 0;
   text-align: justify;
   padding: 4px;
-  font-size:18px;
   margin-left: 8px;
-}
-
-.users-personalities {
-  font-size:24px;
-  letter-spacing: 13px;
 }

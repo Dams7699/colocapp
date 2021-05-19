@@ -7,23 +7,20 @@
   display: block;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 16px;
-  margin: 12px;
+  padding: 4px;
   text-align: center;
   opacity: 0.6;
-  letter-spacing: 1px;
 }
 .checkbox_form:checked + label {
-  color: $white;
+  color: aqua;
   border:3px solid rgba(255, 255, 255, 0.5);
   border-image: $gradient;
   border-image-slice: 1;
   opacity: 1;
-  transition:.2s cubic-bezier(.17,.67,.83,.67);
 }
 .content_chekbox{
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom:5px;
@@ -35,13 +32,4 @@
   display: flex !important;
   flex-direction: column;
   width: 40%;
-}
-
-#step_1, #step_2, #step_3 {
-  margin-top:50px;
-
-  h4 {
-    margin-top:8px;
-    margin-bottom: -12px;
-  }
 }
