@@ -16,8 +16,9 @@
 
 
   <div class="btn-return">
-    <% link_to colocation_path %>
-    <%= image_tag ("return.svg") %>
+    <%= link_to colocations_path do %>
+    <%= image_tag ("return.svg"), method: :post %>
+    <% end %>
   </div>
 
 
@@ -60,8 +61,8 @@
 </div>
 
 <% if @offer %>
-  <p class='btn-bottom btn-coloc'>VOUS AVEZ DÉJÂ POSTULÉ POUR CETTE COLOCATION</p>
+  <p class='btn-bottom btn-coloc'>Vous avez deja postuler à cette colocation</p>
 <% else %>
-  <%= link_to "CONTACTER LA COLOCATION", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
+  <%= link_to "Contacter la colocation", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
 <% end %>
 
