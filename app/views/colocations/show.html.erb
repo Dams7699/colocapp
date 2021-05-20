@@ -8,11 +8,14 @@
     <div class="carousel-inner">
       <% @colocation.photos.each_with_index do |photo, index| %>
         <div class="carousel-item <%= "active" if index == 0 %>">
-          <%= cl_image_tag photo.key, class:"w-100 d-block carousel-image" %>
+          <div class="profil-pictures">
+            <%= cl_image_tag photo.key, class:"w-100 d-block carousel-image" %>
+          </div>
         </div>
       <% end %>
     </div>
   </div>
+
 
 
   <div class="btn-return">
