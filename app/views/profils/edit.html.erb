@@ -34,7 +34,7 @@
   <p class="over-titre">étape 3/3</p>
 
     <%= form_for current_user, url: profil_path do |f| %>
-      <h4>choisis tes styles de colocations</h4><br/>
+      <h4>Choisis ton ambiance de colocation</h4><br/>
       <div class="content_chekbox">
         <%= f.collection_check_boxes(:goal_ids, Goal.all, :id, :full_name) do |check| %>
           <%= check.check_box class:"checkbox_form"%>

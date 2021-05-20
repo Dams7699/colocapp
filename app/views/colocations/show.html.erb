@@ -27,10 +27,11 @@
     <div class="coloc-infos">
       <p><%= @colocation.price %> € /mois</p>
       <p class="desired_people">
-        <i class="fas fa-user-friends"></i>
-        <%= @colocation.remaining_places %> place(s) restante(s)
+        🧓
+        <%= @colocation.desired_people %> place(s) restante(s)
       </p>
     </div>
+    <p>📍<%= @colocation.address %></p>
 
 
     <p class="description mt-3"><%= @colocation.description %></p>
@@ -44,7 +45,7 @@
     </div>
 
     <div class="content_avatar">
-      <h2>Les Colocataires</h2>
+      <h3>Les Colocataires</h3>
       <% @colocation.users.each do |user| %>
         <%= link_to user_path(user), class:"avatar_box" do %>
           <%= cl_image_tag user.photo.key, class:"avatar-large" %>
@@ -57,12 +58,11 @@
       <% end %>
     </div>
   </div>
+  <% if @offer %>
+    <a class='btn-coloc'>Demande envoyée !</a>
+  <% else %>
+    <%= link_to "Contacter la colocation", colocation_offers_path(@colocation), method: :post, class:'btn-coloc mt-4' %>
+  <% end %>
 </div>
 
-<% if @offer %>
-
-  <p class='btn-bottom btn-coloc'>Vous avez deja postuler à cette colocation</p>
-<% else %>
-  <%= link_to "Contacter la colocation", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
-<% end %>
 

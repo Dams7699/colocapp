@@ -14,7 +14,7 @@ class OffersController < ApplicationController
 
   def accept
     @offer = Offer.find(params[:id])
-    @offer.status = "Accepté!"
+    @offer.status = "acceptée !"
     @offer.save
     redirect_to notification_path
 
@@ -26,7 +26,7 @@ class OffersController < ApplicationController
 
   def decline
     @offer = Offer.find(params[:id])
-    @offer.status = "Décliné!"
+    @offer.status = "déclinée !"
     @offer.save
     redirect_to notification_path
 

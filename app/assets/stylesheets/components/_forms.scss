@@ -23,15 +23,23 @@ input.form-control, input.form-control:focus, input.form-control:focus-visible {
   box-shadow: none;
   padding-left:0;
   -webkit-appearance : none;
+  margin-bottom: 30px;
 }
 
 label.string, label.password, label.email  {
   font-size: 18px;
   color: $white;
   opacity: 0.5;
+  margin-bottom:-12px !important;
 }
 
+abbr {
+  display:none;
+}
 
+.text-muted {
+  //margin-top: -5px;
+}
 .devise-sub-infos {
   display:flex;
   flex-direction:column;
