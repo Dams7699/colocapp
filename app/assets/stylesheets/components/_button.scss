@@ -15,11 +15,19 @@
 }
 
 .btn-coloc {
-  bottom: 103px;
-  left: 0;
-  color:$black;
+  background: $gradient;
+  text-align: center;
+  border: 2px solid $black;
+  color: $black;
   font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 24px;
+  display:block;
 }
+
+
 
 .btn-landing {
   width: 75%;

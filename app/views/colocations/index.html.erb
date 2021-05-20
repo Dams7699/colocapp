@@ -2,7 +2,7 @@
 <div class="text-center">
   <%= image_tag ("logo.svg"), class: "icone-landing" %>
   <div class="tl-wrapper">
-    <%= form_tag colocations_path, method: :get, class: "search-form" do %>
+    <%= form_tag colocations_path, method: :get, class: "search-form mt-4" do %>
       <%= text_field_tag :query,
         params[:query],
         class: "form-control inputform",
@@ -32,7 +32,7 @@
               <div class="coloc-infos">
                 <p> <%= colocation.price %> € /mois </p>
                 <p class="desired_people">
-                  <i class="fas fa-user-friends"></i>
+                  🧓
                   <%= colocation.desired_people %> place(s) restante(s) <br>
                 </p>
               </div>

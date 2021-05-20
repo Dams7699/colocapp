@@ -229,43 +229,43 @@ colocation11.photos.attach(io: file3, filename: "salon11.jpg", content_type: 'im
 colocation11.save!
 
 
-offer1 = Offer.create!(user: user1, colocation: colocation1, status: "Accepté!")
-offer2 = Offer.create!(user: user2, colocation: colocation1, status: "Accepté!")
+offer1 = Offer.create!(user: user1, colocation: colocation1, status: "aceptée !")
+offer2 = Offer.create!(user: user2, colocation: colocation1, status: "aceptée !")
 
 
-offer4 = Offer.create!(user: user4, colocation: colocation2, status: "Accepté!")
-offer5 = Offer.create!(user: user5, colocation: colocation2, status: "Accepté!")
+offer4 = Offer.create!(user: user4, colocation: colocation2, status: "aceptée !")
+offer5 = Offer.create!(user: user5, colocation: colocation2, status: "aceptée !")
 
 
-offer7 = Offer.create!(user: user6, colocation: colocation3, status: "Accepté!")
+offer7 = Offer.create!(user: user6, colocation: colocation3, status: "aceptée !")
 offer8 = Offer.create!(user: user3, colocation: colocation3, status: "Décliné!")
 
-offer9 = Offer.create!(user: user9, colocation: colocation4, status: "Accepté!")
+offer9 = Offer.create!(user: user9, colocation: colocation4, status: "aceptée !")
 
 
-offer11 = Offer.create!(user: user11, colocation: colocation5, status: "Accepté!")
+offer11 = Offer.create!(user: user11, colocation: colocation5, status: "aceptée !")
 
 
-offer13 = Offer.create!(user: user15, colocation: colocation6, status: "Accepté!")
+offer13 = Offer.create!(user: user15, colocation: colocation6, status: "aceptée !")
 
 
-offer15 = Offer.create!(user: user17, colocation: colocation7, status: "Accepté!")
-offer16 = Offer.create!(user: user12, colocation: colocation7, status: "Accepté!")
+offer15 = Offer.create!(user: user17, colocation: colocation7, status: "aceptée !")
+offer16 = Offer.create!(user: user12, colocation: colocation7, status: "aceptée !")
 
-offer17 = Offer.create!(user: user13, colocation: colocation8, status: "Accepté!")
-
-
-offer19 = Offer.create!(user: user18, colocation: colocation9, status: "Accepté!")
-offer20 = Offer.create!(user: user20, colocation: colocation9, status: "Accepté!")
-
-offer21 = Offer.create!(user: user1, colocation: colocation11, status: "Accepté!")
-offer22 = Offer.create!(user: user4, colocation: colocation11, status: "Accepté!")
-offer23 = Offer.create!(user: user5, colocation: colocation11, status: "Accepté!")
+offer17 = Offer.create!(user: user13, colocation: colocation8, status: "aceptée !")
 
 
-offer24 = Offer.create!(user: user2, colocation: colocation10, status: "Accepté!")
-offer25 = Offer.create!(user: user7, colocation: colocation10, status: "Accepté!")
-offer26 = Offer.create!(user: user8, colocation: colocation10, status: "Accepté!")
+offer19 = Offer.create!(user: user18, colocation: colocation9, status: "aceptée !")
+offer20 = Offer.create!(user: user20, colocation: colocation9, status: "aceptée !")
+
+offer21 = Offer.create!(user: user1, colocation: colocation11, status: "aceptée !")
+offer22 = Offer.create!(user: user4, colocation: colocation11, status: "aceptée !")
+offer23 = Offer.create!(user: user5, colocation: colocation11, status: "aceptée !")
+
+
+offer24 = Offer.create!(user: user2, colocation: colocation10, status: "aceptée !")
+offer25 = Offer.create!(user: user7, colocation: colocation10, status: "aceptée !")
+offer26 = Offer.create!(user: user8, colocation: colocation10, status: "aceptée !")
 
 
 personality1 = Personality.create!(icon: "🏠", name: "Casanier")
@@ -289,7 +289,7 @@ goal2 = Goal.create!(icon: "🙋", name: "Hypersociable")
 goal3 = Goal.create!(icon: "🐕", name: "Animaux")
 goal4 = Goal.create!(icon: "🎶", name: "Musicale")
 goal5 = Goal.create!(icon: "📡", name: "Haut débit")
-goal6 = Goal.create!(icon: "🌎", name: "Plusieurs Langues")
+goal6 = Goal.create!(icon: "🌎", name: "Multiculturelle")
 goal7 = Goal.create!(icon: "👨‍🎓", name: "Étudiante")
 
 
@@ -394,7 +394,7 @@ user_hobbies2 = UserHobby.create!(user: user4, hobby: hobby3)
 user_hobbies3 = UserHobby.create!(user: user4, hobby: hobby5)
 
 
-user_hobbies1 = UserHobby.create!(user: user5, hobby: hobby6) 
+user_hobbies1 = UserHobby.create!(user: user5, hobby: hobby6)
 user_hobbies2 = UserHobby.create!(user: user5, hobby: hobby2)
 user_hobbies3 = UserHobby.create!(user: user5, hobby: hobby3)
 
