@@ -25,11 +25,17 @@
 }
 
 .notification {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: red;
   position: absolute;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
   top: 0;
   right: 0;
   box-shadow: 0px 3px 5px rgba(0,0,0,1);

@@ -19,7 +19,8 @@ class OffersController < ApplicationController
     redirect_to notification_path
 
     OfferNotification.with(
-      offer: @offer
+      offer: @offer,
+      notifications: @offer.user.notifications.unread.count
     ).deliver(@offer.user)
   end
 
@@ -31,7 +32,8 @@ class OffersController < ApplicationController
 
 
     OfferNotification.with(
-      offer: @offer
+      offer: @offer,
+      notifications: @offer.user.notifications.unread.count
     ).deliver(@offer.user)
   end
 end
