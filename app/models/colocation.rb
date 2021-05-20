@@ -19,4 +19,8 @@ class Colocation < ApplicationRecord
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_address?
 
+  def remaining_places
+    self.desired_people - self.offers.where(status: "Accepté!").count
+  end
+
 end
