@@ -204,7 +204,7 @@ file3 = File.open("app/assets/images/images_coloc/salon9.jpeg")
 colocation9.photos.attach(io: file3, filename: "salon9.jpg", content_type: 'image/png')
 colocation9.save!
 
-colocation10 = Colocation.create!(title: "la Rennaise", address:"15 Place du Bas des Lices, 35000 Rennes", description: "Pour tous ceux qui veulent réussir leurs études", price: 650, desired_people: 6, user: user1)
+colocation10 = Colocation.create!(title: "la Rennaise", address:"15 Place du Bas des Lices, 35000 Rennes", description: "Pour tous ceux qui veulent réussir leurs études", price: 650, desired_people: 6, user: user2)
 file1 = File.open("app/assets/images/images_coloc/chambre10.jpeg")
 colocation10.photos.attach(io: file1, filename: "chambre10.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine10.jpeg")
@@ -213,7 +213,7 @@ file3 = File.open("app/assets/images/images_coloc/salon10.jpeg")
 colocation10.photos.attach(io: file3, filename: "salon10.jpg", content_type: 'image/png')
 colocation10.save!
 
-colocation11 = Colocation.create!(title: "L'idéal", address:"20 Place du Parlement de Bretagne, 35000 Rennes", description: "La coloc' parfaite !", price: 250, desired_people: 6, user: user1)
+colocation11 = Colocation.create!(title: "L'idéal", address:"20 Place du Parlement de Bretagne, 35000 Rennes", description: "Le doux mélange entre fêtes et études, bref la coloc' parfaite !", price: 250, desired_people: 6, user: user1)
 file1 = File.open("app/assets/images/images_coloc/chambre11.jpeg")
 colocation11.photos.attach(io: file1, filename: "chambre11.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine11.jpeg")
@@ -252,14 +252,14 @@ offer17 = Offer.create!(user: user13, colocation: colocation8, status: "Accepté
 offer19 = Offer.create!(user: user18, colocation: colocation9, status: "Accepté!")
 offer20 = Offer.create!(user: user20, colocation: colocation9, status: "Accepté!")
 
-offer21 = Offer.create!(user: user1, colocation: colocation10, status: "Accepté!")
-offer22 = Offer.create!(user: user4, colocation: colocation10, status: "Accepté!")
-offer23 = Offer.create!(user: user5, colocation: colocation10, status: "Accepté!")
+offer21 = Offer.create!(user: user1, colocation: colocation11, status: "Accepté!")
+offer22 = Offer.create!(user: user4, colocation: colocation11, status: "Accepté!")
+offer23 = Offer.create!(user: user5, colocation: colocation11, status: "Accepté!")
 
 
-offer24 = Offer.create!(user: user2, colocation: colocation11, status: "Accepté!")
-offer25 = Offer.create!(user: user7, colocation: colocation11, status: "Accepté!")
-offer26 = Offer.create!(user: user8, colocation: colocation11, status: "Accepté!")
+offer24 = Offer.create!(user: user2, colocation: colocation10, status: "Accepté!")
+offer25 = Offer.create!(user: user7, colocation: colocation10, status: "Accepté!")
+offer26 = Offer.create!(user: user8, colocation: colocation10, status: "Accepté!")
 
 
 personality1 = Personality.create!(icon: "🏠", name: "Casanier")
@@ -386,7 +386,7 @@ user_hobbies3 = UserHobby.create!(user: user3, hobby: hobby5)
 user_hobbies1 = UserHobby.create!(user: user4, hobby: hobby1)
 user_hobbies2 = UserHobby.create!(user: user4, hobby: hobby3)
 user_hobbies3 = UserHobby.create!(user: user4, hobby: hobby5)
-user_hobbies4 = UserHobby.create!(user: user4, hobby: hobby1)
+
 
 user_hobbies1 = UserHobby.create!(user: user5, hobby: hobby6) 
 user_hobbies2 = UserHobby.create!(user: user5, hobby: hobby2)
@@ -458,7 +458,7 @@ user_goals1 = UserGoal.create!(user: user1, goal: goal2)
 user_goals2 = UserGoal.create!(user: user1, goal: goal7)
 user_goals3 = UserGoal.create!(user: user1, goal: goal4)
 
-user_goals4 = UserGoal.create!(user: user2, goal: goa17)
+user_goals4 = UserGoal.create!(user: user2, goal: goal7)
 user_goals5 = UserGoal.create!(user: user2, goal: goal3)
 user_goals6 = UserGoal.create!(user: user2, goal: goal6)
 
@@ -576,9 +576,9 @@ colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal5)
 colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal2)
 colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal4)
 colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal6)
-colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goa17)
+colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal7)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation11, goal: goal2)
 colocation_goals = ColocationGoal.create!(colocation: colocation11, goal: goal4)
 colocation_goals = ColocationGoal.create!(colocation: colocation11, goal: goal6)
-colocation_goals = ColocationGoal.create!(colocation: colocation11, goal: goa17)
+colocation_goals = ColocationGoal.create!(colocation: colocation11, goal: goal7)
