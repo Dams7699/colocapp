@@ -21,6 +21,9 @@ class User < ApplicationRecord
   has_many :colocations
   has_many :owner_offers, through: :colocations, source: :offers
 
+  has_many :notifications, as: :recipient, dependent: :destroy
+  has_noticed_notifications
+
   accepts_nested_attributes_for :user_goals
   accepts_nested_attributes_for :user_hobbies
   accepts_nested_attributes_for :user_personalities

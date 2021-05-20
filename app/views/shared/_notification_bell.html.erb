@@ -1,0 +1,5 @@
+<% if user_signed_in? %>
+  <% if current_user.notifications.unread.any? %>
+    <div class="notification"><%= current_user.notifications.unread.count %></div>
+  <% end %>
+<% end %>

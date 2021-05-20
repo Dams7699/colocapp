@@ -32,12 +32,11 @@
       </p>
     </div>
 
-    <p class="description mt-3"><%= @colocation.description %>
-        <%= image_tag ("modif-pen.svg"), class: "pen" %>
-        <%= link_to notification_path, id: "colocation-link" do %>
-      <% end %>
-    </p>
-    <h3 class="mt-4">Goals Colocation</h3>
+
+    <p class="description mt-3"><%= @colocation.description %></p>
+
+    <h3 class="mt-4">Ambiance Colocation</h3>
+
     <div class="content_chekbox">
       <% @colocation.goals.each do |g| %>
         <div class="jaime"><%= g.full_name %></div>
@@ -61,6 +60,7 @@
 </div>
 
 <% if @offer %>
+
   <p class='btn-bottom btn-coloc'>Vous avez deja postuler à cette colocation</p>
 <% else %>
   <%= link_to "Contacter la colocation", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
