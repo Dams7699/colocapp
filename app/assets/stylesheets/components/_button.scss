@@ -149,8 +149,6 @@
 }
 
 
-
-
 .search-btn {
   background-color: transparent;
   border: none;
@@ -164,3 +162,9 @@
   display: flex;
 }
 
+.btn-return {
+  position:absolute;
+  top: 8px;
+  left: 8px;
+  opacity: 0.7px;
+}
