@@ -22,250 +22,250 @@ Goal.destroy_all
 
 
 user1 = User.create!(first_name: "Marceline", last_name: "Dupont", email: "test@test.fr", password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter!", birthday: Time.now - 18.year)
-file = File.open("app/assets/images/images_profil/image.jpeg")
+file = File.open("db/fixtures/images_profil/image.jpeg")
 user1.photo.attach(io: file, filename: "image.jpeg", content_type: 'image/png')
 user1.save!
 
 user2 = User.create!(first_name: "Thomas", last_name: "Le Devendec", email: "thomas@example.fr" , password:"123456", description:"Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image1.jpeg")
+file = File.open("db/fixtures/images_profil/image1.jpeg")
 user2.photo.attach(io: file, filename: "image1.jpeg", content_type: 'image/png')
 user2.save!
 
 user3 = User.create!(first_name: "Clotilde", last_name: "Maurer", email: "clotax@example.fr", password:"123456", description:"Bonsoir à tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", birthday: Time.now - 19.year)
-file = File.open("app/assets/images/images_profil/image2.jpeg")
+file = File.open("db/fixtures/images_profil/image2.jpeg")
 user3.photo.attach(io: file, filename: "image2.jpeg", content_type: 'image/png')
 user3.save!
 
 user4 = User.create!(first_name: "Simon", last_name: "Lecoffre" , email: "simon@example.fr", password:"123456", description:"Hola, fraîchement arrivé de Colombie, faites moi découvrir la French Life!", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image3.jpeg")
+file = File.open("db/fixtures/images_profil/image3.jpeg")
 user4.photo.attach(io: file, filename: "image3.jpeg", content_type: 'image/png')
 user4.save!
 
 user5 = User.create!(first_name: "Jerôme", last_name: "Trombetta" , email: "jerôme@example.fr", password:"123456", description:"Un Normand venu faire la fiesta en Bretagne !", birthday: Time.now - 17.year)
-file = File.open("app/assets/images/images_profil/image4.jpeg")
+file = File.open("db/fixtures/images_profil/image4.jpeg")
 user5.photo.attach(io: file, filename: "image4.jpeg", content_type: 'image/png')
 user5.save!
 
 user6 = User.create!(first_name: "Damien", last_name: "Ménages", email: "damien@example.fr", password:"123456", description:"Pur produit du Sud, j'arrive imposé la farniente dans ta coloc!", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image5.jpeg")
+file = File.open("db/fixtures/images_profil/image5.jpeg")
 user6.photo.attach(io: file, filename: "image5.jpeg", content_type: 'image/png')
 user6.save!
 
 user7 = User.create!(first_name: "Axel", last_name: "Ridray", email: "axel@example.fr", password:"123456", description:"Hey ! Retour dans ma Bretagne natale pour finir mes études je cherche une coloc sérieuse", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image6.jpeg")
+file = File.open("db/fixtures/images_profil/image6.jpeg")
 user7.photo.attach(io: file, filename: "image6.jpeg", content_type: 'image/png')
 user7.save!
 
 user8 = User.create!(first_name: "Lomig" , last_name: "Guillaume", email: "Lomig@example.fr", password:"123456", description:"Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", birthday: Time.now - 20.year)
-file = File.open("app/assets/images/images_profil/image7.jpeg")
+file = File.open("db/fixtures/images_profil/image7.jpeg")
 user8.photo.attach(io: file, filename: "image7.jpeg", content_type: 'image/png')
 user8.save!
 
 user9 = User.create!(first_name: "Hugo", last_name: "Daniel", email: "hugo@example.fr", password:"123456", description:"Hey, je suis paradoxale à la fois sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image8.jpeg")
+file = File.open("db/fixtures/images_profil/image8.jpeg")
 user9.photo.attach(io: file, filename: "image8.jpeg", content_type: 'image/png')
 user9.save!
 
 user10 = User.create!(first_name: "Jjax", last_name: "Benoit", email: "jjax@example.fr", password:"123456", description:"Bonjour à tous, je fais une entré fraccasssante dans ta coloc comme un obèse qui fait une bombe dans une piscine", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image20.jpeg")
+file = File.open("db/fixtures/images_profil/image20.jpeg")
 user10.photo.attach(io: file, filename: "image20.jpeg", content_type: 'image/png')
 user10.save!
 
 user11 = User.create!(first_name: "Pierre", last_name: "Facq", email: "pierre@example.fr", password:"123456", description:"Bonsoir a tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image14.jpeg")
+file = File.open("db/fixtures/images_profil/image14.jpeg")
 user11.photo.attach(io: file, filename: "image14.jpeg", content_type: 'image/png')
 user11.save!
 
 user12 = User.create!(first_name: "Clémentine", last_name: "David", email: "martin@example.fr", password:"123456", description:"Hey, je suis paradoxale à la fois sportif et fêtard, si tu veux de l'ambiance prend moi dans ta team", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image10.jpeg")
+file = File.open("db/fixtures/images_profil/image10.jpeg")
 user12.photo.attach(io: file, filename: "image10.jpeg", content_type: 'image/png')
 user12.save!
 
 user13 = User.create!(first_name: "Cécile", last_name: "DeFrance", email: "cécile@example.fr", password:"123456", description: "Hello, à la recherche de nouvelles expériences, la vie en communauté me tente donc let's go!", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image11.jpeg")
+file = File.open("db/fixtures/images_profil/image11.jpeg")
 user13.photo.attach(io: file, filename: "image11.jpeg", content_type: 'image/png')
 user13.save!
 
 user14 = User.create!(first_name: "Titou", last_name: "Lefauconier", email: "titax@example.fr", password:"123456", description: "Bonsoir à tous, fraîchement arrivé de Normandie venu retourner la Bretagne, n'hésite pas à me contacter", birthday: Time.now - 23.year)
-file = File.open("app/assets/images/images_profil/image17.jpeg")
+file = File.open("db/fixtures/images_profil/image17.jpeg")
 user14.photo.attach(io: file, filename: "image17.jpeg", content_type: 'image/png')
 user14.save!
 
 user15 = User.create!(first_name: "Marine", last_name: "DesChateau", email: "marine@example.fr", password:"123456", description: "Hello, venu découvrir la Bretagne en espérant que la légende sur votre alcoolisme est fondé ;)", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image12.jpeg")
+file = File.open("db/fixtures/images_profil/image12.jpeg")
 user15.photo.attach(io: file, filename: "image12.jpeg", content_type: 'image/png')
 user15.save!
 
 user16 = User.create!(first_name: "Manon", last_name: "Gaillard", email: "manon@example.fr", password:"123456", description: "Hi, fraîchement arrivé des US, faites moi découvrir la French Life!", birthday: Time.now - 24.year)
-file = File.open("app/assets/images/images_profil/image13.jpeg")
+file = File.open("db/fixtures/images_profil/image13.jpeg")
 user16.photo.attach(io: file, filename: "image13.jpeg", content_type: 'image/png')
 user16.save!
 
 user17 = User.create!(first_name: "Leo", last_name: "Criquet", email: "léo@example.fr", password:"123456", description: "Hey, ton futur barman préféré ;)", birthday: Time.now - 21.year)
-file = File.open("app/assets/images/images_profil/image18.jpeg")
+file = File.open("db/fixtures/images_profil/image18.jpeg")
 user17.photo.attach(io: file, filename: "image18.jpeg", content_type: 'image/png')
 user17.save!
 
 user18 = User.create!(first_name: "Marie", last_name: "Cottebrune", email: "marie@example.fr", password:"123456", description: "Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image16.jpeg")
+file = File.open("db/fixtures/images_profil/image16.jpeg")
 user18.photo.attach(io: file, filename: "image16.jpeg", content_type: 'image/png')
 user18.save!
 
 user19 = User.create!(first_name: "Flossie", last_name: "Dusclos", email: "flossie@example.fr", password:"123456", description: "Hey, Parisienne venu observer les provinciaux", birthday: Time.now - 22.year)
-file = File.open("app/assets/images/images_profil/image15.jpeg")
+file = File.open("db/fixtures/images_profil/image15.jpeg")
 user19.photo.attach(io: file, filename: "image15.jpeg", content_type: 'image/png')
 user19.save!
 
 user20 = User.create!(first_name: "Alexandre", last_name: "Teyant", email: "alex@example.fr", password:"123456", description: "Hey, je viens d'arrivée sur Rennes et je recherche une petite colocation des familles, histoire de passer de bons moments :)", birthday: Time.now - 20.year)
-file = File.open("app/assets/images/images_profil/image19.jpeg")
+file = File.open("db/fixtures/images_profil/image19.jpeg")
 user20.photo.attach(io: file, filename: "image19.jpeg", content_type: 'image/png')
 user20.save!
 
 
 
 
-colocation1 = Colocation.create!(title: "La Chouille House", address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 275, desired_people: 1, user: user1)
-file1 = File.open("app/assets/images/images_coloc/n.chambre1.jpeg")
+colocation1 = Colocation.create!(title: "La Chouille House", address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 275, desired_people: 6, user: user1)
+file1 = File.open("db/fixtures/images_coloc/n.chambre1.jpeg")
 colocation1.photos.attach(io: file1, filename: "n.chambre1.jpeg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/n.cuisine1.jpeg")
+file2 = File.open("db/fixtures/images_coloc/n.cuisine1.jpeg")
 colocation1.photos.attach(io: file2, filename: "n.cuisine1.jpeg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/n.salledebain1.jpeg")
-colocation1.photos.attach(io: file3, filename: "n.salledebain1.jpeg", content_type: 'image/png')
+file3 = File.open("db/fixtures/images_coloc/n.salledebain.jpeg")
+colocation1.photos.attach(io: file3, filename: "n.salledebain.jpeg", content_type: 'image/png')
 colocation1.save!
 
-colocation2 = Colocation.create!(title: "Koh Lanta", address:"1 Place Sainte-Anne, 35000 Rennes", description: "En plein centre de l'effervescence Rennaise! Si l'imprévu est t'on fil conducteur viens avec nous chef!", price: 415, desired_people: 1, user: user5)
-file1 = File.open("app/assets/images/images_coloc/n.chambre2.jpeg")
+colocation2 = Colocation.create!(title: "Koh Lanta", address:"1 Place Sainte-Anne, 35000 Rennes", description: "En plein centre de l'effervescence Rennaise! Si l'imprévu est t'on fil conducteur viens avec nous chef!", price: 415, desired_people: 4, user: user5)
+file1 = File.open("db/fixtures/images_coloc/n.chambre2.jpeg")
 colocation2.photos.attach(io: file1, filename: "n.chambre2.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/n.cuisine2.jpeg")
+file2 = File.open("db/fixtures/images_coloc/n.cuisine2.jpeg")
 colocation2.photos.attach(io: file2, filename: "n.cuisine2.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon.jpeg")
-colocation2.photos.attach(io: file3, filename: "salon.jpg", content_type: 'image/png')
+file3 = File.open("db/fixtures/images_coloc/salon1.jpeg")
+colocation2.photos.attach(io: file3, filename: "salon1.jpg", content_type: 'image/png')
 colocation2.save!
 
-colocation3 = Colocation.create!(title: "Chill House", address:"10 Place de la République, 69002 Lyon", description: "Bien situé, dans un environnement qui pousse au travail ! Si tu es déterminé, et sérieux nous t'accepterons avec plaisir", price: 750, desired_people: 1, user: user6)
-file1 = File.open("app/assets/images/images_coloc/chambre3.jpeg")
+colocation3 = Colocation.create!(title: "Chill House", address:"10 Place de la République, 69002 Lyon", description: "Bien situé, dans un environnement qui pousse au travail ! Si tu es déterminé, et sérieux nous t'accepterons avec plaisir", price: 750, desired_people: 6, user: user6)
+file1 = File.open("db/fixtures/images_coloc/chambre3.jpeg")
 colocation3.photos.attach(io: file1, filename: "chambre3.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine3.jpeg")
+file2 = File.open("db/fixtures/images_coloc/cuisine3.jpeg")
 colocation3.photos.attach(io: file2, filename: "cuisine3.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon3.jpeg")
+file3 = File.open("db/fixtures/images_coloc/salon3.jpeg")
 colocation3.photos.attach(io: file3, filename: "salon3.jpg", content_type: 'image/png')
 colocation3.save!
 
 
-colocation4 = Colocation.create!(title: "L'ESL Breton", address:"17 Cours du Président John Fitzgerald Kennedy, 35000 Rennes", description: "Si t'aime taper des grosses LAN entre potes, cette coloc est faite pour toi !", price: 375, desired_people: 1, user: user9)
-file1 = File.open("app/assets/images/images_coloc/n.chambre3.jpeg")
+colocation4 = Colocation.create!(title: "L'ESL Breton", address:"17 Cours du Président John Fitzgerald Kennedy, 35000 Rennes", description: "Si t'aime taper des grosses LAN entre potes, cette coloc est faite pour toi !", price: 375, desired_people: 5, user: user9)
+file1 = File.open("db/fixtures/images_coloc/n.chambre3.jpeg")
 colocation4.photos.attach(io: file1, filename: "n.chambre3.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/n.cuisine3.jpeg")
+file2 = File.open("db/fixtures/images_coloc/n.cuisine3.jpeg")
 colocation4.photos.attach(io: file2, filename: "n.cuisine3.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/n.salledebain3.jpeg")
+file3 = File.open("db/fixtures/images_coloc/n.salledebain3.jpeg")
 colocation4.photos.attach(io: file3, filename: "n.salledebain3.jpg", content_type: 'image/png')
 colocation4.save!
 
-colocation5 = Colocation.create!(title: "La Geuleton House", address:"20 Rue de Gadagne, 69002 Lyon", description: "Si t'aime les copains et la bonne bouffe, c'est ici qu'il faut que tu sois!", price: 675, desired_people: 1, user: user11)
-file1 = File.open("app/assets/images/images_coloc/chambre5.jpeg")
+colocation5 = Colocation.create!(title: "La Geuleton House", address:"20 Rue de Gadagne, 69002 Lyon", description: "Si t'aime les copains et la bonne bouffe, c'est ici qu'il faut que tu sois!", price: 675, desired_people: 6, user: user11)
+file1 = File.open("db/fixtures/images_coloc/chambre5.jpeg")
 colocation5.photos.attach(io: file1, filename: "chambre5.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine5.jpeg")
+file2 = File.open("db/fixtures/images_coloc/cuisine5.jpeg")
 colocation5.photos.attach(io: file2, filename: "cuisine5.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon5.jpeg")
+file3 = File.open("db/fixtures/images_coloc/salon5.jpeg")
 colocation5.photos.attach(io: file3, filename: "salon5.jpg", content_type: 'image/png')
 colocation5.save!
 
 
-colocation6 = Colocation.create!(title: "La Club House", address:"11 Rue Saint-Georges, 69002 Lyon", description: "Les boîtes te manque, leur ambiance aussi, durant cette période agacente nous te proposons une colocation énergique, qui te fera oublier l'existence du mot ennui", price: 310, desired_people: 1, user: user15)
-file1 = File.open("app/assets/images/images_coloc/chambre6.jpeg")
+colocation6 = Colocation.create!(title: "La Club House", address:"11 Rue Saint-Georges, 69002 Lyon", description: "Les boîtes te manque, leur ambiance aussi, durant cette période agacente nous te proposons une colocation énergique, qui te fera oublier l'existence du mot ennui", price: 310, desired_people: 4, user: user15)
+file1 = File.open("db/fixtures/images_coloc/chambre6.jpeg")
 colocation6.photos.attach(io: file1, filename: "chambre6.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine6.jpeg")
+file2 = File.open("db/fixtures/images_coloc/cuisine6.jpeg")
 colocation6.photos.attach(io: file2, filename: "cuisine6.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon6.jpeg")
+file3 = File.open("db/fixtures/images_coloc/salon6.jpeg")
 colocation6.photos.attach(io: file3, filename: "salon6.jpg", content_type: 'image/png')
 colocation6.save!
 
 
-colocation7 = Colocation.create!(title: "Tokyo House", address:"11 Rue Denuzière, 69002 Lyon", description: "Si la culture japonaise fait partie de toi, tu sera ici chez toi", price: 260, desired_people: 1, user: user17)
-file1 = File.open("app/assets/images/images_coloc/chambre7.jpeg")
+colocation7 = Colocation.create!(title: "Tokyo House", address:"11 Rue Denuzière, 69002 Lyon", description: "Si la culture japonaise fait partie de toi, tu sera ici chez toi", price: 260, desired_people: 5, user: user17)
+file1 = File.open("db/fixtures/images_coloc/chambre7.jpeg")
 colocation7.photos.attach(io: file1, filename: "chambre7.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine7.jpeg")
+file2 = File.open("db/fixtures/images_coloc/cuisine7.jpeg")
 colocation7.photos.attach(io: file2, filename: "cuisine7.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon7.jpeg")
+file3 = File.open("db/fixtures/images_coloc/salon7.jpeg")
 colocation7.photos.attach(io: file3, filename: "salon7.jpg", content_type: 'image/png')
 colocation7.save!
 
 
-colocation8 = Colocation.create!(title: "Au bout du Monde", address:"11 Rue de Léon, 35000 Rennes", description: "Colocation suspendu dans le temps et l'espace, si tu veux venir te ressourcer tu es le bienvenue!", price: 225, desired_people: 1, user: user13)
-file1 = File.open("app/assets/images/images_coloc/n.chambre6.jpeg")
+colocation8 = Colocation.create!(title: "Au bout du Monde", address:"11 Rue de Léon, 35000 Rennes", description: "Colocation suspendu dans le temps et l'espace, si tu veux venir te ressourcer tu es le bienvenue!", price: 225, desired_people: 4, user: user13)
+file1 = File.open("db/fixtures/images_coloc/n.chambre6.jpeg")
 colocation8.photos.attach(io: file1, filename: "n.chambre6.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/n.cuisine6.jpeg")
+file2 = File.open("db/fixtures/images_coloc/n.cuisine6.jpeg")
 colocation8.photos.attach(io: file2, filename: "n.cuisine6.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/n.salon6.jpeg")
+file3 = File.open("db/fixtures/images_coloc/n.salon6.jpeg")
 colocation8.photos.attach(io: file3, filename: "n.salon6.jpg", content_type: 'image/png')
 colocation8.save!
 
-colocation9 = Colocation.create!(title: "Le Zoo", address:"25 Rue Victor Hugo, 69002 Lyon", description: "Si tu veux foutre le bordel, ramène toi direct!", price: 620, desired_people: 1, user: user18)
-file1 = File.open("app/assets/images/images_coloc/chambre9.jpeg")
+colocation9 = Colocation.create!(title: "Le Zoo", address:"25 Rue Victor Hugo, 69002 Lyon", description: "Si tu veux foutre le bordel, ramène toi direct!", price: 620, desired_people: 6, user: user18)
+file1 = File.open("db/fixtures/images_coloc/chambre9.jpeg")
 colocation9.photos.attach(io: file1, filename: "chambre9.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine9.jpeg")
+file2 = File.open("db/fixtures/images_coloc/cuisine9.jpeg")
 colocation9.photos.attach(io: file2, filename: "cuisine9.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon9.jpeg")
+file3 = File.open("db/fixtures/images_coloc/salon9.jpeg")
 colocation9.photos.attach(io: file3, filename: "salon9.jpg", content_type: 'image/png')
 colocation9.save!
 
 
 colocation10 = Colocation.create!(title: "la Rennaise", address:"15 Place du Bas des Lices, 35000 Rennes", description: "Pour tous ceux qui veulent réussir leurs études", price: 650, desired_people: 6, user: user2)
-file1 = File.open("app/assets/images/images_coloc/chambre10.jpeg")
+file1 = File.open("db/fixtures/images_coloc/chambre10.jpeg")
 colocation10.photos.attach(io: file1, filename: "chambre10.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine10.jpeg")
+file2 = File.open("db/fixtures/images_coloc/cuisine10.jpeg")
 colocation10.photos.attach(io: file2, filename: "cuisine10.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon10.jpeg")
+file3 = File.open("db/fixtures/images_coloc/salon10.jpeg")
 colocation10.photos.attach(io: file3, filename: "salon10.jpg", content_type: 'image/png')
 colocation10.save!
 
 colocation11 = Colocation.create!(title: "L'idéal", address:"20 Place du Parlement de Bretagne, 35000 Rennes", description: "Le doux mélange entre fêtes et études, bref la coloc' parfaite !", price: 250, desired_people: 6, user: user1)
-file1 = File.open("app/assets/images/images_coloc/chambre11.jpeg")
+file1 = File.open("db/fixtures/images_coloc/chambre11.jpeg")
 colocation11.photos.attach(io: file1, filename: "chambre11.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine11.jpeg")
+file2 = File.open("db/fixtures/images_coloc/cuisine11.jpeg")
 colocation11.photos.attach(io: file2, filename: "cuisine11.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon11.jpeg")
+file3 = File.open("db/fixtures/images_coloc/salon11.jpeg")
 colocation11.photos.attach(io: file3, filename: "salon11.jpg", content_type: 'image/png')
 colocation11.save!
 
 
-offer1 = Offer.create!(user: user1, colocation: colocation1, status: "aceptée !")
-offer2 = Offer.create!(user: user2, colocation: colocation1, status: "aceptée !")
+offer1 = Offer.create!(user: user1, colocation: colocation1, status: "acceptée !")
+offer2 = Offer.create!(user: user2, colocation: colocation1, status: "acceptée !")
 
 
-offer4 = Offer.create!(user: user4, colocation: colocation2, status: "aceptée !")
-offer5 = Offer.create!(user: user5, colocation: colocation2, status: "aceptée !")
+offer4 = Offer.create!(user: user4, colocation: colocation2, status: "acceptée !")
+offer5 = Offer.create!(user: user5, colocation: colocation2, status: "acceptée !")
 
 
-offer7 = Offer.create!(user: user6, colocation: colocation3, status: "aceptée !")
-offer8 = Offer.create!(user: user3, colocation: colocation3, status: "Décliné!")
+offer7 = Offer.create!(user: user6, colocation: colocation3, status: "acceptée !")
+offer8 = Offer.create!(user: user3, colocation: colocation3, status: "déclinée !")
 
-offer9 = Offer.create!(user: user9, colocation: colocation4, status: "aceptée !")
-
-
-offer11 = Offer.create!(user: user11, colocation: colocation5, status: "aceptée !")
+offer9 = Offer.create!(user: user9, colocation: colocation4, status: "acceptée !")
 
 
-offer13 = Offer.create!(user: user15, colocation: colocation6, status: "aceptée !")
+offer11 = Offer.create!(user: user11, colocation: colocation5, status: "acceptée !")
 
 
-offer15 = Offer.create!(user: user17, colocation: colocation7, status: "aceptée !")
-offer16 = Offer.create!(user: user12, colocation: colocation7, status: "aceptée !")
-
-offer17 = Offer.create!(user: user13, colocation: colocation8, status: "aceptée !")
+offer13 = Offer.create!(user: user15, colocation: colocation6, status: "acceptée !")
 
 
-offer19 = Offer.create!(user: user18, colocation: colocation9, status: "aceptée !")
-offer20 = Offer.create!(user: user20, colocation: colocation9, status: "aceptée !")
+offer15 = Offer.create!(user: user17, colocation: colocation7, status: "acceptée !")
+offer16 = Offer.create!(user: user12, colocation: colocation7, status: "acceptée !")
 
-offer21 = Offer.create!(user: user1, colocation: colocation11, status: "aceptée !")
-offer22 = Offer.create!(user: user4, colocation: colocation11, status: "aceptée !")
-offer23 = Offer.create!(user: user5, colocation: colocation11, status: "aceptée !")
+offer17 = Offer.create!(user: user13, colocation: colocation8, status: "acceptée !")
 
 
-offer24 = Offer.create!(user: user2, colocation: colocation10, status: "aceptée !")
-offer25 = Offer.create!(user: user7, colocation: colocation10, status: "aceptée !")
-offer26 = Offer.create!(user: user8, colocation: colocation10, status: "aceptée !")
+offer19 = Offer.create!(user: user18, colocation: colocation9, status: "acceptée !")
+offer20 = Offer.create!(user: user20, colocation: colocation9, status: "acceptée !")
+
+offer21 = Offer.create!(user: user1, colocation: colocation11, status: "acceptée !")
+offer22 = Offer.create!(user: user4, colocation: colocation11, status: "acceptée !")
+offer23 = Offer.create!(user: user5, colocation: colocation11, status: "acceptée !")
+
+
+offer24 = Offer.create!(user: user2, colocation: colocation10, status: "acceptée !")
+offer25 = Offer.create!(user: user7, colocation: colocation10, status: "acceptée !")
+offer26 = Offer.create!(user: user8, colocation: colocation10, status: "acceptée !")
 
 
 personality1 = Personality.create!(icon: "🏠", name: "Casanier")

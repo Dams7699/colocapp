@@ -10,7 +10,7 @@ class Colocation < ApplicationRecord
   
   has_many :offers
   
-  has_many :accepted_offers, -> { where(status: "Accepté!") }, class_name: "Offer"
+  has_many :accepted_offers, -> { where(status: "acceptée !") }, class_name: "Offer"
   has_many :users, through: :accepted_offers
   
   has_many :user_personalities
@@ -20,7 +20,7 @@ class Colocation < ApplicationRecord
   after_validation :geocode, if: :will_save_change_to_address?
 
   def remaining_places
-    self.desired_people - self.offers.where(status: "Accepté!").count
+    self.desired_people - self.offers.where(status: "acceptée !").count
   end
 
 end
