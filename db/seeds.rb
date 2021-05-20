@@ -122,9 +122,7 @@ user20.photo.attach(io: file, filename: "image19.jpeg", content_type: 'image/png
 user20.save!
 
 
-
-
-colocation1 = Colocation.create!(title: "La Chouille House", address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 275, desired_people: 6, user: user1)
+colocation1 = Colocation.create!(title: "La Chouille House", address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, on aime la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenue !!", price: 275, desired_people: 6, user: user1)
 file1 = File.open("db/fixtures/images_coloc/n.chambre1.jpeg")
 colocation1.photos.attach(io: file1, filename: "n.chambre1.jpeg", content_type: 'image/png')
 file2 = File.open("db/fixtures/images_coloc/n.cuisine1.jpeg")
@@ -585,6 +583,7 @@ colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal2)
 colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal4)
 colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal6)
 colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal7)
+colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal3)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation11, goal: goal2)
 colocation_goals = ColocationGoal.create!(colocation: colocation11, goal: goal4)
