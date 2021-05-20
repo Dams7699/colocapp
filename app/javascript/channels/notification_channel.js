@@ -9,7 +9,7 @@ const initChatroomCable = () => {
         console.log(data); // called when data is broadcast in the cable
         // notificationContainer.innerHTML = data
         // notificationBullet.style.display = "block";
-        notifBell.innerHTML = `<div class='notification'>${parseInt(data.notifications, 10) + 1}</div>`
+        notifBell.innerHTML = `<div class='notification animated bounce'>${parseInt(data.notifications, 10) + 1}</div>`
       },
     });
   }
