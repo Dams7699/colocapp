@@ -289,7 +289,7 @@ goal4 = Goal.create!(icon: "🎶", name: "Musicale")
 goal5 = Goal.create!(icon: "📡", name: "Haut débit")
 goal6 = Goal.create!(icon: "🌎", name: "Multiculturelle")
 goal7 = Goal.create!(icon: "👨‍🎓", name: "Étudiante")
-goal8 = Goal.create!(icon: "👵🏻", name: "intergénérationnelle")
+goal8 = Goal.create!(icon: "👵🏻", name: "Sénior")
 
 
 
