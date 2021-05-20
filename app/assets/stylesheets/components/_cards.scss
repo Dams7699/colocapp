@@ -70,11 +70,9 @@
   height: 100%;
 }
 
-.pen {
-  width: 15px;
-  margin-bottom: 7px;
-  .img {
-    vertical-align: middle;
-    border-style: none;
-  }
+.pen img{
+  width: 20px;
+  position:absolute;
+  bottom: 30px;
+  right: 50px;
 }
