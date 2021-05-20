@@ -6,8 +6,8 @@
 class OfferNotification < Noticed::Base
   # Add your delivery methods
   #
-  deliver_by :action_cable, channel: "NotificationChannel"
-  # deliver_by :database
+  deliver_by :database
+  deliver_by :action_cable, channel: "NotificationChannel"#, format: :format_for_action_cable
   # deliver_by :email, mailer: "UserMailer"
   # deliver_by :slack
   # deliver_by :custom, class: "MyDeliveryMethod"
@@ -17,6 +17,10 @@ class OfferNotification < Noticed::Base
   # param :post
 
   # Define helper methods to make rendering easier.
+  # def format_for_action_cable
+  #   # binding.pry
+  # end
+
   #
   # def message
   #   t(".message")

@@ -3,15 +3,6 @@
 
   <h3>Notifications</h3>
 
-
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mes Recherches</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Mes Demandes</a>
-    </li>
-  </ul>
   <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
     <% @offers.each do |o| %>
@@ -21,14 +12,12 @@
         <p>Votre demande pour <%= o.colocation.title %> est <%= o.status %></p></div>
     </div>
   <% end %>
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
     <% @owner_offers.each do |o| %>
     <div class="notification-content">
       <%= cl_image_tag o.colocation.photos.first.key%>
       <div class="notification-infos">
         <span class="over-titre"><%= o.created_at.strftime("%d/%m/%Y à %Hh%M") %></span>
-        <p>Jeannot a fait une demande pour La Grosse Beuverie</p>
+        <p><%= o.user.first_name %> a fait une demande pour <%= o.colocation.title %></p>
         <div class="notifications-actions">
           <%= link_to accept_offer_path(o), method: :patch, class: 'btn-notification' do %>
             <%= icon("fas","check") %>

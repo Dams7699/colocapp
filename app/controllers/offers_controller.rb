@@ -6,7 +6,7 @@ class OffersController < ApplicationController
     @offer.user = current_user
     @offer.status = "En attente.."
     if @offer.save
-      redirect_to notification_path
+      redirect_to colocation_path(@colocation)
     else
       redirect_to colocation_path(@colocation)
     end
@@ -18,10 +18,9 @@ class OffersController < ApplicationController
     @offer.save
     redirect_to notification_path
 
-    NotificationChannel.broadcast_to(
-      @offer.user,
-      render_to_string(partial: "notifications/new", locals: { offer: @offer })
-    )
+    OfferNotification.with(
+      offer: @offer
+    ).deliver(@offer.user)
   end
 
   def decline
@@ -31,9 +30,8 @@ class OffersController < ApplicationController
     redirect_to notification_path
 
 
-    NotificationChannel.broadcast_to(
-      @offer.user,
-      render_to_string(partial: "notifications/new", locals: { offer: @offer })
-    )
+    OfferNotification.with(
+      offer: @offer
+    ).deliver(@offer.user)
   end
 end

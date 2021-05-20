@@ -1,5 +1,4 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-
   <%= link_to colocations_path do %>
     <%= image_tag ("search.svg"), class: "icone #{'active' if controller_name == 'colocations'}" %>
   <% end %>
@@ -10,6 +9,8 @@
 
   <%= link_to notification_path, id: "notification-link" do %>
     <%= image_tag ("bell.svg"), class: "icone #{'active' if controller_name == 'notifications'}" %>
-    <div class="notification"></div>
+    <div id="notification-bell">
+      <%= render "shared/notification_bell" %>
+    </div>
   <% end %>
 </div>
