@@ -12,6 +12,8 @@ class ColocationsController < ApplicationController
       colocations = Colocation.all
     end
 
+    session[:search_query] = request.url
+
     @colocations = colocations.sort_by do |colocation|
       goals = colocation.goals & current_user.goals
       -goals.length

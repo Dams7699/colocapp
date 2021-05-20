@@ -16,7 +16,7 @@
 
 
   <div class="btn-return">
-    <%= link_to colocations_path do %>
+    <%= link_to session[:search_query] do %>
     <%= image_tag ("return.svg"), method: :post %>
     <% end %>
   </div>
