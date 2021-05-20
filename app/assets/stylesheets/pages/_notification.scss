@@ -12,11 +12,22 @@
   text-align:left;
   padding:10px;
   margin:12px 0;
-  img {
+  .notification-image {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
     min-height: 100px;
     min-width:100px;
     max-height: 100px;
     max-width:100px;
+    color: white;
+  }
+  i {
+    color: white;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1)
   }
   .notification-infos {
     margin-left:12px;
