@@ -124,24 +124,24 @@ user20.save!
 
 
 colocation1 = Colocation.create!(title: "La Chouille House", address:"1 Place de la République, 35000 Rennes", description: "En plein centre ville de Rennes, ont aiment la nuit et la vie ! ;) Si tu es un bon vivant alors tu es le bienvenu!!", price: 275, desired_people: 1, user: user1)
-file1 = File.open("app/assets/images/images_coloc/chambre1.jpeg")
-colocation1.photos.attach(io: file1, filename: "chambre1.jpeg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine1.jpeg")
-colocation1.photos.attach(io: file2, filename: "cuisine1.jpeg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon1.jpeg")
-colocation1.photos.attach(io: file3, filename: "salon1.jpeg", content_type: 'image/png')
+file1 = File.open("app/assets/images/images_coloc/n.chambre1.jpeg")
+colocation1.photos.attach(io: file1, filename: "n.chambre1.jpeg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/n.cuisine1.jpeg")
+colocation1.photos.attach(io: file2, filename: "n.cuisine1.jpeg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/n.salledebain1.jpeg")
+colocation1.photos.attach(io: file3, filename: "n.salledebain1.jpeg", content_type: 'image/png')
 colocation1.save!
 
-colocation2 = Colocation.create!(title: "Koh Lanta", address:"1 Place Sainte-Anne, 35000 Rennes", description: "En plein centre de l'effervescence Rennaise! Si l'imprévu est t'on fil conducteur viens avec nous chef!", price: 475, desired_people: 1, user: user5)
-file1 = File.open("app/assets/images/images_coloc/chambre2.jpeg")
-colocation2.photos.attach(io: file1, filename: "chambre2.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine2.jpeg")
-colocation2.photos.attach(io: file2, filename: "cuisine2.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon2.jpeg")
-colocation2.photos.attach(io: file3, filename: "salon2.jpg", content_type: 'image/png')
+colocation2 = Colocation.create!(title: "Koh Lanta", address:"1 Place Sainte-Anne, 35000 Rennes", description: "En plein centre de l'effervescence Rennaise! Si l'imprévu est t'on fil conducteur viens avec nous chef!", price: 415, desired_people: 1, user: user5)
+file1 = File.open("app/assets/images/images_coloc/n.chambre2.jpeg")
+colocation2.photos.attach(io: file1, filename: "n.chambre2.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/n.cuisine2.jpeg")
+colocation2.photos.attach(io: file2, filename: "n.cuisine2.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/salon.jpeg")
+colocation2.photos.attach(io: file3, filename: "salon.jpg", content_type: 'image/png')
 colocation2.save!
 
-colocation3 = Colocation.create!(title: "Chill House", address:"10 Place du Parlment de Bretagne, 35000 Rennes", description: "Bien situé, dans un environnement qui pousse au travail ! Si tu es déterminé, et sérieux nous t'accepterons avec plaisir", price: 415, desired_people: 1, user: user6)
+colocation3 = Colocation.create!(title: "Chill House", address:"10 Place de la République, 69002 Lyon", description: "Bien situé, dans un environnement qui pousse au travail ! Si tu es déterminé, et sérieux nous t'accepterons avec plaisir", price: 750, desired_people: 1, user: user6)
 file1 = File.open("app/assets/images/images_coloc/chambre3.jpeg")
 colocation3.photos.attach(io: file1, filename: "chambre3.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine3.jpeg")
@@ -151,15 +151,15 @@ colocation3.photos.attach(io: file3, filename: "salon3.jpg", content_type: 'imag
 colocation3.save!
 
 colocation4 = Colocation.create!(title: "L'ESL Breton", address:"17 Cours du Président John Fitzgerald Kennedy, 35000 Rennes", description: "Si t'aime taper des grosses LAN entre potes, cette coloc est faite pour toi !", price: 375, desired_people: 1, user: user9)
-file1 = File.open("app/assets/images/images_coloc/chambre4.jpeg")
-colocation4.photos.attach(io: file1, filename: "chambre4.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine4.jpeg")
-colocation4.photos.attach(io: file2, filename: "cuisine4.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon4.jpeg")
-colocation4.photos.attach(io: file3, filename: "salon4.jpg", content_type: 'image/png')
+file1 = File.open("app/assets/images/images_coloc/n.chambre3.jpeg")
+colocation4.photos.attach(io: file1, filename: "n.chambre3.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/n.cuisine3.jpeg")
+colocation4.photos.attach(io: file2, filename: "n.cuisine3.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/n.salledebain3.jpeg")
+colocation4.photos.attach(io: file3, filename: "n.salledebain3.jpg", content_type: 'image/png')
 colocation4.save!
 
-colocation5 = Colocation.create!(title: "La Geuleton House", address:"1 Rue du Thabor, 35000 Rennes", description: "Si t'aime les copains et la bonne bouffe, c'est ici qu'il faut que tu sois!", price: 250, desired_people: 1, user: user11)
+colocation5 = Colocation.create!(title: "La Geuleton House", address:"20 Rue de Gadagne, 69002 Lyon", description: "Si t'aime les copains et la bonne bouffe, c'est ici qu'il faut que tu sois!", price: 675, desired_people: 1, user: user11)
 file1 = File.open("app/assets/images/images_coloc/chambre5.jpeg")
 colocation5.photos.attach(io: file1, filename: "chambre5.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine5.jpeg")
@@ -168,7 +168,7 @@ file3 = File.open("app/assets/images/images_coloc/salon5.jpeg")
 colocation5.photos.attach(io: file3, filename: "salon5.jpg", content_type: 'image/png')
 colocation5.save!
 
-colocation6 = Colocation.create!(title: "La Club House", address:"25 Rue Alexandre Duval, 35000 Rennes", description: "Les boîtes te manque, leur ambiance aussi, durant cette période agacente nous te proposons une colocation énergique, qui te fera oublier l'existence du mot ennui", price: 310, desired_people: 1, user: user15)
+colocation6 = Colocation.create!(title: "La Club House", address:"11 Rue Saint-Georges, 69002 Lyon", description: "Les boîtes te manque, leur ambiance aussi, durant cette période agacente nous te proposons une colocation énergique, qui te fera oublier l'existence du mot ennui", price: 310, desired_people: 1, user: user15)
 file1 = File.open("app/assets/images/images_coloc/chambre6.jpeg")
 colocation6.photos.attach(io: file1, filename: "chambre6.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine6.jpeg")
@@ -177,7 +177,7 @@ file3 = File.open("app/assets/images/images_coloc/salon6.jpeg")
 colocation6.photos.attach(io: file3, filename: "salon6.jpg", content_type: 'image/png')
 colocation6.save!
 
-colocation7 = Colocation.create!(title: "Tokyo House", address:"11 Rue Ange Blèze, 35000 Rennes", description: "Si la culture japonaise fait partie de toi, tu sera ici chez toi", price: 260, desired_people: 1, user: user17)
+colocation7 = Colocation.create!(title: "Tokyo House", address:"11 Rue Denuzière, 69002 Lyon", description: "Si la culture japonaise fait partie de toi, tu sera ici chez toi", price: 260, desired_people: 1, user: user17)
 file1 = File.open("app/assets/images/images_coloc/chambre7.jpeg")
 colocation7.photos.attach(io: file1, filename: "chambre7.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine7.jpeg")
@@ -187,15 +187,15 @@ colocation7.photos.attach(io: file3, filename: "salon7.jpg", content_type: 'imag
 colocation7.save!
 
 colocation8 = Colocation.create!(title: "Au bout du Monde", address:"11 Rue de Léon, 35000 Rennes", description: "Colocation suspendu dans le temps et l'espace, si tu veux venir te ressourcer tu es le bienvenue!", price: 225, desired_people: 1, user: user13)
-file1 = File.open("app/assets/images/images_coloc/chambre8.jpeg")
-colocation8.photos.attach(io: file1, filename: "chambre8.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine8.jpeg")
-colocation8.photos.attach(io: file2, filename: "cuisine8.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon8.jpeg")
-colocation8.photos.attach(io: file3, filename: "salon8.jpg", content_type: 'image/png')
+file1 = File.open("app/assets/images/images_coloc/n.chambre6.jpeg")
+colocation8.photos.attach(io: file1, filename: "n.chambre6.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/n.cuisine6.jpeg")
+colocation8.photos.attach(io: file2, filename: "n.cuisine6.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/n.salon6.jpeg")
+colocation8.photos.attach(io: file3, filename: "n.salon6.jpg", content_type: 'image/png')
 colocation8.save!
 
-colocation9 = Colocation.create!(title: "Le Zoo", address:"20 Place du Bas des Lices, 35000 Rennes", description: "Si tu veux foutre le bordel, ramène toi direct!", price: 325, desired_people: 1, user: user18)
+colocation9 = Colocation.create!(title: "Le Zoo", address:"25 Rue Victor Hugo, 69002 Lyon", description: "Si tu veux foutre le bordel, ramène toi direct!", price: 620, desired_people: 1, user: user18)
 file1 = File.open("app/assets/images/images_coloc/chambre9.jpeg")
 colocation9.photos.attach(io: file1, filename: "chambre9.jpg", content_type: 'image/png')
 file2 = File.open("app/assets/images/images_coloc/cuisine9.jpeg")
@@ -205,21 +205,21 @@ colocation9.photos.attach(io: file3, filename: "salon9.jpg", content_type: 'imag
 colocation9.save!
 
 colocation10 = Colocation.create!(title: "L'idéal", address:"15 Place du Bas des Lices, 35000 Rennes", description: "Pour ceux qui le valent bien !", price: 650, desired_people: 1, user: user1)
-file1 = File.open("app/assets/images/images_coloc/chambre10.jpeg")
-colocation10.photos.attach(io: file1, filename: "chambre10.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine10.jpeg")
-colocation10.photos.attach(io: file2, filename: "cuisine10.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon10.jpeg")
-colocation10.photos.attach(io: file3, filename: "salon10.jpg", content_type: 'image/png')
+file1 = File.open("app/assets/images/images_coloc/n.chambre4.jpeg")
+colocation10.photos.attach(io: file1, filename: "n.chambre4.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/n.cuisine4.jpeg")
+colocation10.photos.attach(io: file2, filename: "n.cuisine4.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/n.salledebain4.jpeg")
+colocation10.photos.attach(io: file3, filename: "n.salledebain4.jpg", content_type: 'image/png')
 colocation10.save!
 
 colocation11 = Colocation.create!(title: "L'idéal 2", address:"20 Place du Parlement de Bretagne, 35000 Rennes", description: "Pour ceux qui le valent MIEUX !", price: 255, desired_people: 1, user: user1)
-file1 = File.open("app/assets/images/images_coloc/chambre11.jpeg")
-colocation11.photos.attach(io: file1, filename: "chambre11.jpg", content_type: 'image/png')
-file2 = File.open("app/assets/images/images_coloc/cuisine11.jpeg")
-colocation11.photos.attach(io: file2, filename: "cuisine11.jpg", content_type: 'image/png')
-file3 = File.open("app/assets/images/images_coloc/salon11.jpeg")
-colocation11.photos.attach(io: file3, filename: "salon11.jpg", content_type: 'image/png')
+file1 = File.open("app/assets/images/images_coloc/n.chambre5.jpeg")
+colocation11.photos.attach(io: file1, filename: "n.chambre5.jpg", content_type: 'image/png')
+file2 = File.open("app/assets/images/images_coloc/n.cuisine5.jpeg")
+colocation11.photos.attach(io: file2, filename: "n.cuisine5.jpg", content_type: 'image/png')
+file3 = File.open("app/assets/images/images_coloc/n.piècecommune1.jpeg")
+colocation11.photos.attach(io: file3, filename: "n.piècecommune1.jpg", content_type: 'image/png')
 colocation11.save!
 
 
