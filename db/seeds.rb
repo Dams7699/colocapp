@@ -542,32 +542,31 @@ colocation_goals = ColocationGoal.create!(colocation: colocation1, goal: goal5)
 colocation_goals = ColocationGoal.create!(colocation: colocation1, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal2)
-colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal4)
-colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal3)
 colocation_goals = ColocationGoal.create!(colocation: colocation2, goal: goal7)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation3, goal: goal1)
 colocation_goals = ColocationGoal.create!(colocation: colocation3, goal: goal3)
-colocation_goals = ColocationGoal.create!(colocation: colocation3, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation3, goal: goal5)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation4, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation4, goal: goal7)
 colocation_goals = ColocationGoal.create!(colocation: colocation4, goal: goal4)
-colocation_goals = ColocationGoal.create!(colocation: colocation4, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal1)
 colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal5)
-colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation5, goal: goal3)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal2)
-colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal4)
-colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal3)
+colocation_goals = ColocationGoal.create!(colocation: colocation6, goal: goal1)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal1)
 colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal3)
 colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal2)
-colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal4)
+colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal5)
 colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal1)
