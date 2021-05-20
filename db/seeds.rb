@@ -21,7 +21,7 @@ Goal.destroy_all
 
 
 
-user1 = User.create!(first_name: "Marceline", last_name: "Dupont", email: "test@test.fr", password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter!", birthday: Time.now - 18.year)
+user1 = User.create!(first_name: "Marceline", last_name: "Dupont", email: "test@test.fr", password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter !", birthday: Time.now - 18.year)
 file = File.open("db/fixtures/images_profil/image.jpeg")
 user1.photo.attach(io: file, filename: "image.jpeg", content_type: 'image/png')
 user1.save!
@@ -171,7 +171,7 @@ colocation5.photos.attach(io: file3, filename: "salon5.jpg", content_type: 'imag
 colocation5.save!
 
 
-colocation6 = Colocation.create!(title: "La Club House", address:"11 Rue Saint-Georges, 69002 Lyon", description: "Les boîtes te manque, leur ambiance aussi, durant cette période agacente nous te proposons une colocation énergique, qui te fera oublier l'existence du mot ennui", price: 310, desired_people: 4, user: user15)
+colocation6 = Colocation.create!(title: "La Club House", address:"11 Rue Saint-Georges, 69002 Lyon", description: "Les boîtes te manquent, leur ambiance aussi, durant cette période agacente nous te proposons une colocation énergique, qui te fera oublier l'existence du mot ennuie", price: 310, desired_people: 4, user: user15)
 file1 = File.open("db/fixtures/images_coloc/chambre6.jpeg")
 colocation6.photos.attach(io: file1, filename: "chambre6.jpg", content_type: 'image/png')
 file2 = File.open("db/fixtures/images_coloc/cuisine6.jpeg")
@@ -181,7 +181,7 @@ colocation6.photos.attach(io: file3, filename: "salon6.jpg", content_type: 'imag
 colocation6.save!
 
 
-colocation7 = Colocation.create!(title: "Tokyo House", address:"11 Rue Denuzière, 69002 Lyon", description: "Si la culture japonaise fait partie de toi, tu sera ici chez toi", price: 260, desired_people: 5, user: user17)
+colocation7 = Colocation.create!(title: "Tokyo House", address:"11 Rue Denuzière, 69002 Lyon", description: "Si la culture japonaise fait partie de toi, tu seras ici chez toi", price: 260, desired_people: 5, user: user17)
 file1 = File.open("db/fixtures/images_coloc/chambre7.jpeg")
 colocation7.photos.attach(io: file1, filename: "chambre7.jpg", content_type: 'image/png')
 file2 = File.open("db/fixtures/images_coloc/cuisine7.jpeg")
@@ -191,7 +191,7 @@ colocation7.photos.attach(io: file3, filename: "salon7.jpg", content_type: 'imag
 colocation7.save!
 
 
-colocation8 = Colocation.create!(title: "Au bout du Monde", address:"11 Rue de Léon, 35000 Rennes", description: "Colocation suspendu dans le temps et l'espace, si tu veux venir te ressourcer tu es le bienvenue!", price: 225, desired_people: 4, user: user13)
+colocation8 = Colocation.create!(title: "Au bout du Monde", address:"11 Rue de Léon, 35000 Rennes", description: "Colocation suspendue dans le temps et l'espace, si tu veux venir te ressourcer tu es le bienvenue !", price: 225, desired_people: 4, user: user13)
 file1 = File.open("db/fixtures/images_coloc/n.chambre6.jpeg")
 colocation8.photos.attach(io: file1, filename: "n.chambre6.jpg", content_type: 'image/png')
 file2 = File.open("db/fixtures/images_coloc/n.cuisine6.jpeg")
@@ -200,7 +200,7 @@ file3 = File.open("db/fixtures/images_coloc/n.salon6.jpeg")
 colocation8.photos.attach(io: file3, filename: "n.salon6.jpg", content_type: 'image/png')
 colocation8.save!
 
-colocation9 = Colocation.create!(title: "Le Zoo", address:"25 Rue Victor Hugo, 69002 Lyon", description: "Si tu veux foutre le bordel, ramène toi direct!", price: 620, desired_people: 6, user: user18)
+colocation9 = Colocation.create!(title: "La Lyonnaise", address:"25 Rue Victor Hugo, 69002 Lyon", description: "Si tu veux faire la fête, ramènes-toi direct !", price: 450, desired_people: 6, user: user18)
 file1 = File.open("db/fixtures/images_coloc/chambre9.jpeg")
 colocation9.photos.attach(io: file1, filename: "chambre9.jpg", content_type: 'image/png')
 file2 = File.open("db/fixtures/images_coloc/cuisine9.jpeg")
@@ -210,7 +210,7 @@ colocation9.photos.attach(io: file3, filename: "salon9.jpg", content_type: 'imag
 colocation9.save!
 
 
-colocation10 = Colocation.create!(title: "la Rennaise", address:"15 Place du Bas des Lices, 35000 Rennes", description: "Pour tous ceux qui veulent réussir leurs études", price: 650, desired_people: 6, user: user2)
+colocation10 = Colocation.create!(title: "la Rennaise", address:"15 Place du Bas des Lices, 35000 Rennes", description: "Pour tous ceux qui veulent réussir leurs études", price: 250, desired_people: 6, user: user2)
 file1 = File.open("db/fixtures/images_coloc/chambre10.jpeg")
 colocation10.photos.attach(io: file1, filename: "chambre10.jpg", content_type: 'image/png')
 file2 = File.open("db/fixtures/images_coloc/cuisine10.jpeg")
@@ -575,9 +575,11 @@ colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal2)
 colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal5)
 colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal6)
 
-colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal1)
-colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal3)
-colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal5)
+colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal2)
+colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal4)
+colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal6)
+colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal7)
+
 
 colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal2)
 colocation_goals = ColocationGoal.create!(colocation: colocation10, goal: goal4)
