@@ -50,8 +50,8 @@
 </div>
 
 <% if @offer %>
-  <p class='btn-bottom btn-coloc'>VOUS AVEZ DÉJÂ POSTULÉ POUR CETTE COLOCATION</p>
+  <p class='btn-bottom btn-coloc'>VOUS AVEZ POSTULÉ !</p>
 <% else %>
-  <%= link_to "CONTACTER LA COLOCATION", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
+  <%= link_to "POSTULER À CETTE COLOCATION", colocation_offers_path(@colocation), method: :post, class:'btn-bottom btn-coloc' %>
 <% end %>
 
