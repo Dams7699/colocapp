@@ -1,7 +1,9 @@
 import flatpickr from "flatpickr";
 
 const initFlatpickr = () => {
-  flatpickr(".datepicker", {});
+  flatpickr(".datepicker", {
+    maxDate: "2005-01"
+  });
 }
 
 export { initFlatpickr };
