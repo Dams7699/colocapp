@@ -54,7 +54,7 @@
           <%= cl_image_tag user.photo.key, class:"avatar-large" %>
           <p class="name_avatar">
             <%= user.first_name %>
-            <span class="over-titre">25 ans</span><br>
+            <span class="over-titre"><%= user.age_in_years %></span><br>
             <span class="users-personalities"><%= user.personalities.first(3).map(&:icon).join %></span>
           </p>
         <% end %>
