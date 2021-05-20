@@ -6,14 +6,14 @@
       <%= text_field_tag :query,
         params[:query],
         class: "form-control inputform",
-        placeholder: "Quelle ville cherche tu ?"
+        placeholder: "Quelle ville cherches-tu ?"
       %>
       <%= number_field_tag :price, params[:price], class: "form-control inputform", placeholder: "Budget" %>
       <button type="submit" class="search-btn">
         <%= image_tag "search.svg" %>
       </button>
     <% end %>
-    <h3 class="text-left mt-5 mb-3">Les meilleurs colocs pour toi</h3>
+    <h3 class="text-left mt-5 mb-3">Les meilleures colocs pour toi</h3>
     <% if @colocations.any? %>
       <% @colocations.each do |colocation| %>
         <%= link_to colocation_path(colocation) do %>

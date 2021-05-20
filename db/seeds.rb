@@ -21,17 +21,17 @@ Goal.destroy_all
 
 
 
-user1 = User.create!(first_name: "Marceline", last_name: "Dupont", email: "test@test.fr", password:"123456", description:"Hey ! J'adore l'aventure, toujours partant pour une bière, hésite pas me contacter !", birthday: Time.now - 18.year)
+user1 = User.create!(first_name: "Marceline", last_name: "Dupont", email: "test@test.fr", password:"123456", description:"Hey ! J'adore l'aventure, toujours partante pour une bière, n'hésite pas me contacter !", birthday: Time.now - 18.year)
 file = File.open("db/fixtures/images_profil/image.jpeg")
 user1.photo.attach(io: file, filename: "image.jpeg", content_type: 'image/png')
 user1.save!
 
-user2 = User.create!(first_name: "Thomas", last_name: "Le Devendec", email: "thomas@example.fr" , password:"123456", description:"Salut, je viens d'arriver sur Rennes partante pour découvrir la vie étudiante !", birthday: Time.now - 22.year)
+user2 = User.create!(first_name: "Thomas", last_name: "Le Devendec", email: "thomas@example.fr" , password:"123456", description:"Salut, je viens d'arriver sur Rennes partant pour découvrir la vie étudiante !", birthday: Time.now - 22.year)
 file = File.open("db/fixtures/images_profil/image1.jpeg")
 user2.photo.attach(io: file, filename: "image1.jpeg", content_type: 'image/png')
 user2.save!
 
-user3 = User.create!(first_name: "Clotilde", last_name: "Maurer", email: "clotax@example.fr", password:"123456", description:"Bonsoir à tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", birthday: Time.now - 19.year)
+user3 = User.create!(first_name: "Clothilde", last_name: "Maurer", email: "clotax@example.fr", password:"123456", description:"Bonsoir à tous ! amateur de tunning, Johnny dans mon coeur R.I.P ", birthday: Time.now - 19.year)
 file = File.open("db/fixtures/images_profil/image2.jpeg")
 user3.photo.attach(io: file, filename: "image2.jpeg", content_type: 'image/png')
 user3.save!
@@ -208,7 +208,7 @@ colocation9.photos.attach(io: file3, filename: "salon9.jpg", content_type: 'imag
 colocation9.save!
 
 
-colocation10 = Colocation.create!(phone_number: "0634582258", title: "la Rennaise", address:"15 Place du Bas des Lices, 35000 Rennes", description: "Pour tous ceux qui veulent réussir leurs études", price: 250, desired_people: 6, user: user2)
+colocation10 = Colocation.create!(phone_number: "0634582258", title: "La Rennaise", address:"15 Place du Bas des Lices, 35000 Rennes", description: "Pour tous ceux qui veulent réussir leurs études", price: 250, desired_people: 6, user: user2)
 file1 = File.open("db/fixtures/images_coloc/chambre10.jpeg")
 colocation10.photos.attach(io: file1, filename: "chambre10.jpg", content_type: 'image/png')
 file2 = File.open("db/fixtures/images_coloc/cuisine10.jpeg")
@@ -217,7 +217,7 @@ file3 = File.open("db/fixtures/images_coloc/salon10.jpeg")
 colocation10.photos.attach(io: file3, filename: "salon10.jpg", content_type: 'image/png')
 colocation10.save!
 
-colocation11 = Colocation.create!(phone_number: "0634582258", title: "L'idéal", address:"20 Place du Parlement de Bretagne, 35000 Rennes", description: "Le doux mélange entre fêtes et études, bref la coloc' parfaite !", price: 250, desired_people: 6, user: user1)
+colocation11 = Colocation.create!(phone_number: "0634582258", title: "L'Idéale", address:"20 Place du Parlement de Bretagne, 35000 Rennes", description: "Le doux mélange entre fêtes et études, bref la coloc' parfaite !", price: 250, desired_people: 6, user: user1)
 file1 = File.open("db/fixtures/images_coloc/chambre11.jpeg")
 colocation11.photos.attach(io: file1, filename: "chambre11.jpg", content_type: 'image/png')
 file2 = File.open("db/fixtures/images_coloc/cuisine11.jpeg")
@@ -266,12 +266,12 @@ offer25 = Offer.create!(user: user7, colocation: colocation10, status: "accepté
 offer26 = Offer.create!(user: user8, colocation: colocation10, status: "acceptée !")
 
 
-personality1 = Personality.create!(icon: "🏠", name: "Casanier")
-personality2 = Personality.create!(icon: "🤠", name: "Aventurier")
-personality3 = Personality.create!(icon: "🎓", name: "Studieux")
-personality4 = Personality.create!(icon: "🥳", name: "Fêtard")
-personality5 = Personality.create!(icon: "🤡", name: "Extraverti")
-personality6 = Personality.create!(icon: "👉👈", name: "Introverti")
+personality1 = Personality.create!(icon: "🏠", name: "Casanière")
+personality2 = Personality.create!(icon: "🤠", name: "Aventurière")
+personality3 = Personality.create!(icon: "🎓", name: "Studieuse")
+personality4 = Personality.create!(icon: "🥳", name: "Fêtarde")
+personality5 = Personality.create!(icon: "🤡", name: "Extravertie")
+personality6 = Personality.create!(icon: "👉👈", name: "Introvertie")
 
 
 hobby1 = Hobby.create!(icon: "📽️", name: "Cinéphile")
@@ -282,7 +282,7 @@ hobby5 = Hobby.create!(icon: "🕹️", name: "Gamer")
 hobby6 = Hobby.create!(icon: "📚", name: "Littéraire")
 
 
-goal1 = Goal.create!(icon: "🙅", name: "Antisocial")
+goal1 = Goal.create!(icon: "🙅", name: "Antisociale")
 goal2 = Goal.create!(icon: "🙋", name: "Hypersociable")
 goal3 = Goal.create!(icon: "🐕", name: "Animaux")
 goal4 = Goal.create!(icon: "🎶", name: "Musicale")
