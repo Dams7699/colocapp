@@ -343,7 +343,7 @@ user_personalities35 = UserPersonality.create!(user: user12, personality: person
 user_personalities36 = UserPersonality.create!(user: user12, personality: personality6)
 
 user_personalities37 = UserPersonality.create!(user: user13, personality: personality1)
-user_personalities38 = UserPersonality.create!(user: user13, personality: personality4)
+user_personalities38 = UserPersonality.create!(user: user13, personality: personality3)
 user_personalities39 = UserPersonality.create!(user: user13, personality: personality6)
 
 user_personalities40 = UserPersonality.create!(user: user14, personality: personality2)
@@ -570,8 +570,8 @@ colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal1)
 colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal3)
 colocation_goals = ColocationGoal.create!(colocation: colocation7, goal: goal6)
 
-colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal2)
-colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal5)
+colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal1)
+colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal4)
 colocation_goals = ColocationGoal.create!(colocation: colocation8, goal: goal6)
 
 colocation_goals = ColocationGoal.create!(colocation: colocation9, goal: goal2)
